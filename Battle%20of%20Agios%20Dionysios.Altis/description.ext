@@ -1,0 +1,17 @@
+author = SethosII;
+onLoadName = "Battle of Agios Dionysios";
+onLoadMission = "We will attack Agios Dionysios shortly and want to get information about the enemy.";
+loadScreen = "load.paa";
+enableDebugConsole = 1;
+
+overviewText = "We will attack Agios Dionysios shortly and want to get information about the enemy. Your task is to create an observation post to prepare our attack at Agios Dionysios.";
+overviewPicture = "load.paa"; 
+
+respawn = "SIDE";
+respawnDialog = true;
+
+class Header {
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 12;
+};

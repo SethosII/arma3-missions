@@ -1,0 +1,28 @@
+author = SethosII;
+onLoadName = "Strike back";
+onLoadMission = "Your task is to attack an enemy mortar camp.";
+loadScreen = "load.paa";
+enableDebugConsole = 1;
+
+overviewText = "We are under attack by enemy mortars. Attack their position to neutralize this threat. Any feedback will be much appreciated. You can watch two friends and me playing an early version of the mission on YouTube: https://www.youtube.com/watch?v=EwX1XGaTxh4";
+overviewPicture = "load.paa"; 
+
+respawn = "SIDE";
+respawnDialog = true;
+
+class Header {
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 8;
+};
+
+class Params {
+	class Daytime {
+		title = "Time";
+		texts[] = {"Morning","Day","Evening"};
+		values[] = {6,12,18};
+		default = 12;
+		function = "BIS_fnc_paramDaytime";
+ 		isGlobal = 1;
+	};
+};

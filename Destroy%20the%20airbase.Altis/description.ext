@@ -1,0 +1,17 @@
+author = SethosII;
+onLoadName = "Destroy the Airbase";
+onLoadMission = "Attack an airbase with captured vehicles.";
+loadScreen = "load.paa";
+enableDebugConsole = 1;
+
+overviewText = "We need to capture the main airbase of Altis. Intel reports that a weak observation post with plenty of vehicles is near. Capture and use them against their former owners.";
+overviewPicture = "load.paa"; 
+
+respawn = "SIDE";
+respawnDialog = true;
+
+class Header {
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 10;
+};

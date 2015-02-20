@@ -1,0 +1,25 @@
+author = SethosII;
+onLoadName = "CAS";
+onLoadMission = "Use close air support and drones to destroy an OPFOR airbase.";
+loadScreen = "load.paa";
+enableDebugConsole = 1;
+
+overviewText = "We need to destroy an OPFOR airbase. Infiltrate via boat, search for a good overwatch position and eliminate the enemies at the airbase with CAS.";
+overviewPicture = "load.paa"; 
+
+respawn = "SIDE";
+respawnDialog = true;
+
+class Header {
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 8;
+};
+
+class CfgMusic {
+	tracks[]={dab};
+	class yourmusicname {
+		name = "dab";
+		sound[]={"\music\dab.ogg",db+5,1.0};
+	};
+};

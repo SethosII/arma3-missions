@@ -1,0 +1,17 @@
+author = SethosII;
+onLoadName = "Modern warfare";
+onLoadMission = "Be an American. Use drones.";
+loadScreen = "load.paa";
+enableDebugConsole = 1;
+
+overviewText = "All with drones.";
+overviewPicture = "load.paa"; 
+
+respawn = "SIDE";
+respawnDialog = true;
+
+class Header {
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 4;
+};

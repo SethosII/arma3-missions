@@ -1,0 +1,17 @@
+author = SethosII;
+onLoadName = "Black ops bullshit";
+onLoadMission = "Miller.";
+loadScreen = "load.paa";
+enableDebugConsole = 1;
+
+overviewText = "Blub.";
+overviewPicture = "load.paa"; 
+
+respawn = "SIDE";
+respawnDialog = true;
+
+class Header {
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 8;
+};

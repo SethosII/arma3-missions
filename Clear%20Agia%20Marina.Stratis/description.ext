@@ -1,0 +1,57 @@
+author = SethosII;
+onLoadName = "Clear Agia Marina";
+onLoadMission = "Use a tank and your squad to attack.";
+loadScreen = "load.paa";
+enableDebugConsole = 1;
+
+overviewText = "Agia Marina is under control by the enemy, we need to change this!";
+overviewPicture = "load.paa"; 
+
+respawn = "SIDE";
+respawnDialog = true;
+
+class Header {
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 9;
+};
+
+class Params {
+	class Daytime {
+		title = "Time";
+		texts[] = {"Morning","Day","Evening","Night"};
+		values[] = {6,12,18,0};
+		default = 12;
+		function = "BIS_fnc_paramDaytime";
+ 		isGlobal = 1;
+	};
+};
+
+class CfgRadio {
+	sounds[] = {start,reply,contact,clear,rtb};
+	class start {
+		name = "start";
+		sound[] = {"audio\start.ogg", db+0, 1};
+		title = "Want to take our new tank to a test drive through a enemy town?";
+	};
+	class reply {
+		name = "reply";
+		sound[] = {"audio\reply.ogg", db+0, 1};
+		title = "Would be a pleasure to do this!";
+	};
+	class contact {
+		name = "contact";
+		sound[] = {"audio\contact.ogg", db+0, 1};
+		title = "We spotted CSAT forces. Engaging.";
+	};
+	class clear {
+		name = "clear";
+		sound[] = {"audio\clear.ogg", db+0, 1};
+		title = "Test drive passed: Agia Marina cleared. Any further orders?";
+	};
+	class rtb {
+		name = "rtb";
+		sound[] = {"audio\rtb.ogg", db+0, 1};
+		title = "Good to here, just RTB.";
+	};
+};

@@ -1,0 +1,69 @@
+author = SethosII;
+onLoadName = "Zum Testen";
+onLoadMission = "Explanation";
+loadScreen = "load.paa";
+enableDebugConsole = 1;
+
+overviewText = "Overview";
+overviewPicture = "load.paa"; 
+
+respawn = "BASE";
+respawnVehicle = "BASE";
+respawnVehicledelay = 60;
+respawnDelay = 5;
+respawnDialog = true;
+respawnTemplates[] = {"Counter","Wave"};
+
+#include "=BTC=_revive\=BTC=_respawn.h"
+
+class Header {
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 4;
+};
+
+class Params {
+	class Daytime {
+		title = "Time";
+		texts[] = {"Morning","Day","Evening","Night"};
+		values[] = {6,12,18,0};
+		default = 12;
+		function = "BIS_fnc_paramDaytime";
+ 		isGlobal = 1;
+	};
+	class Weather {
+		title = "Weather";
+		texts[] = {"Sunny","Cloudy","Rainy","Stormy"};
+		values[] = {20,40,65,90};
+		default = 2;
+		function = "BIS_fnc_paramWeather";
+ 		isGlobal = 1;
+	};
+	class IndependentRelation {
+		title = "Independent friendly to";
+		texts[] = {"Nobody","OPFOR","BLUFOR","Everybody"};
+		values[] = {-1,0,1,2};
+		default = 1;
+		function = "BIS_fnc_paramGuerFriendly";
+	};
+	class Revive {
+		title = "Enable revive script";
+		values[] = {0,1};
+		texts[] = {"Off","On"};
+		default = 0;
+	};
+};
+
+class CfgRadio {
+	sounds[] = {Hello,Hello2};
+	class Hello {
+		name = "Hello";
+		sound[] = {"audio\hallo.ogg", db-100, 1.0};
+		title = "Hello.";
+	};
+	class Hello2 {
+		name = "Hello";
+		sound[] = {"audio\hallo2.ogg", db-100, 1.0};
+		title = "Hello.";
+	};
+};

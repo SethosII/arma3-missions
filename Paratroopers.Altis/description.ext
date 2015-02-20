@@ -1,0 +1,17 @@
+author = SethosII;
+onLoadName = "Paratroopers";
+onLoadMission = "Find the laptop.";
+loadScreen = "load.paa";
+enableDebugConsole = 1;
+
+overviewText = "Search in a factory near Athira for a laptop with valuable information. You will be inserted via helicopter. AAF infantry is expected to be stationed there and hostile. Nearby is also a OPFOR camp so don't draw their attention! When you have found the laptop move south east and hand other the laptop to an officer.";
+overviewPicture = "load.paa"; 
+
+respawn = "SIDE";
+respawnDialog = true;
+
+class Header {
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 8;
+};

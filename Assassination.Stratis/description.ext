@@ -1,0 +1,28 @@
+author = SethosII;
+onLoadName = "Assassination";
+onLoadMission = "Kill or be killed.";
+loadScreen = "load.paa";
+enableDebugConsole = 1;
+
+overviewText = "NATO has pushed CSAT into the south of Stratis and attempts to seize the island completely by launching a final attack. CSAT doesn't have enough troops to repel the attack so their only hope is to cut off the head off the operation.";
+overviewPicture = "load.paa"; 
+
+respawn = "SIDE";
+respawnDialog = true;
+
+class Header {
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 3;
+};
+
+class Params {
+	class Daytime {
+		title = "Time";
+		texts[] = {"Morning","Day","Evening","Night"};
+		values[] = {6,12,18,0};
+		default = 6;
+		function = "BIS_fnc_paramDaytime";
+ 		isGlobal = 1;
+	};
+};

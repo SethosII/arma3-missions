@@ -1,0 +1,17 @@
+author = SethosII;
+onLoadName = "Tanks";
+onLoadMission = "Use heavy armed forces to attack a base near Pyrgos.";
+loadScreen = "load.paa";
+enableDebugConsole = 1;
+
+overviewText = "You are the leader of our heavy armed forces offensive against a BLUFOR base near Pyrgos. Artillery support is available to.";
+overviewPicture = "load.paa"; 
+
+respawn = "SIDE";
+respawnDialog = true;
+
+class Header {
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 20;
+};

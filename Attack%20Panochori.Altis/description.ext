@@ -1,0 +1,56 @@
+author = SethosII;
+onLoadName = "Attack Panochori";
+onLoadMission = "This is my first mission, I hope you enjoy it anyway.";
+loadScreen = "load.paa";
+enableDebugConsole = 1;
+
+overviewText = "Your task is to attack Panochori. In order to do that you first attack an outpost at a church. Be prepared for some surprises. This is my first mission so any feedback will be much appreciated. You can watch a friend and me playing an early version of the mission on YouTube: https://www.youtube.com/playlist?list=PLlpwdi59qNnldGyZLc2q_N_YEozG3nN0s";
+overviewPicture = "load.paa"; 
+
+respawn = "SIDE";
+respawnDialog = true;
+
+class Header {
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 14;
+};
+
+class CfgRadio {
+	sounds[] = {heli,noise,aa_down,recieved,unknown,panochori_seized,good_news};
+	class heli {
+		name = "heli";
+		sound[] = {"audio\heli.ogg", db+0, 1};
+		title = "All right, we're going to land now. Good luck out there!";
+	};
+	class noise {
+		name = "noise";
+		sound[] = {"audio\noise.ogg", db+0, 1};
+		title = "...";
+	};
+	class aa_down {
+		name = "aa_down";
+		sound[] = {"audio\aa_down.ogg", db+0, 1};
+		title = "AA-threat neutralized. We are now proceeding to Panochori.";
+	};
+	class recieved {
+		name = "recieved";
+		sound[] = {"audio\recieved.ogg", db+0, 1};
+		title = "Recieved. Out.";
+	};
+	class unknown {
+		name = "unknown";
+		sound[] = {"audio\unknown.ogg", db+0, 1};
+		title = "OK. I think this was the missed team ...";
+	};
+	class panochori_seized {
+		name = "panochori_seized";
+		sound[] = {"audio\panochori_seized.ogg", db+0, 1};
+		title = "Panochori seems to be our. We're now proceeding to the extraction point.";
+	};
+	class good_news {
+		name = "good_news";
+		sound[] = {"audio\good_news.ogg", db+0, 1};
+		title = "Splendid news! Helicopter for extraction is on the way.";
+	};
+};

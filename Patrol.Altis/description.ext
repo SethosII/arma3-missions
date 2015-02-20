@@ -1,0 +1,17 @@
+author = SethosII;
+onLoadName = "Patrol";
+onLoadMission = "Do your daily duty and patrol arround to search for FIA members.";
+loadScreen = "load.paa";
+enableDebugConsole = 1;
+
+overviewText = "FIA members are hiding in this area, patrol around to search for and eliminate them.";
+overviewPicture = "load.paa"; 
+
+respawn = "SIDE";
+respawnDialog = true;
+
+class Header {
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 8;
+};

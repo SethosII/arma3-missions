@@ -1,0 +1,17 @@
+author = SethosII;
+onLoadName = "Operation Mermaid";
+onLoadMission = "Mermaid!";
+loadScreen = "load.paa";
+enableDebugConsole = 1;
+
+overviewText = "Clear the enemy camp from naval mines and command our amphibian vehicles during the attack on the base.";
+overviewPicture = "load.paa"; 
+
+respawn = "SIDE";
+respawnDialog = true;
+
+class Header {
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 8;
+};

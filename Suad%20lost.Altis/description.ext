@@ -1,0 +1,17 @@
+author = SethosII;
+onLoadName = "Squad lost";
+onLoadMission = "Make your way back home.";
+loadScreen = "load.paa";
+enableDebugConsole = 1;
+
+overviewText = "A AAF squad has lost orientation on Altis and has to be rescued by NATO forces.";
+overviewPicture = "load.paa"; 
+
+respawn = "GROUP";
+respawnDialog = true;
+
+class Header {
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 12;
+};

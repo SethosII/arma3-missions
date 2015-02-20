@@ -1,0 +1,17 @@
+author = SethosII;
+onLoadName = "Defend Panagia";
+onLoadMission = ".";
+loadScreen = "load.paa";
+enableDebugConsole = 1;
+
+overviewText = "Your task is to defend Panagia, which is under attack by CSAT. There are some FIA members in the Village but they need your assistance.";
+overviewPicture = "load.paa"; 
+
+respawn = "SIDE";
+respawnDialog = true;
+
+class Header {
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 8;
+};

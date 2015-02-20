@@ -1,0 +1,17 @@
+author = SethosII;
+onLoadName = "Helicopter attack";
+onLoadMission = "Steal a helicopter and attack with it.";
+loadScreen = "load.paa";
+enableDebugConsole = 1;
+
+overviewText = "Steal a Helicopter and attack with it.";
+overviewPicture = "load.paa"; 
+
+respawn = "SIDE";
+respawnDialog = true;
+
+class Header {
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 10;
+};

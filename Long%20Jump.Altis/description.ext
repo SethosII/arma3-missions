@@ -1,0 +1,17 @@
+author = SethosII;
+onLoadName = "Long Jump";
+onLoadMission = ".";
+loadScreen = "load.paa";
+enableDebugConsole = 1;
+
+overviewText = ".";
+overviewPicture = "load.paa"; 
+
+respawn = "SIDE";
+respawnDialog = true;
+
+class Header {
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 4;
+};
