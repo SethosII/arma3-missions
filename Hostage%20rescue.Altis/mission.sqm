@@ -127,21 +127,6 @@ class Mission
 					skill=0.24943733;
 				};
 			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={3787.061,11.211561,13396.384};
-					id=2;
-					combatMode="RED";
-					combat="SAFE";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-				};
-			};
 		};
 		class Item3
 		{
@@ -365,21 +350,6 @@ class Mission
 					skill=0.24943733;
 				};
 			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={3788.8955,11.315699,13396.441};
-					id=14;
-					combatMode="RED";
-					combat="SAFE";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-				};
-			};
 		};
 		class Item8
 		{
@@ -396,21 +366,6 @@ class Mission
 					vehicle="B_G_Soldier_F";
 					leader=1;
 					skill=0.24943733;
-				};
-			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={3790.7859,11.414236,13396.494};
-					id=15;
-					combatMode="RED";
-					combat="SAFE";
-					class Effects
-					{
-					};
-					showWP="NEVER";
 				};
 			};
 		};
@@ -431,21 +386,6 @@ class Mission
 					skill=0.24943733;
 				};
 			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={3792.6204,11.510183,13396.552};
-					id=16;
-					combatMode="RED";
-					combat="SAFE";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-				};
-			};
 		};
 		class Item10
 		{
@@ -462,21 +402,6 @@ class Mission
 					vehicle="B_G_Soldier_TL_F";
 					leader=1;
 					skill=0.24943733;
-				};
-			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={3787.1724,11.150405,13394.552};
-					id=17;
-					combatMode="RED";
-					combat="SAFE";
-					class Effects
-					{
-					};
-					showWP="NEVER";
 				};
 			};
 		};
@@ -497,21 +422,6 @@ class Mission
 					skill=0.24943733;
 				};
 			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={3789.0068,11.226071,13394.609};
-					id=18;
-					combatMode="RED";
-					combat="SAFE";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-				};
-			};
 		};
 		class Item12
 		{
@@ -528,21 +438,6 @@ class Mission
 					vehicle="B_G_Soldier_lite_F";
 					leader=1;
 					skill=0.24943733;
-				};
-			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={3790.8972,11.324621,13394.662};
-					id=19;
-					combatMode="RED";
-					combat="SAFE";
-					class Effects
-					{
-					};
-					showWP="NEVER";
 				};
 			};
 		};
@@ -563,21 +458,6 @@ class Mission
 					skill=0.24943733;
 				};
 			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={3792.7317,11.420556,13394.72};
-					id=20;
-					combatMode="RED";
-					combat="SAFE";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-				};
-			};
 		};
 		class Item14
 		{
@@ -594,21 +474,6 @@ class Mission
 					vehicle="B_G_Soldier_AR_F";
 					leader=1;
 					skill=0.24943733;
-				};
-			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={3787.1724,11.11478,13392.882};
-					id=21;
-					combatMode="RED";
-					combat="SAFE";
-					class Effects
-					{
-					};
-					showWP="NEVER";
 				};
 			};
 		};
@@ -629,21 +494,6 @@ class Mission
 					skill=0.24943733;
 				};
 			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={3789.0068,11.156194,13392.939};
-					id=22;
-					combatMode="RED";
-					combat="SAFE";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-				};
-			};
 		};
 		class Item16
 		{
@@ -662,21 +512,6 @@ class Mission
 					skill=0.24943733;
 				};
 			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={3790.8972,11.237785,13392.992};
-					id=23;
-					combatMode="RED";
-					combat="SAFE";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-				};
-			};
 		};
 		class Item17
 		{
@@ -693,21 +528,6 @@ class Mission
 					vehicle="B_G_Soldier_AR_F";
 					leader=1;
 					skill=0.24943733;
-				};
-			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={3792.7317,11.33372,13393.05};
-					id=24;
-					combatMode="RED";
-					combat="SAFE";
-					class Effects
-					{
-					};
-					showWP="NEVER";
 				};
 			};
 		};

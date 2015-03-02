@@ -41,4 +41,6 @@ for "_x" from 0 to count kidnapper - 1 do {
 	if (kidnapper select _x != guard) then {
 		kidnapper select _x setPosATL ((nearestBuilding [3790,13422]) buildingPos (positions select _x));
 	};
+	group (kidnapper select _x) setBehaviour "SAFE";
+	group (kidnapper select _x) setCombatMode "WHITE";
 };
