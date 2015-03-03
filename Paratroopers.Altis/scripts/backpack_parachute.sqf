@@ -11,7 +11,7 @@
  * true when completed
  *
  * Example:
- * _backack_parachute_sqf = [this] execVM "scripts\backack_parachute.sqf";
+ * _backack_parachute_sqf = [this] execVM "scripts\backpack_parachute.sqf";
  */
 
 if (isServer) then {
