@@ -19,8 +19,8 @@ if (isServer) then {
 		positions pushBack _x;
 	};
 
-	for "_x" from count positions - 1 to 1 step -1 do {
-		_y = floor random _x;
+	for "_x" from 0 to count positions - 1 do {
+		_y = _x + floor random (count positions - _x);
 		_z = positions select _x;
 		positions set [_x, positions select _y];
 		positions set [_y, _z];
