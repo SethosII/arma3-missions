@@ -34,20 +34,20 @@ waitUntil{!(isNil "BIS_fnc_init")};
 // Intro message
 if (player in units players) then {
 	[
-			[
-				[format [" %1 %2", rank player, name player],"align = 'center' shadow = '1' size = '1'"],
-				["","<br/>"],
-				["Somewhere on","align = 'center' shadow = '1' size = '0.7'"],
-				[" Altis","align = 'center' shadow = '1' size = '0.7'","#aaaaaa"]
-			]
+		[
+			[format [" %1 %2", rank player, name player],"align = 'center' shadow = '1' size = '1'"],
+			["","<br/>"],
+			["Somewhere on","align = 'center' shadow = '1' size = '0.7'"],
+			[" Altis","align = 'center' shadow = '1' size = '0.7'","#aaaaaa"]
+		]
 	] spawn BIS_fnc_typeText2;
 } else {
 	[
-			[
-				[format [" %1 %2", rank player, name player],"align = 'center' shadow = '1' size = '1'"],
-				["","<br/>"],
-				["Main airfield on","align = 'center' shadow = '1' size = '0.7'"],
-				[" Altis","align = 'center' shadow = '1' size = '0.7'","#aaaaaa"]
-			]
+		[
+			[format [" %1 %2", rank player, name player],"align = 'center' shadow = '1' size = '1'"],
+			["","<br/>"],
+			["Main airfield on","align = 'center' shadow = '1' size = '0.7'"],
+			[" Altis","align = 'center' shadow = '1' size = '0.7'","#aaaaaa"]
+		]
 	] spawn BIS_fnc_typeText2;	
 };
