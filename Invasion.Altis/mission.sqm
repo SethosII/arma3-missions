@@ -61,7 +61,7 @@ class Mission
 		briefingName="COOP 08 Invasion";
 		resistanceEast=1;
 		startWeather=0.64999998;
-		startFog=0.099999994;
+		startFog=0.39999998;
 		startWind=0.099999994;
 		startWaves=0.099999994;
 		forecastWind=0.099999994;
@@ -3877,7 +3877,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=6;
+		items=7;
 		class Item0
 		{
 			position[]={484.95374,0.0041477829,30109.289};
@@ -3944,9 +3944,9 @@ class Mission
 		};
 		class Item4
 		{
-			position[]={20431.748,39.926517,5816.0635};
+			position[]={20649.047,56.567486,6144.3477};
 			a=500;
-			angle=30;
+			b=500;
 			activationBy="VEHICLE";
 			interruptable=1;
 			age="UNKNOWN";
@@ -3958,9 +3958,9 @@ class Mission
 		};
 		class Item5
 		{
-			position[]={20180.406,48.108635,6000.6738};
+			position[]={20395.525,77.142937,6281.5645};
 			a=500;
-			angle=30;
+			b=500;
 			activationBy="VEHICLE";
 			interruptable=1;
 			age="UNKNOWN";
@@ -3968,6 +3968,19 @@ class Mission
 			expActiv="_eject1_sqf = [paratroopers1, transport1] execVM ""scripts\eject.sqf""; _eject2_sqf = [paratroopers2, transport1] execVM ""scripts\eject.sqf"";";
 			class Effects
 			{
+			};
+		};
+		class Item6
+		{
+			position[]={19038.766,-183.50839,4131.3521};
+			a=0;
+			b=0;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="true";
+			class Effects
+			{
+				track="LeadTrack02_F_EPB";
 			};
 		};
 	};
