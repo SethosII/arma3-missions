@@ -1,10 +1,10 @@
 author = SethosII;
-onLoadName = "Template";
-onLoadMission = "Template.";
+onLoadName = "Invasion";
+onLoadMission = "NATO wants to gain a foothold in the south east of Altis.";
 loadScreen = "load.paa";
 enableDebugConsole = 1;
 
-overviewText = "Template";
+overviewText = "NATO wants to gain a foothold in the south east of Altis.";
 overviewPicture = "load.paa"; 
 
 respawn = "SIDE";

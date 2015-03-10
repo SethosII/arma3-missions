@@ -634,7 +634,7 @@ class Mission
 						};
 						class Item3
 						{
-							value="Clear the beach.";
+							value="Clear the <marker name=""beach"">beach</marker>.";
 							parentCls="ModuleTaskCreate_F";
 							typeName="Description";
 						};
@@ -3332,7 +3332,7 @@ class Mission
 						};
 						class Item4
 						{
-							value="Kilo <marker name=""kilo_1"">1</marker> and <marker name=""kilo_2"">2</marker><br/><marker name=""whisky"">Whisky</marker><br/><marker name=""hotel"">Hotel</marker>";
+							value="Alpha - infantry carried by Kilo in assault boats<br/>Delta - paratroopers carried by Kilo<br/>Kilo <marker name=""kilo_1"">1</marker> and <marker name=""kilo_2"">2</marker> - heavy transport helicopters<br/><marker name=""whisky"">Whisky</marker> - combat helicopter<br/><marker name=""hotel"">Hotel</marker> - mechanized infantry";
 							parentCls="ModuleCreateDiaryRecord_F";
 							typeName="Description";
 						};
@@ -3494,7 +3494,7 @@ class Mission
 						};
 						class Item4
 						{
-							value="NATO want's to gain foothold in the south east of Altis.";
+							value="NATO wants to gain foothold in the south east of Altis.";
 							parentCls="ModuleCreateDiaryRecord_F";
 							typeName="Description";
 						};
@@ -4091,7 +4091,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=8;
+		items=16;
 		class Item0
 		{
 			position[]={19306.037,-0.61851609,4381.9839};
@@ -4165,6 +4165,88 @@ class Mission
 			text="Kilo 2";
 			type="b_air";
 			colorName="ColorWEST";
+		};
+		class Item8
+		{
+			position[]={5687.0293,189.47604,11783.776};
+			name="nato";
+			type="flag_NATO";
+			a=2;
+			b=2;
+		};
+		class Item9
+		{
+			position[]={15952.092,18.124348,17704.264};
+			name="csat";
+			type="flag_CSAT";
+			a=2;
+			b=2;
+		};
+		class Item10
+		{
+			position[]={7541.7158,83.103432,15335.656};
+			name="fln";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorWEST";
+			fillName="DiagGrid";
+			a=4000;
+			b=100;
+			angle=350.53146;
+		};
+		class Item11
+		{
+			position[]={7626.8125,110.72446,15583.089};
+			name="flc";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorEAST";
+			fillName="DiagGrid";
+			a=4000;
+			b=100;
+			angle=350.53146;
+		};
+		class Item12
+		{
+			position[]={12426.289,9.8384695,14357.137};
+			name="fln_1";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorWEST";
+			fillName="DiagGrid";
+			a=2000;
+			b=100;
+			angle=417.34647;
+		};
+		class Item13
+		{
+			position[]={12539.902,24.369818,14602.665};
+			name="flc_1";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorEAST";
+			fillName="DiagGrid";
+			a=2000;
+			b=100;
+			angle=417.34647;
+		};
+		class Item14
+		{
+			position[]={19553.273,-0.3342877,4665.0366};
+			name="boat_drop_zone";
+			text="boat drop zone";
+			type="mil_arrow2";
+			colorName="ColorWEST";
+			angle=-128.68661;
+		};
+		class Item15
+		{
+			position[]={20450.289,72.661812,6079.4146};
+			name="paratroopers_drop_zone";
+			text="paratroopers drop zone";
+			type="mil_arrow2";
+			colorName="ColorWEST";
+			angle=-129.813;
 		};
 	};
 	class Sensors
