@@ -141,25 +141,25 @@ class Mission
 				class Item0
 				{
 					position[]={18174.723,20.270636,15107.617};
-					type="HOLD";
 					formation="COLUMN";
 					speed="NORMAL";
-					synchronizations[]={26};
+					class Effects
+					{
+					};
+					timeoutMin=600;
+					timeoutMid=660;
+					timeoutMax=720;
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={19359.451,18.153013,15295.62};
+					synchronizations[]={19,20};
 					class Effects
 					{
 					};
 					showWP="NEVER";
 					syncId=18;
-				};
-				class Item1
-				{
-					position[]={19359.451,18.153013,15295.62};
-					synchronizations[]={20,21};
-					class Effects
-					{
-					};
-					showWP="NEVER";
-					syncId=19;
 				};
 				class Item2
 				{
@@ -198,23 +198,23 @@ class Mission
 					position[]={19367.635,18.178089,15297.764};
 					id=3;
 					combat="SAFE";
-					synchronizations[]={19};
+					synchronizations[]={18};
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					syncId=20;
+					syncId=19;
 				};
 				class Item1
 				{
 					position[]={19365.297,18.182335,15295.374};
 					expActiv="gate animate [""Door_1_rot"", 1];";
-					synchronizations[]={19};
+					synchronizations[]={18};
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					syncId=21;
+					syncId=20;
 				};
 				class Item2
 				{
@@ -251,21 +251,7 @@ class Mission
 					vehicle="I_HMG_01_high_F";
 					leader=1;
 					skill=0.29708391;
-					init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
-				};
-			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={19370.383,18.189627,15292.64};
-					id=4;
-					combatMode="RED";
-					class Effects
-					{
-					};
-					showWP="NEVER";
+					init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this; this setCombatMode ""RED"";";
 				};
 			};
 		};
@@ -279,27 +265,13 @@ class Mission
 				{
 					position[]={19354.924,18.128611,15303.393};
 					azimut=224.968;
-					offsetY=2;
+					offsetY=2.0999999;
 					id=5;
 					side="GUER";
 					vehicle="I_HMG_01_high_F";
 					leader=1;
 					skill=0.29708391;
-					init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
-				};
-			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={19354.924,18.128611,15303.393};
-					id=5;
-					combatMode="RED";
-					class Effects
-					{
-					};
-					showWP="NEVER";
+					init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this; this setCombatMode ""RED"";";
 				};
 			};
 		};
@@ -318,21 +290,7 @@ class Mission
 					vehicle="I_Soldier_AR_F";
 					leader=1;
 					skill=0.27802527;
-					init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
-				};
-			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={19355.611,18.131031,15302.95};
-					id=6;
-					combatMode="RED";
-					class Effects
-					{
-					};
-					showWP="NEVER";
+					init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this; this setCombatMode ""YELLOW""; this setUnitPos ""UP"";";
 				};
 			};
 		};
@@ -351,21 +309,7 @@ class Mission
 					vehicle="I_Soldier_GL_F";
 					leader=1;
 					skill=0.29708391;
-					init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
-				};
-			};
-			class Waypoints
-			{
-				items=1;
-				class Item0
-				{
-					position[]={19351.537,18.115459,15306.48};
-					id=7;
-					combatMode="RED";
-					class Effects
-					{
-					};
-					showWP="NEVER";
+					init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this; this setCombatMode ""YELLOW""; this setUnitPos ""UP"";";
 				};
 			};
 		};
@@ -481,7 +425,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					syncId=1;
-					synchronizations[]={2,24};
+					synchronizations[]={2,23};
 				};
 			};
 		};
@@ -500,7 +444,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					syncId=2;
-					synchronizations[]={23,1};
+					synchronizations[]={22,1};
 				};
 			};
 		};
@@ -1022,7 +966,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					syncId=13;
-					synchronizations[]={14,25};
+					synchronizations[]={14,24};
 				};
 			};
 		};
@@ -1118,7 +1062,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					syncId=15;
-					synchronizations[]={27,14};
+					synchronizations[]={25,14};
 				};
 			};
 		};
@@ -1148,7 +1092,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					syncId=16;
-					synchronizations[]={28,17};
+					synchronizations[]={26,17};
 				};
 			};
 		};
@@ -1234,7 +1178,7 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.44999999;
-					init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
+					init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this; this setCombatMode ""RED"";";
 				};
 				class Item1
 				{
@@ -1252,6 +1196,7 @@ class Mission
 				class Item0
 				{
 					position[]={19441.223,15.452841,15162.089};
+					speed="LIMITED";
 					combat="SAFE";
 					class Effects
 					{
@@ -1333,7 +1278,7 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.44999999;
-					init="[group this, getPos this, 75] call BIS_fnc_taskPatrol; {bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
+					init="[group this, getPos this, 75] call BIS_fnc_taskPatrol; {bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this; this setCombatMode ""RED"";";
 				};
 				class Item1
 				{
@@ -1373,12 +1318,12 @@ class Mission
 					position[]={18205.664,47.492897,15523.096};
 					completitionRadius=10;
 					type="HOLD";
-					synchronizations[]={29};
+					synchronizations[]={27};
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					syncId=22;
+					syncId=21;
 				};
 				class Item1
 				{
@@ -1441,7 +1386,7 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.44999999;
-					init="[group this, getPos this, 75] call BIS_fnc_taskPatrol; {bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
+					init="[group this, getPos this, 75] call BIS_fnc_taskPatrol; {bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;this setCombatMode ""RED"";";
 				};
 				class Item1
 				{
@@ -1788,7 +1733,7 @@ class Mission
 		};
 		class Item11
 		{
-			position[]={19409.84,19.312963,15280.594};
+			position[]={19409.84,19.308901,15280.828};
 			azimut=-57.96051;
 			id=60;
 			side="EMPTY";
@@ -2155,7 +2100,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=15;
+		items=14;
 		class Item0
 		{
 			position[]={18671.564,19.712038,15110.719};
@@ -2183,7 +2128,7 @@ class Mission
 			{
 			};
 			synchronizations[]={2};
-			syncId=23;
+			syncId=22;
 		};
 		class Item2
 		{
@@ -2198,7 +2143,7 @@ class Mission
 			{
 			};
 			synchronizations[]={1};
-			syncId=24;
+			syncId=23;
 		};
 		class Item3
 		{
@@ -2231,28 +2176,9 @@ class Mission
 			{
 			};
 			synchronizations[]={13};
-			syncId=25;
+			syncId=24;
 		};
 		class Item5
-		{
-			position[]={18175.141,20.127033,15103.262};
-			a=0;
-			b=0;
-			angle=13.7365;
-			timeoutMin=600;
-			timeoutMid=660;
-			timeoutMax=720;
-			interruptable=1;
-			type="SWITCH";
-			age="UNKNOWN";
-			expCond="true";
-			class Effects
-			{
-			};
-			synchronizations[]={18};
-			syncId=26;
-		};
-		class Item6
 		{
 			position[]={18478.992,24.579693,14283.965};
 			activationBy="VEHICLE";
@@ -2264,7 +2190,7 @@ class Mission
 			{
 			};
 		};
-		class Item7
+		class Item6
 		{
 			position[]={18474.838,24.396282,14283.896};
 			activationBy="VEHICLE";
@@ -2276,7 +2202,7 @@ class Mission
 			{
 			};
 		};
-		class Item8
+		class Item7
 		{
 			position[]={18127.838,18.962845,15094.799};
 			a=0;
@@ -2292,7 +2218,7 @@ class Mission
 			{
 			};
 		};
-		class Item9
+		class Item8
 		{
 			position[]={18458.816,23.445444,14275.256};
 			a=0;
@@ -2308,9 +2234,9 @@ class Mission
 			{
 			};
 			synchronizations[]={15};
-			syncId=27;
+			syncId=25;
 		};
-		class Item10
+		class Item9
 		{
 			position[]={19364.928,18.158848,15302.09};
 			a=20;
@@ -2327,9 +2253,9 @@ class Mission
 			{
 			};
 			synchronizations[]={16};
-			syncId=28;
+			syncId=26;
 		};
-		class Item11
+		class Item10
 		{
 			position[]={18672.104,19.712379,15111.164};
 			a=700;
@@ -2345,7 +2271,7 @@ class Mission
 			{
 			};
 		};
-		class Item12
+		class Item11
 		{
 			position[]={18670.979,19.715527,15111.2};
 			a=700;
@@ -2361,7 +2287,7 @@ class Mission
 			{
 			};
 		};
-		class Item13
+		class Item12
 		{
 			position[]={18479.787,24.684141,14270.405};
 			a=0;
@@ -2377,7 +2303,7 @@ class Mission
 			{
 			};
 		};
-		class Item14
+		class Item13
 		{
 			position[]={18219.025,47.466457,15527.729};
 			a=0;
@@ -2389,8 +2315,8 @@ class Mission
 			class Effects
 			{
 			};
-			synchronizations[]={22};
-			syncId=29;
+			synchronizations[]={21};
+			syncId=27;
 		};
 	};
 };
