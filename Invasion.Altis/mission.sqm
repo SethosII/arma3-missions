@@ -1032,7 +1032,7 @@ class Mission
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.5;
-					init="paratroopers3 = group this; {[_x,""MANW""] call BIS_fnc_setUnitInsignia; _x moveInCargo transport2; _backack_parachute_sqf = [_x] execVM ""scripts\backpack_parachute.sqf"";} forEach units paratroopers3;";
+					init="paratroopers3 = group this; {[_x,""MANW""] call BIS_fnc_setUnitInsignia; _x moveInCargo transport2;} forEach units paratroopers3;";
 					syncId=17;
 					synchronizations[]={26};
 				};
@@ -1134,7 +1134,7 @@ class Mission
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.5;
-					init="paratroopers4 = group this; {[_x,""MANW""] call BIS_fnc_setUnitInsignia; _x moveInCargo transport2; _backack_parachute_sqf = [_x] execVM ""scripts\backpack_parachute.sqf"";} forEach units paratroopers4;";
+					init="paratroopers4 = group this; {[_x,""MANW""] call BIS_fnc_setUnitInsignia; _x moveInCargo transport2;} forEach units paratroopers4;";
 					syncId=18;
 					synchronizations[]={25};
 				};
@@ -1236,7 +1236,7 @@ class Mission
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.5;
-					init="paratroopers1 = group this; {[_x,""MANW""] call BIS_fnc_setUnitInsignia; _x moveInCargo transport1; _backack_parachute_sqf = [_x] execVM ""scripts\backpack_parachute.sqf"";} forEach units paratroopers1;";
+					init="paratroopers1 = group this; {[_x,""MANW""] call BIS_fnc_setUnitInsignia; _x moveInCargo transport1;} forEach units paratroopers1;";
 					syncId=19;
 					synchronizations[]={22};
 				};
@@ -1338,7 +1338,7 @@ class Mission
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.5;
-					init="paratroopers2 = group this; {[_x,""MANW""] call BIS_fnc_setUnitInsignia; _x moveInCargo transport1; _backack_parachute_sqf = [_x] execVM ""scripts\backpack_parachute.sqf"";} forEach units paratroopers2;";
+					init="paratroopers2 = group this; {[_x,""MANW""] call BIS_fnc_setUnitInsignia; _x moveInCargo transport1;} forEach units paratroopers2;";
 					syncId=20;
 					synchronizations[]={23};
 				};
@@ -4328,7 +4328,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			idVehicle=32;
-			expActiv="_eject3_sqf = [paratroopers3, transport2] execVM ""scripts\eject.sqf""; _eject4_sqf = [paratroopers4, transport2] execVM ""scripts\eject.sqf"";";
+			expActiv="{_backack_parachute_sqf = [_x] execVM ""scripts\backpack_parachute.sqf"";} forEach units paratroopers3; _eject3_sqf = [paratroopers3, transport2] execVM ""scripts\eject.sqf""; {_backack_parachute_sqf = [_x] execVM ""scripts\backpack_parachute.sqf"";} forEach units paratroopers4; _eject4_sqf = [paratroopers4, transport2] execVM ""scripts\eject.sqf"";";
 			class Effects
 			{
 			};
@@ -4342,7 +4342,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			idVehicle=20;
-			expActiv="_eject1_sqf = [paratroopers1, transport1] execVM ""scripts\eject.sqf""; _eject2_sqf = [paratroopers2, transport1] execVM ""scripts\eject.sqf"";";
+			expActiv="{_backack_parachute_sqf = [_x] execVM ""scripts\backpack_parachute.sqf"";} forEach units paratroopers1; _eject1_sqf = [paratroopers1, transport1] execVM ""scripts\eject.sqf""; {_backack_parachute_sqf = [_x] execVM ""scripts\backpack_parachute.sqf"";} forEach units paratroopers2; _eject2_sqf = [paratroopers2, transport1] execVM ""scripts\eject.sqf"";";
 			class Effects
 			{
 			};
