@@ -2080,7 +2080,7 @@ class Mission
 			age="UNKNOWN";
 			name="engine";
 			expCond="triggerActivated ambush";
-			expActiv="t1 setHit [""motor"", 1]; hint ""Support on the way""";
+			expActiv="t1 setHit [getText(configfile >> ""CfgVehicles"" >> ""B_Heli_Transport_01_camo_F"" >> ""HitPoints"" >> ""HitEngine"" >> ""name""), 1]; hint ""Support on the way""";
 			class Effects
 			{
 				track="LeadTrack01a_F";
