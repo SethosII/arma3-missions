@@ -91,7 +91,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="p3";
-					init="removeAllWeapons this; this addWeapon ""B_UavTerminal""; o3_animate = [this] execVM ""scripts\animate_computer_work.sqf"";";
+					init="removeAllWeapons this; this addWeapon ""B_UavTerminal""; [this,""MANW""] call BIS_fnc_setUnitInsignia; o3_animate = [this] execVM ""scripts\animate_computer_work.sqf"";";
 				};
 			};
 		};
@@ -1850,7 +1850,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="p1";
-					init="removeAllWeapons this; this addWeapon ""B_UavTerminal""; o1_animate = [this] execVM ""scripts\animate_computer_work.sqf"";";
+					init="removeAllWeapons this; this addWeapon ""B_UavTerminal""; [this,""MANW""] call BIS_fnc_setUnitInsignia; o1_animate = [this] execVM ""scripts\animate_computer_work.sqf"";";
 					syncId=6;
 					synchronizations[]={0,1,3,16,17};
 				};
@@ -1875,7 +1875,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="p2";
-					init="removeAllWeapons this; this addWeapon ""B_UavTerminal""; o2_animate = [this] execVM ""scripts\animate_computer_work.sqf"";";
+					init="removeAllWeapons this; this addWeapon ""B_UavTerminal""; [this,""MANW""] call BIS_fnc_setUnitInsignia; o2_animate = [this] execVM ""scripts\animate_computer_work.sqf"";";
 				};
 			};
 		};
@@ -1898,7 +1898,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="p4";
-					init="removeAllWeapons this; this addWeapon ""B_UavTerminal""; o4_animate = [this] execVM ""scripts\animate_computer_work.sqf"";";
+					init="removeAllWeapons this; this addWeapon ""B_UavTerminal""; [this,""MANW""] call BIS_fnc_setUnitInsignia; o4_animate = [this] execVM ""scripts\animate_computer_work.sqf"";";
 				};
 			};
 		};
