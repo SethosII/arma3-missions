@@ -30,7 +30,8 @@ class Mission
 		"A3_Data_F_Curator_Virtual",
 		"A3_Modules_F_Curator_Misc",
 		"A3_Modules_F",
-		"A3_Modules_F_GroupModifiers"
+		"A3_Modules_F_GroupModifiers",
+		"A3_Modules_F_Curator_Mines"
 	};
 	addOnsAuto[]=
 	{
@@ -54,8 +55,7 @@ class Mission
 		"A3_Soft_F_MRAP_01",
 		"A3_Soft_F_Quadbike",
 		"A3_Weapons_F_Ammoboxes",
-		"A3_Structures_F_Items_Stationery",
-		"A3_Structures_F_Items_Vessels",
+		"A3_Modules_F_Curator_Mines",
 		"A3_Structures_F_Mil_Helipads",
 		"A3_Structures_F_Civ_Dead",
 		"A3_Structures_F_System",
@@ -2042,8 +2042,6 @@ class Mission
 				{
 					position[]={5742.7017,35.823357,10937.206};
 					combatMode="BLUE";
-					formation="STAG COLUMN";
-					speed="FULL";
 					combat="CARELESS";
 					synchronizations[]={38};
 					class Effects
@@ -2054,8 +2052,8 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={5800.0181,40.470985,10966.211};
-					speed="FULL";
+					position[]={5795.749,40.874676,10972.953};
+					formation="FILE";
 					combat="AWARE";
 					class Effects
 					{
@@ -3822,48 +3820,48 @@ class Mission
 		};
 		class Item17
 		{
-			position[]={6894.979,11.798234,11115.144};
+			position[]={6894.2026,11.786376,11109.948};
 			azimut=-140.035;
 			special="NONE";
 			id=166;
 			side="EMPTY";
-			vehicle="Land_PencilYellow_F";
+			vehicle="IEDLandSmall_F";
 			leader=1;
 			skill=0.2;
 			text="IED3";
 		};
 		class Item18
 		{
-			position[]={6912.8989,11.253623,11110.8};
+			position[]={6910.7651,11.284673,11106.069};
 			azimut=-222.256;
 			special="NONE";
 			id=167;
 			side="EMPTY";
-			vehicle="Land_PencilYellow_F";
+			vehicle="IEDLandSmall_F";
 			leader=1;
 			skill=0.2;
 			text="IED2";
 		};
 		class Item19
 		{
-			position[]={6931.207,10.699151,11106.686};
+			position[]={6918.7954,11.108347,11115.447};
 			azimut=-68.866203;
 			special="NONE";
 			id=168;
 			side="EMPTY";
-			vehicle="Land_PencilYellow_F";
+			vehicle="IEDLandSmall_F";
 			leader=1;
 			skill=0.2;
 			text="IED1";
 		};
 		class Item20
 		{
-			position[]={5796.519,40.353329,10966.123};
+			position[]={5789.6538,40.111164,10966.783};
 			azimut=-140.035;
 			special="NONE";
 			id=169;
 			side="EMPTY";
-			vehicle="Land_MetalBarrel_F";
+			vehicle="IEDUrbanBig_F";
 			leader=1;
 			skill=0.2;
 			text="IED4";
@@ -4134,7 +4132,7 @@ class Mission
 		};
 		class Item1
 		{
-			position[]={6929.7319,10.745444,11107.138};
+			position[]={6917.4756,11.11585,11109.776};
 			a=3;
 			b=8;
 			angle=13.4886;
@@ -4143,14 +4141,14 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=151;
 			expCond="this AND alive spotter";
-			expActiv="bomb=""M_Mo_82mm_AT_LG"" createVehicle (getPos IED1); deletevehicle IED1;";
+			expActiv="IED1 setDamage 1;";
 			class Effects
 			{
 			};
 		};
 		class Item2
 		{
-			position[]={6893.1138,11.855801,11115.572};
+			position[]={6895.2476,11.790108,11115.106};
 			a=3;
 			b=8;
 			angle=13.4886;
@@ -4159,14 +4157,14 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=149;
 			expCond="this AND alive spotter";
-			expActiv="bomb=""M_Mo_82mm_AT_LG"" createVehicle (getPos IED3); deletevehicle IED3;";
+			expActiv="IED3 setDamage 1;";
 			class Effects
 			{
 			};
 		};
 		class Item3
 		{
-			position[]={6910.7153,11.321512,11111.376};
+			position[]={6912.3062,11.272532,11111.028};
 			a=3;
 			b=8;
 			angle=-163.94901;
@@ -4175,7 +4173,7 @@ class Mission
 			age="UNKNOWN";
 			idVehicle=150;
 			expCond="this AND alive spotter";
-			expActiv="bomb=""M_Mo_82mm_AT_LG"" createVehicle (getPos IED2); deletevehicle IED2;";
+			expActiv="IED2 setDamage 1;";
 			class Effects
 			{
 			};
@@ -4189,6 +4187,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			idVehicle=0;
+			expCond="true || this";
 			expActiv="unknown sideRadio ""noise"";";
 			class Effects
 			{
@@ -4198,15 +4197,15 @@ class Mission
 		};
 		class Item5
 		{
-			position[]={5795.667,40.153568,10964.525};
+			position[]={5787.8101,40.153801,10967.803};
 			a=12;
-			b=12;
-			angle=-100.35;
+			b=15;
+			angle=60;
 			activationBy="GROUP";
 			interruptable=1;
 			age="UNKNOWN";
 			idVehicle=96;
-			expActiv="0 = [] spawn {bomb=""M_Mo_82mm_AT_LG"" createVehicle (getPos IED4); deletevehicle IED4; sleep 3; leader players groupRadio ""unknown"";}";
+			expActiv="_nul = [] spawn {IED4 setDamage 1; sleep 3; leader players groupRadio ""unknown"";}";
 			class Effects
 			{
 			};
