@@ -11,3 +11,7 @@ waitUntil{!(isNil "BIS_fnc_init")};
 		[" Telos","align = 'center' shadow = '1' size = '0.7'","#aaaaaa"]
 	]
 ] spawn BIS_fnc_typeText2;
+
+if (!isDedicated) then {
+	player action ["UAVTerminalOpen", player];
+};
