@@ -4254,7 +4254,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=7;
+		items=9;
 		class Item0
 		{
 			position[]={484.95374,0.0041477829,30109.289};
@@ -4358,6 +4358,40 @@ class Mission
 			class Effects
 			{
 				track="LeadTrack02_F_EPB";
+			};
+		};
+		class Item7
+		{
+			position[]={19419.613,0.11749852,4685.5337};
+			b=10;
+			angle=30;
+			activationBy="VEHICLE";
+			timeoutMin=4;
+			timeoutMid=4;
+			timeoutMax=4;
+			interruptable=1;
+			age="UNKNOWN";
+			idVehicle=20;
+			expActiv="_nul = transport1 setSlingLoad objNull;";
+			class Effects
+			{
+			};
+		};
+		class Item8
+		{
+			position[]={19571.355,-0.43391925,4600.623};
+			b=10;
+			angle=30;
+			activationBy="VEHICLE";
+			timeoutMin=4;
+			timeoutMid=4;
+			timeoutMax=4;
+			interruptable=1;
+			age="UNKNOWN";
+			idVehicle=32;
+			expActiv="_nul = transport2 setSlingLoad objNull;";
+			class Effects
+			{
 			};
 		};
 	};
