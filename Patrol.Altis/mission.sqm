@@ -4277,7 +4277,9 @@ class Mission
 		items=9;
 		class Item0
 		{
-			position[]={10814.465,136.71405,7188.5947};
+			position[]={10752.175,141.39464,7298.4893};
+			a=150;
+			angle=60;
 			activationBy="VEHICLE";
 			interruptable=1;
 			age="UNKNOWN";
