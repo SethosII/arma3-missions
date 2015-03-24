@@ -298,7 +298,7 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.44999999;
-					init="assassins = group this; {_x unassignItem ""Rangefinder""; _x removeWeapon ""Rangefinder""; _x addWeapon ""Laserdesignator""; _x assignItem ""Laserdesignator""; _x addItem ""Laserbatteries""; [_x,""MANW""] call BIS_fnc_setUnitInsignia;} forEach units group this;";
+					init="assassins = group this; {_x unassignItem ""Rangefinder""; _x removeWeapon ""Rangefinder""; _x addWeapon ""Laserdesignator""; _x assignItem ""Laserdesignator""; _x addItem ""Laserbatteries""; [_x,""MANW""] call BIS_fnc_setUnitInsignia;} forEach units group this; this setFace ""WhiteHead_22_a"";";
 					syncId=4;
 					synchronizations[]={3,27,40,44,42,46,47,48,49};
 				};
@@ -310,6 +310,7 @@ class Mission
 					vehicle="O_spotter_F";
 					player="PLAY CDG";
 					skill=0.40000001;
+					init="this setFace ""GreekHead_A3_10_a"";";
 				};
 			};
 		};
@@ -3565,6 +3566,7 @@ class Mission
 			side="EMPTY";
 			vehicle="O_supplyCrate_F";
 			skill=0.60000002;
+			init="this addItemCargoGlobal [""U_O_FullGhillie_lsh"",2]; this addItemCargoGlobal [""U_O_FullGhillie_sard"",2]; this addItemCargoGlobal [""U_O_FullGhillie_ard"",2];";
 		};
 		class Item7
 		{
