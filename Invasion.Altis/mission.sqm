@@ -4297,6 +4297,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			name="beach_clear";
+			expCond="counter = 0; {if (side _x == east) then {counter = counter + 1;}} forEach thisList; if (counter < 4) then {true} else {false};";
 			class Effects
 			{
 			};

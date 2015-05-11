@@ -885,7 +885,7 @@ class Mission
 						};
 						class Item4
 						{
-							value="Use the slammer and your squad to eliminate all enemy forces in <marker name=""agia marina"">Agia Marina</marker>";
+							value="Use the modified Slammer and your squad to eliminate all enemy forces in <marker name=""agia marina"">Agia Marina</marker>";
 							parentCls="ModuleCreateDiaryRecord_F";
 							typeName="Description";
 						};
@@ -1482,6 +1482,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			name="clear";
+			expCond="counter = 0; {if (side _x == east) then {counter = counter + 1;}} forEach thisList; if (counter < 2) then {true} else {false};";
 			expActiv="0 = [] spawn {leader players sideRadio ""clear""; sleep 4.5; hq sideRadio ""rtb"";};";
 			class Effects
 			{

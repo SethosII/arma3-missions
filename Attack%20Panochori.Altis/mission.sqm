@@ -4275,6 +4275,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			name="pano";
+			expCond="counter = 0; {if (side _x == east) then {counter = counter + 1;}} forEach thisList; if (counter < 3) then {true} else {false};";
 			expActiv="0 = [] spawn {leader players sideRadio ""panochori_seized""; sleep 4.5; hq sideRadio ""good_news"";};";
 			class Effects
 			{

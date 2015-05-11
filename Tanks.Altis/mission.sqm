@@ -1950,6 +1950,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			name="seized";
+			expCond="counter = 0; {if (side _x == west) then {counter = counter + 1;}} forEach thisList; if (counter < 3) then {true} else {false};";
 			class Effects
 			{
 			};

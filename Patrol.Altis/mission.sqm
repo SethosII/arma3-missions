@@ -4335,6 +4335,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			name="clear";
+			expCond="counter = 0; {if (side _x == west) then {counter = counter + 1;}} forEach thisList; if (counter < 3) then {true} else {false};";
 			expActiv="hint ""Miller was among them! Good job. Let that be a lesson to them.""";
 			class Effects
 			{

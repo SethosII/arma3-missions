@@ -1542,7 +1542,7 @@ class Mission
 						{
 							value="0";
 							parentCls="ModuleChemlight_F";
-							typeName="Repeat";
+							typeName="";
 						};
 					};
 					id=51;
@@ -3028,7 +3028,7 @@ class Mission
 			timeoutMax=15;
 			interruptable=1;
 			age="UNKNOWN";
-			expCond="area1 AND area2 AND area3";
+			expCond="triggerActivated base1 AND triggerActivated base2 AND triggerActivated base3";
 			expActiv="""END1"" call BIS_fnc_endMission;";
 			class Effects
 			{
@@ -3047,7 +3047,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			name="base1";
-			expActiv="area1 = true;";
+			expCond="counter = 0; {if (side _x == east) then {counter = counter + 1;}} forEach thisList; if (counter < 2) then {true} else {false};";
 			class Effects
 			{
 			};
@@ -3067,7 +3067,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			name="base2";
-			expActiv="area2 = true;";
+			expCond="counter = 0; {if (side _x == east) then {counter = counter + 1;}} forEach thisList; if (counter < 2) then {true} else {false};";
 			class Effects
 			{
 			};
@@ -3086,7 +3086,8 @@ class Mission
 			timeoutMax=5;
 			interruptable=1;
 			age="UNKNOWN";
-			expActiv="area3 = true;";
+			name="base3";
+			expCond="counter = 0; {if (side _x == east) then {counter = counter + 1;}} forEach thisList; if (counter < 2) then {true} else {false};";
 			class Effects
 			{
 			};

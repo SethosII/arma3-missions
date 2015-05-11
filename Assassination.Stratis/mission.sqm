@@ -4053,6 +4053,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			name="mike26_seized";
+			expCond="counter = 0; {if (side _x == east) then {counter = counter + 1;}} forEach thisList; if (counter < 2) then {true} else {false};";
 			class Effects
 			{
 			};
@@ -4071,6 +4072,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			name="maxwell_seized";
+			expCond="counter = 0; {if (side _x == east) then {counter = counter + 1;}} forEach thisList; if (counter < 2) then {true} else {false};";
 			class Effects
 			{
 			};

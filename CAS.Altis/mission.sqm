@@ -2580,6 +2580,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			name="destroyed";
+			expCond="counter = 0; {if (side _x == east) then {counter = counter + 1;}} forEach thisList; if (counter < 3) then {true} else {false};";
 			class Effects
 			{
 				track="yourmusicname";
