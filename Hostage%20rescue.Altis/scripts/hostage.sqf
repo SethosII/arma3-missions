@@ -33,6 +33,7 @@ if (isServer) then {
 	_hostage setCaptive true;
 	_hostage disableAI "MOVE";
 	removeAllWeapons _hostage;
+	_hostage switchMove "Acts_AidlPsitMstpSsurWnonDnon_loop";
 
 	_nul = [_hostage, _guard, _trigger] spawn {
 		// shoot the hostage when trigger is activated
@@ -56,6 +57,7 @@ if (isServer) then {
 	};
 	[_hostage] join _rescue;
 	_hostage enableAI "MOVE";
+	_hostage switchMove "Acts_AidlPsitMstpSsurWnonDnon_out";
 };
 
 true
