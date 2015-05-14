@@ -3966,7 +3966,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=15;
+		items=17;
 		class Item0
 		{
 			position[]={3291.6721,229.14677,2937.0742};
@@ -4213,6 +4213,32 @@ class Mission
 			};
 			synchronizations[]={39};
 			syncId=59;
+		};
+		class Item15
+		{
+			position[]={3282.2327,229.17999,2935.6987};
+			a=0;
+			b=0;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="true";
+			class Effects
+			{
+				track="LeadTrack02_F_Mark";
+			};
+		};
+		class Item16
+		{
+			position[]={3282.6663,229.17999,2935.6904};
+			a=0;
+			b=0;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="(officer_unit distance leader assassins) < 1000";
+			class Effects
+			{
+				track="LeadTrack03_F_Mark";
+			};
 		};
 	};
 };
