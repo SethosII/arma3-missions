@@ -182,7 +182,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.46666664;
-					init="sup = group this; {_x moveinCargo reinforcement1; _x unlinkItem ""NVGoggles"";}foreach units sup; {bis_curator addCuratorEditableObjects [[_x], true];} foreach units sup;";
+					init="sup = group this; {_x moveinCargo reinforcement1; _x unlinkItem ""NVGoggles"";}forEach units sup; {bis_curator addCuratorEditableObjects [[_x], true];} forEach units sup;";
 				};
 				class Item1
 				{

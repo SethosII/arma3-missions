@@ -2977,7 +2977,7 @@ class Mission
 			side="EMPTY";
 			vehicle="O_Truck_03_covered_F";
 			skill=0.60000002;
-			init="{bis_curator addCuratorEditableObjects [[_x], true];} foreach units group this;";
+			init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 		};
 		class Item13
 		{
@@ -2997,7 +2997,7 @@ class Mission
 			side="EMPTY";
 			vehicle="O_Truck_03_covered_F";
 			skill=0.60000002;
-			init="{bis_curator addCuratorEditableObjects [[_x], true];} foreach units group this;";
+			init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 		};
 		class Item15
 		{

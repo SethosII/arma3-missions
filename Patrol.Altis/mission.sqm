@@ -871,7 +871,7 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.33333331;
-					init="{bis_curator addCuratorEditableObjects [[_x], true];} foreach units group this;";
+					init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 				};
 			};
 		};
@@ -891,7 +891,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.46666664;
-					init="{bis_curator addCuratorEditableObjects [[_x], true];} foreach units group this;";
+					init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 				};
 			};
 			class Waypoints
@@ -938,7 +938,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.46666664;
-					init="{bis_curator addCuratorEditableObjects [[_x], true];} foreach units group this;";
+					init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 					syncId=2;
 					synchronizations[]={17};
 				};
@@ -1024,7 +1024,7 @@ class Mission
 					vehicle="B_G_Soldier_F";
 					leader=1;
 					skill=0.2;
-					init="this setUnitPos ""middle""; {bis_curator addCuratorEditableObjects [[_x], true];} foreach units group this;";
+					init="this setUnitPos ""middle""; {bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 					syncId=3;
 					synchronizations[]={11};
 				};
@@ -1046,7 +1046,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.46666664;
-					init="{bis_curator addCuratorEditableObjects [[_x], true];} foreach units group this;";
+					init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 				};
 				class Item1
 				{
@@ -1362,7 +1362,7 @@ class Mission
 					vehicle="B_G_Soldier_F";
 					leader=1;
 					skill=0.2;
-					init="{bis_curator addCuratorEditableObjects [[_x], true];} foreach units group this;";
+					init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 				};
 			};
 		};
@@ -1381,7 +1381,7 @@ class Mission
 					vehicle="B_G_Soldier_F";
 					leader=1;
 					skill=0.2;
-					init="{bis_curator addCuratorEditableObjects [[_x], true];} foreach units group this;";
+					init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 					syncId=4;
 					synchronizations[]={8};
 				};
@@ -1402,7 +1402,7 @@ class Mission
 					vehicle="B_G_Soldier_F";
 					leader=1;
 					skill=0.2;
-					init="this setUnitPos ""middle""; {bis_curator addCuratorEditableObjects [[_x], true];} foreach units group this;";
+					init="this setUnitPos ""middle""; {bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 					syncId=5;
 					synchronizations[]={8};
 				};
@@ -1423,7 +1423,7 @@ class Mission
 					vehicle="B_G_Soldier_F";
 					leader=1;
 					skill=0.2;
-					init="{bis_curator addCuratorEditableObjects [[_x], true];} foreach units group this;";
+					init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 					syncId=6;
 					synchronizations[]={9};
 				};
@@ -1444,7 +1444,7 @@ class Mission
 					vehicle="B_G_Soldier_F";
 					leader=1;
 					skill=0.2;
-					init="this setPosATL(this modelToWorld[0,0,1]); this setUnitPos ""middle""; {bis_curator addCuratorEditableObjects [[_x], true];} foreach units group this;";
+					init="this setPosATL(this modelToWorld[0,0,1]); this setUnitPos ""middle""; {bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 					syncId=7;
 					synchronizations[]={9};
 				};
@@ -1549,7 +1549,7 @@ class Mission
 					vehicle="B_G_Soldier_F";
 					leader=1;
 					skill=0.2;
-					init="this setUnitPos ""middle""; {bis_curator addCuratorEditableObjects [[_x], true];} foreach units group this;";
+					init="this setUnitPos ""middle""; {bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 					syncId=10;
 					synchronizations[]={10,11};
 				};
@@ -1612,7 +1612,7 @@ class Mission
 					vehicle="B_G_Soldier_F";
 					leader=1;
 					skill=0.2;
-					init="{bis_curator addCuratorEditableObjects [[_x], true];} foreach units group this;";
+					init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 				};
 				class Item1
 				{
@@ -1811,7 +1811,7 @@ class Mission
 					leader=1;
 					skill=0.2;
 					text="stavrou";
-					init="{bis_curator addCuratorEditableObjects [[_x], true];} foreach units group this;";
+					init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 				};
 			};
 			class Waypoints
@@ -1857,7 +1857,7 @@ class Mission
 					leader=1;
 					skill=0.2;
 					text="miller";
-					init="{bis_curator addCuratorEditableObjects [[_x], true];} foreach units group this;";
+					init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 				};
 			};
 			class Waypoints
@@ -1903,7 +1903,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.46666664;
-					init="{bis_curator addCuratorEditableObjects [[_x], true];} foreach units group this;";
+					init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 				};
 				class Item1
 				{
@@ -1986,7 +1986,7 @@ class Mission
 					side="WEST";
 					vehicle="B_G_Soldier_F";
 					skill=0.2;
-					init="{bis_curator addCuratorEditableObjects [[_x], true];} foreach units group this;";
+					init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 				};
 			};
 			class Waypoints
@@ -2230,7 +2230,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.46666664;
-					init="{bis_curator addCuratorEditableObjects [[_x], true];} foreach units group this;";
+					init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 					syncId=13;
 					synchronizations[]={12};
 				};
@@ -2646,7 +2646,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.46666664;
-					init="{bis_curator addCuratorEditableObjects [[_x], true];} foreach units group this;";
+					init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 					syncId=16;
 					synchronizations[]={17};
 				};
@@ -2774,7 +2774,7 @@ class Mission
 					vehicle="B_G_Soldier_F";
 					leader=1;
 					skill=0.2;
-					init="this setUnitPos ""middle""; {bis_curator addCuratorEditableObjects [[_x], true];} foreach units group this;";
+					init="this setUnitPos ""middle""; {bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 					syncId=18;
 					synchronizations[]={21};
 				};
@@ -2795,7 +2795,7 @@ class Mission
 					vehicle="B_G_Soldier_F";
 					leader=1;
 					skill=0.2;
-					init="this setUnitPos ""middle""; {bis_curator addCuratorEditableObjects [[_x], true];} foreach units group this;";
+					init="this setUnitPos ""middle""; {bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 					syncId=19;
 					synchronizations[]={21};
 				};
@@ -2816,7 +2816,7 @@ class Mission
 					vehicle="B_G_Soldier_F";
 					leader=1;
 					skill=0.2;
-					init="this setPosATL(this modelToWorld[0,0,1]); this setUnitPos ""middle""; {bis_curator addCuratorEditableObjects [[_x], true];} foreach units group this;";
+					init="this setPosATL(this modelToWorld[0,0,1]); this setUnitPos ""middle""; {bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 					syncId=20;
 					synchronizations[]={25};
 				};
@@ -3140,7 +3140,7 @@ class Mission
 					vehicle="B_G_Soldier_F";
 					leader=1;
 					skill=0.2;
-					init="this setUnitPos ""middle""; {bis_curator addCuratorEditableObjects [[_x], true];} foreach units group this;";
+					init="this setUnitPos ""middle""; {bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 					syncId=24;
 					synchronizations[]={25};
 				};
@@ -3207,7 +3207,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.46666664;
 					text="g1";
-					init="{bis_curator addCuratorEditableObjects [[_x], true];} foreach units group this;";
+					init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 				};
 				class Item1
 				{
@@ -3825,7 +3825,7 @@ class Mission
 			side="EMPTY";
 			vehicle="B_G_Offroad_01_F";
 			skill=0.60000002;
-			init="{bis_curator addCuratorEditableObjects [[_x], true];} foreach units group this;";
+			init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 		};
 		class Item7
 		{
@@ -3910,7 +3910,7 @@ class Mission
 			vehicle="B_MRAP_01_F";
 			leader=1;
 			skill=0.2;
-			init="{bis_curator addCuratorEditableObjects [[_x], true];} foreach units group this;";
+			init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 		};
 		class Item15
 		{

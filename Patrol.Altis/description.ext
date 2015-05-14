@@ -1,6 +1,6 @@
 author = SethosII;
 onLoadName = "Patrol";
-onLoadMission = "Do your daily duty and patrol arround to search for FIA members.";
+onLoadMission = "Do your daily duty and patrol around to search for FIA members.";
 loadScreen = "load.paa";
 enableDebugConsole = 1;
 

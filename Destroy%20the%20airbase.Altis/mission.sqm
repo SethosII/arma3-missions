@@ -1134,7 +1134,7 @@ class Mission
 						};
 						class Item3
 						{
-							value="Clear the <marker name=""outpost"">outpost</marker> and use the vehicles there. Once captured reinforcment will be send to fend the enemy counterattack off.";
+							value="Clear the <marker name=""outpost"">outpost</marker> and use the vehicles there. Once captured reinforcement will be send to fend the enemy counterattack off.";
 							parentCls="ModuleTaskCreate_F";
 							typeName="Description";
 						};

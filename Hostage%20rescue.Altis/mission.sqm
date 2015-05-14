@@ -900,7 +900,7 @@ class Mission
 						};
 						class Item4
 						{
-							value="You will be tranported with an AAF truck to the <marker name=""insert"">west</marker>. o the building. Locate the exact position of the <marker name=""hostage"">hostage</marker> without being seen. Afterwards neutralize the guards around the hostage and then go in.";
+							value="You will be transported with an AAF truck to the <marker name=""insert"">west</marker> of the building. Locate the exact position of the <marker name=""hostage"">hostage</marker> without being seen. Afterwards neutralize the guards around the hostage and then go in.";
 							parentCls="ModuleCreateDiaryRecord_F";
 							typeName="Description";
 						};
@@ -1010,7 +1010,7 @@ class Mission
 						};
 						class Item4
 						{
-							value="One of our soldiers was kidnapped by the FIA and they hold him in an <marker name=""hostage"">unfinised building</marker> in Kavala. Negotiations aren't going well, so we decided to free him with force.";
+							value="One of our soldiers was kidnapped by the FIA and they hold him in an <marker name=""hostage"">unfinished building</marker> in Kavala. Negotiations aren't going well, so we decided to free him with force.";
 							parentCls="ModuleCreateDiaryRecord_F";
 							typeName="Description";
 						};

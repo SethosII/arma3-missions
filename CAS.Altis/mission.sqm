@@ -387,7 +387,7 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.44999999;
-					init="this moveInCargo b2; this addweapon ""ItemGPS""; this addWeapon ""Binocular"";";
+					init="this moveInCargo b2; this addWeapon ""ItemGPS""; this addWeapon ""Binocular"";";
 				};
 				class Item3
 				{
@@ -2583,7 +2583,6 @@ class Mission
 			expCond="counter = 0; {if (side _x == east) then {counter = counter + 1;}} forEach thisList; if (counter < 3) then {true} else {false};";
 			class Effects
 			{
-				track="yourmusicname";
 			};
 			synchronizations[]={6};
 			syncId=31;

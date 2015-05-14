@@ -719,7 +719,7 @@ class Mission
 						};
 						class Item4
 						{
-							value="First create a distraction by blowing up a <marker name=""radar"">radar site</marker>. Enemy forces will divert to search for the cause of the attack. Then proceed to their weakend <marker name=""base"">base</marker> and rescue Miller. Once you rescued him <marker name=""extract"">extract</marker> via helicopter.";
+							value="First create a distraction by blowing up a <marker name=""radar"">radar site</marker>. Enemy forces will divert to search for the cause of the attack. Then proceed to their weakened <marker name=""base"">base</marker> and rescue Miller. Once you rescued him <marker name=""extract"">extract</marker> via helicopter.";
 							parentCls="ModuleCreateDiaryRecord_F";
 							typeName="Description";
 						};
@@ -1888,7 +1888,7 @@ class Mission
 						};
 						class Item3
 						{
-							value="Enemy forces will will move to the radar site. Use this opputunity to attack the <marker name=""base"">base</marker> and rescue Miller.";
+							value="Enemy forces will will move to the radar site. Use this opportunity to attack the <marker name=""base"">base</marker> and rescue Miller.";
 							parentCls="ModuleTaskCreate_F";
 							typeName="Description";
 						};

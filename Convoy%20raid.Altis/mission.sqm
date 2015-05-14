@@ -2564,7 +2564,7 @@ class Mission
 			interruptable=1;
 			type="SWITCH";
 			age="UNKNOWN";
-			expCond="fullfilled = false; {if (vehicle _x == truck2 || vehicle _x == truck1) then {fullfilled = true}} forEach units players; fullfilled";
+			expCond="fulfilled = false; {if (vehicle _x == truck2 || vehicle _x == truck1) then {fulfilled = true}} forEach units players; fulfilled";
 			class Effects
 			{
 			};

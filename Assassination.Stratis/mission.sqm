@@ -70,7 +70,7 @@ class Mission
 	randomSeed=12715300;
 	class Intel
 	{
-		briefingName="COOP 03 Assasination";
+		briefingName="COOP 03 Assassination";
 		timeOfChanges=5400;
 		startWeather=0.64999998;
 		startWind=0.099999994;
@@ -104,7 +104,7 @@ class Mission
 						items=6;
 						class Item0
 						{
-							value="{_x setPos (_this select 0);} foreach units assassins;";
+							value="{_x setPos (_this select 0);} forEach units assassins;";
 							parentCls="ModuleStrategicMapMission_F";
 							typeName="Code";
 						};
@@ -194,7 +194,7 @@ class Mission
 						items=6;
 						class Item0
 						{
-							value="{_x setPos (_this select 0);} foreach units assassins;";
+							value="{_x setPos (_this select 0);} forEach units assassins;";
 							parentCls="ModuleStrategicMapMission_F";
 							typeName="Code";
 						};
@@ -3322,7 +3322,7 @@ class Mission
 						};
 						class Item4
 						{
-							value="<img image=""pictures\officer.paa"" width=""256"" heigth=""256"" />";
+							value="<img image=""pictures\officer.paa"" width=""256"" height=""256"" />";
 							parentCls="ModuleCreateDiaryRecord_F";
 							typeName="Description";
 						};

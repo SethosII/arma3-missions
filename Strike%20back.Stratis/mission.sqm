@@ -2535,7 +2535,7 @@ class Mission
 		class Item4
 		{
 			position[]={4340.8774,225.88266,3808.8643};
-			name="indipendent";
+			name="independent";
 			markerType="ELLIPSE";
 			type="Empty";
 			colorName="ColorGUER";
@@ -2547,7 +2547,7 @@ class Mission
 		class Item5
 		{
 			position[]={4406.6064,229.73294,3902.6377};
-			name="INDIPENDENT base";
+			name="INDEPENDENT base";
 			text="INDEPENDENT base";
 			type="mil_arrow2";
 			colorName="ColorGUER";

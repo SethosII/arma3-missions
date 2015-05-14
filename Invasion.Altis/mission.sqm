@@ -3389,7 +3389,7 @@ class Mission
 						};
 						class Item4
 						{
-							value="Kilo will carry Alpha with two boats to the <marker name=""boat drop zone"">drop zone</marker>. Afterwards they will drop Delta <marker name=""paratroopers drop zone"">behind the coast</marker>. Kilo will be escorted by a Blackfoot callsign Whisky. We also deployed an AMV-7 callsign Hotel, that will assist Alpha with the assault. The transport vehicles also carry some new experimental weapons.";
+							value="Kilo will carry Alpha with two boats to the <marker name=""boat drop zone"">drop zone</marker>. Afterwards they will drop Delta <marker name=""paratroopers drop zone"">behind the coast</marker>. Kilo will be escorted by a Blackfoot call-sign Whisky. We also deployed an AMV-7 call-sign Hotel, that will assist Alpha with the assault. The transport vehicles also carry some new experimental weapons.";
 							parentCls="ModuleCreateDiaryRecord_F";
 							typeName="Description";
 						};

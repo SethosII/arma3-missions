@@ -17,7 +17,7 @@ class Header {
 };
 
 class CfgRadio {
-	sounds[] = {heli,noise,aa_down,recieved,unknown,panochori_seized,good_news};
+	sounds[] = {heli,noise,aa_down,received,unknown,panochori_seized,good_news};
 	class heli {
 		name = "heli";
 		sound[] = {"audio\heli.ogg", db+0, 1};
@@ -33,10 +33,10 @@ class CfgRadio {
 		sound[] = {"audio\aa_down.ogg", db+0, 1};
 		title = "AA-threat neutralized. We are now proceeding to Panochori.";
 	};
-	class recieved {
-		name = "recieved";
-		sound[] = {"audio\recieved.ogg", db+0, 1};
-		title = "Recieved. Out.";
+	class received {
+		name = "received";
+		sound[] = {"audio\received.ogg", db+0, 1};
+		title = "Received. Out.";
 	};
 	class unknown {
 		name = "unknown";

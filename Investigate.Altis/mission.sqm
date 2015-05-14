@@ -531,7 +531,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			expCond="true";
-			expActiv="bomb=""M_Mo_82mm_AT_LG"" createVehicle (getPos IED1); deletevehicle IED1;";
+			expActiv="bomb=""M_Mo_82mm_AT_LG"" createVehicle (getPos IED1); deleteVehicle IED1;";
 			class Effects
 			{
 			};

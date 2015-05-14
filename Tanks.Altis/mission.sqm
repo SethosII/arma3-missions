@@ -1136,7 +1136,7 @@ class Mission
 						};
 						class Item4
 						{
-							value="<marker name=""regroup"">Regroup</marker> with some other tanks and attack the <marker name=""base"">base</marker> at Pyrgos. Artillery support is available. Avoid bridges, they coud blow them up.";
+							value="<marker name=""regroup"">Regroup</marker> with some other tanks and attack the <marker name=""base"">base</marker> at Pyrgos. Artillery support is available. Avoid bridges, they could blow them up.";
 							parentCls="ModuleCreateDiaryRecord_F";
 							typeName="Description";
 						};
