@@ -4,7 +4,7 @@ onLoadMission = "Get supplies from an AAF convoy.";
 loadScreen = "load.paa";
 enableDebugConsole = 1;
 
-overviewText = "Template";
+overviewText = "A local FIA group in the east of Altis is running out of weapons and supplies. Luckily a good opportunity opened up: an AAF convoy is moving from Charkia to Paros. Go and get the supplies from this convoy.";
 overviewPicture = "load.paa"; 
 
 respawn = "SIDE";
