@@ -80,7 +80,7 @@ class Mission
 	randomSeed=15650699;
 	class Intel
 	{
-		briefingName="COOP 08 Convoy";
+		briefingName="COOP 12 Convoy";
 		startWeather=0.29999998;
 		startWind=0.099999994;
 		startWaves=0.099999994;
