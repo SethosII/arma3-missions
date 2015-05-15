@@ -11,7 +11,7 @@ respawn = "SIDE";
 respawnDialog = true;
 
 class Header {
-	gameType = COOP;
+	gameType = TVT;
 	minPlayers = 1;
 	maxPlayers = 3;
 };

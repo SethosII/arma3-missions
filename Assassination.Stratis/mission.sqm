@@ -70,7 +70,7 @@ class Mission
 	randomSeed=12715300;
 	class Intel
 	{
-		briefingName="COOP 03 Assassination";
+		briefingName="TVT 03 Assassination";
 		timeOfChanges=5400;
 		startWeather=0.64999998;
 		startWind=0.099999994;
@@ -298,7 +298,7 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.44999999;
-					init="assassins = group this; {_x unassignItem ""Rangefinder""; _x removeWeapon ""Rangefinder""; _x addWeapon ""Laserdesignator""; _x assignItem ""Laserdesignator""; _x addItem ""Laserbatteries""; [_x,""MANW""] call BIS_fnc_setUnitInsignia;} forEach units group this; this setFace ""WhiteHead_22_a"";";
+					init="assassins = group this; {_x unassignItem ""Rangefinder""; _x removeWeapon ""Rangefinder""; _x addWeapon ""Laserdesignator_02""; _x assignItem ""Laserdesignator_02""; _x addItem ""Laserbatteries""; _x linkItem ""O_UavTerminal""; [_x,""MANW""] call BIS_fnc_setUnitInsignia;} forEach units group this; this setFace ""WhiteHead_22_a"";";
 					syncId=4;
 					synchronizations[]={3,27,40,44,42,46,47,48,49};
 				};
@@ -786,7 +786,7 @@ class Mission
 					text="officer_unit";
 					init="comment ""Exported from Arsenal by Sethos II"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""U_B_CombatUniform_mcam"";  this addItemToUniform ""FirstAidKit"";  this addItemToUniform ""Chemlight_green"";  for ""_i"" from 1 to 2 do {this addItemToUniform ""11Rnd_45ACP_Mag"";};  this addItemToUniform ""SmokeShellGreen"";  this addItemToUniform ""SmokeShell"";  this addItemToUniform ""SmokeShellRed"";  this addVest ""V_BandollierB_rgr"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellGreen"";  this addItemToVest ""Chemlight_green"";  for ""_i"" from 1 to 3 do {this addItemToVest ""30Rnd_45ACP_Mag_SMG_01"";};  for ""_i"" from 1 to 3 do {this addItemToVest ""30Rnd_45ACP_Mag_SMG_01_Tracer_Green"";};  this addHeadgear ""H_MilCap_mcamo"";  this addGoggles ""G_Tactical_Black"";    comment ""Add weapons"";  this addWeapon ""SMG_01_F"";  this addPrimaryWeaponItem ""optic_Holosight"";  this addWeapon ""hgun_Pistol_heavy_01_F"";  this addHandgunItem ""optic_MRD"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""ItemRadio"";  this linkItem ""ItemGPS"";    comment ""Set identity""; this setFace ""GreekHead_A3_02""; this setSpeaker ""Male11ENG""; {[_x,""MANW""] call BIS_fnc_setUnitInsignia;} forEach units group this;";
 					syncId=14;
-					synchronizations[]={18,21,22,20,34,36,32};
+					synchronizations[]={18,22,21,20,34,36,32};
 				};
 				class Item1
 				{
@@ -1734,60 +1734,6 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={2069.6069,5.615458,5721.8516};
-					class args
-					{
-						items=5;
-						class Item0
-						{
-							value="2";
-							parentCls="ModuleCreateDiaryRecord_F";
-							typeName="Owner";
-						};
-						class Item1
-						{
-							value="";
-							parentCls="ModuleCreateDiaryRecord_F";
-							typeName="Subject";
-						};
-						class Item2
-						{
-							value="Situation";
-							parentCls="ModuleCreateDiaryRecord_F";
-							typeName="PresetTitle";
-						};
-						class Item3
-						{
-							value="";
-							parentCls="ModuleCreateDiaryRecord_F";
-							typeName="Title";
-						};
-						class Item4
-						{
-							value="During the last days we were able to push CSAT to the south of Stratis and now we throw them completely from the island. You are in charge of leading this operation starting at the <marker name=""officer"">airfield</marker> of Stratis.";
-							parentCls="ModuleCreateDiaryRecord_F";
-							typeName="Description";
-						};
-					};
-					id=39;
-					side="LOGIC";
-					vehicle="ModuleCreateDiaryRecord_F";
-					leader=1;
-					lock="UNLOCKED";
-					skill=0.60000002;
-					syncId=21;
-					synchronizations[]={14};
-				};
-			};
-		};
-		class Item33
-		{
-			side="LOGIC";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
 					position[]={2069.6072,5.6802125,5711.3545};
 					class args
 					{
@@ -1819,6 +1765,60 @@ class Mission
 						class Item4
 						{
 							value="Lead the operation and seize <marker name=""camp_tempest"">Camp Tempest</marker>, <marker name=""mike26"">Air Station Mike-26</marker> and <marker name=""camp_maxwell"">Camp Maxwell</marker>.";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Description";
+						};
+					};
+					id=39;
+					side="LOGIC";
+					vehicle="ModuleCreateDiaryRecord_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=21;
+					synchronizations[]={14};
+				};
+			};
+		};
+		class Item33
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2069.6069,5.615458,5721.8516};
+					class args
+					{
+						items=5;
+						class Item0
+						{
+							value="2";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Subject";
+						};
+						class Item2
+						{
+							value="Situation";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="PresetTitle";
+						};
+						class Item3
+						{
+							value="";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Title";
+						};
+						class Item4
+						{
+							value="During the last days we were able to push CSAT to the south of Stratis and now we throw them completely from the island. You are in charge of leading this operation starting at the <marker name=""officer"">airfield</marker> of Stratis.";
 							parentCls="ModuleCreateDiaryRecord_F";
 							typeName="Description";
 						};
@@ -3503,7 +3503,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=36;
+		items=37;
 		class Item0
 		{
 			position[]={3295.0835,228.97121,2949.1609};
@@ -3566,7 +3566,7 @@ class Mission
 			side="EMPTY";
 			vehicle="O_supplyCrate_F";
 			skill=0.60000002;
-			init="this addItemCargoGlobal [""U_O_FullGhillie_lsh"",2]; this addItemCargoGlobal [""U_O_FullGhillie_sard"",2]; this addItemCargoGlobal [""U_O_FullGhillie_ard"",2];";
+			init="this addItemCargoGlobal [""U_O_FullGhillie_lsh"",2]; this addItemCargoGlobal [""U_O_FullGhillie_sard"",2]; this addItemCargoGlobal [""U_O_FullGhillie_ard"",2]; this addBackpackCargoGlobal [""O_Static_Designator_02_weapon_F"",2];";
 		};
 		class Item7
 		{
@@ -3854,6 +3854,16 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CncBarrier_F";
 			skill=0.60000002;
+		};
+		class Item36
+		{
+			position[]={3302.7258,228.86163,2940.3408};
+			azimut=225;
+			id=152;
+			side="EMPTY";
+			vehicle="O_Quadbike_01_F";
+			leader=1;
+			skill=0.44999999;
 		};
 	};
 	class Markers
