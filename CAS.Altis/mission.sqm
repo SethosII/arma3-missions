@@ -520,7 +520,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					syncId=3;
-					synchronizations[]={2};
+					synchronizations[]={2,24};
 				};
 			};
 		};
@@ -1990,7 +1990,7 @@ class Mission
 						};
 						class Item4
 						{
-							value="Wait until you were given order to attack the enemy <marker name=""airbase"">airbase</marker>.";
+							value="Wait until you were given the order to attack the enemy <marker name=""airbase"">airbase</marker>.";
 							parentCls="ModuleCreateDiaryRecord_F";
 							typeName="Description";
 						};
@@ -2132,7 +2132,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					syncId=24;
-					synchronizations[]={21,22,23};
+					synchronizations[]={21,22,23,3};
 				};
 				class Item1
 				{
