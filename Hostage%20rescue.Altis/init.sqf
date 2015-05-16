@@ -11,6 +11,7 @@ if (isServer) then {
 	{
 		if (side _x == west) then {
 			kidnapper pushBack _x;
+			bis_curator addCuratorEditableObjects [[_x], true];
 		};
 	} forEach ([3790,13422] nearObjects ["Man",70]);
 
@@ -43,7 +44,7 @@ if (isServer) then {
 	[
 		[format [" %1 %2", rank player, name player],"align = 'center' shadow = '1' size = '1'"],
 		["","<br/>"],
-		["Somewhere on","align = 'center' shadow = '1' size = '0.7'"],
-		[" Altis","align = 'center' shadow = '1' size = '0.7'","#aaaaaa"]
+		["Hospital of","align = 'center' shadow = '1' size = '0.7'"],
+		[" Kavala","align = 'center' shadow = '1' size = '0.7'","#aaaaaa"]
 	]
 ] spawn BIS_fnc_typeText2;

@@ -1,10 +1,10 @@
 author = SethosII;
 onLoadName = "Hostage rescue";
-onLoadMission = "Hostage rescue.";
+onLoadMission = "Rescue a hostage taken by the FIA.";
 loadScreen = "load.paa";
 enableDebugConsole = 1;
 
-overviewText = "Template";
+overviewText = "The FIA has taken a hostage and the police and AAF were unable to end the hostage-taking. So it has come to our team to rescue our man. The only problem is that the FIA will shot the hostage if they detect you.";
 overviewPicture = "load.paa"; 
 
 respawn = "SIDE";
