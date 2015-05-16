@@ -897,7 +897,7 @@ class Mission
 						};
 						class Item4
 						{
-							value="Defend the camp.";
+							value="Defend the <marker name=""camp"">camp</marker> and search fpr enemies in the <marker name=""south"">south</marker>. Repair and supply points are at the <marker name=""camp"">camp</marker> and the <marker name=""support3"">main airfield</marker>. When the camp is safe again we will send a convoy with supply vehices and sometrrops.";
 							parentCls="ModuleCreateDiaryRecord_F";
 							typeName="Description";
 						};
@@ -946,7 +946,7 @@ class Mission
 						};
 						class Item3
 						{
-							value="Defend the <marker name=""camp"">camp</marker>.";
+							value="Defend the <marker name=""camp"">camp</marker> from an imminent attack.";
 							parentCls="ModuleTaskCreate_F";
 							typeName="Description";
 						};
@@ -1044,7 +1044,7 @@ class Mission
 						};
 						class Item3
 						{
-							value="Clear the <marker name=""south"">south</marker>.";
+							value="Search in the <marker name=""south"">south</marker> for enemy presence and clear it.";
 							parentCls="ModuleTaskCreate_F";
 							typeName="Description";
 						};
@@ -2759,7 +2759,7 @@ class Mission
 						};
 						class Item4
 						{
-							value="Defend the camp.";
+							value="Defend the <marker name=""camp"">camp</marker> from the attack and search for remaining enemy presence in the <marker name=""south"">south</marker>.";
 							parentCls="ModuleCreateDiaryRecord_F";
 							typeName="Description";
 						};
@@ -2813,7 +2813,7 @@ class Mission
 						};
 						class Item4
 						{
-							value="Defend the camp.";
+							value="An enemy attack on one of our <marker name=""camp"">camps</marker> in the south is imminient.";
 							parentCls="ModuleCreateDiaryRecord_F";
 							typeName="Description";
 						};

@@ -4,7 +4,7 @@ onLoadMission = "Be an American. Use drones.";
 loadScreen = "load.paa";
 enableDebugConsole = 1;
 
-overviewText = "All with drones.";
+overviewText = "A mission completely played with drones.";
 overviewPicture = "load.paa"; 
 
 respawn = "SIDE";
