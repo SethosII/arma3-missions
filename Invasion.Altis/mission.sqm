@@ -60,7 +60,7 @@ class Mission
 	randomSeed=7077427;
 	class Intel
 	{
-		briefingName="COOP 08 Invasion";
+		briefingName="COOP 65 Invasion";
 		resistanceEast=1;
 		startWeather=0.64999998;
 		startFog=0.5;
