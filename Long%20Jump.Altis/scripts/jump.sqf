@@ -14,11 +14,9 @@
  * _jump_sqf = [this] execVM "scripts\jump.sqf";
  */
 
-[_this, 0, objNull, [objNull]] call BIS_fnc_param;
+params[["_unit", objNull, [objNull]]];
 
-private ["_unit", "_pos", "_time", "_distance"];
-
-_unit = _this select 0;
+private ["_pos", "_time", "_distance"];
 
 while {true} do {
 	waitUntil {!isTouchingGround vehicle _unit && !(vehicle _unit isKindOf "Air")};

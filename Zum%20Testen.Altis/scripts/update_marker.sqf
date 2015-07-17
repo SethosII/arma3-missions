@@ -17,15 +17,9 @@
  */
 
 if (isServer) then {
-	[_this, 0, "", [""]] call BIS_fnc_param;
-	[_this, 1, objNull, [objNull]] call BIS_fnc_param;
-	[_this, 2, 0, [0]] call BIS_fnc_param;
-
-	private ["_marker", "_unit", "_interval"];
-
-	_marker = _this select 0;
-	_unit = _this select 1;
-	_interval = _this select 2;
+	params[["_marker", "", [""]],
+		["_unit", objNull, [objNull]],
+		["_interval", 0, [0]]];
 
 	while {!isNull _unit} do {
 		waitUntil {_marker setMarkerPos getPos _unit; true};

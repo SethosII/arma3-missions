@@ -15,11 +15,7 @@
  */
 
 if (isServer) then {
-	[_this, 0, objNull, [objNull]] call BIS_fnc_param;
-
-	private ["_unit"];
-
-	_unit = _this select 0;
+	params[["_unit", objNull, [objNull]]];
 
 	while {true} do {
 		// choose an animation

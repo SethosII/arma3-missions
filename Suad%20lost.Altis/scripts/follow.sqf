@@ -16,13 +16,8 @@
  */
 
 if (isServer) then {
-	[_this, 0, grpNull, [grpNull]] call BIS_fnc_param;
-	[_this, 1, grpNull, [grpNull]] call BIS_fnc_param;
-
-	private ["_follow", "_followed", "_x"];
-
-	_follow = _this select 0;
-	_followed = _this select 1;
+	params[["_follow", grpNull, [grpNull]],
+		["_followed", grpNull, [grpNull]]];
 
 	while {alive leader _followed} do {
 		_follow move position leader _followed;

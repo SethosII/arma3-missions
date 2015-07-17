@@ -18,17 +18,12 @@
  */
 
 if (isServer) then {
-	[_this, 0, objNull, [objNull]] call BIS_fnc_param;
-	[_this, 1, grpNull, [grpNull]] call BIS_fnc_param;
-	[_this, 2, objNull, [objNull]] call BIS_fnc_param;
-	[_this, 3, objNull, [objNull]] call BIS_fnc_param;
+	params[["_hostage", objNull, [objNull]],
+		["_rescue", grpNull, [grpNull]],
+		["_trigger", objNull, [objNull]],
+		["_guard", objNull, [objNull]]];
 
-	private ["_hostage", "_rescue", "_trigger", "_guard", "_rescued"];
-
-	_hostage = _this select 0;
-	_rescue = _this select 1;
-	_trigger = _this select 2;
-	_guard = _this select 3;
+	private ["_rescued"];
 
 	_hostage setCaptive true;
 	_hostage disableAI "MOVE";

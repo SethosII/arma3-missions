@@ -15,11 +15,9 @@
  */
 
 if (isServer) then {
-	[_this, 0, objNull, [objNull]] call BIS_fnc_param;
+	params[["_unit", objNull, [objNull]]];
 
-	private ["_unit", "_backpack"];
-
-	_unit = _this select 0;
+	private ["_backpack"];
 
 	// save the backpack and content of the unit and give it a parachute instead
 	_backpack = backpack _unit;

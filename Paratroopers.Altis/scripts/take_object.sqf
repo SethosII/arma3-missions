@@ -17,15 +17,9 @@
  */
 
 if (isServer) then {
-	[_this, 0, objNull, [objNull]] call BIS_fnc_param;
-	[_this, 1, objNull, [objNull]] call BIS_fnc_param;
-	[_this, 2, 0, [0]] call BIS_fnc_param;
-
-	private ["_object", "_caller", "_action"];
-
-	_object = _this select 0;
-	_caller = _this select 1;
-	_action = _this select 2;
+	params[["_object", objNull, [objNull]],
+		["_caller", objNull, [objNull]],
+		["_action", 0, [0]]];
 
 	if (side _caller == west) then {
 		_object removeAction _action;

@@ -16,13 +16,10 @@
  */
 
 if (isServer) then {
-	[_this, 0, grpNull, [grpNull]] call BIS_fnc_param;
-	[_this, 1, objNull, [objNull]] call BIS_fnc_param;
+	params[["_group", grpNull, [grpNull]],
+		["_vehicle", objNull, [objNull]]];
 
-	private ["_group", "_vehicle", "_x"];
-
-	_group = _this select 0;
-	_vehicle = _this select 1;
+	private ["_x"];
 
 	{
 		if (vehicle _x != _x) then {

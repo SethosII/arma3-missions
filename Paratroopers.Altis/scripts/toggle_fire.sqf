@@ -16,15 +16,11 @@
  * _toggle_fire_sqf = [fireplace, "I_soldier_F", seen] execVM "scripts\toggle_fire.sqf";
  */
 
-[_this, 0, objNull, [objNull]] call BIS_fnc_param;
-[_this, 1, objNull, [objNull]] call BIS_fnc_param;
-[_this, 2, objNull, [objNull]] call BIS_fnc_param;
+params[["_fireplace", objNull, [objNull]],
+	["_type", objNull, [objNull]],
+	["_trigger", objNull, [objNull]]];
 
-private ["_fireplace", "_type", "_trigger", "_unit"];
-
-_fireplace = _this select 0;
-_type = _this select 1;
-_trigger = _this select 2;
+private ["_unit"];
 
 while {true} do {
 	waitUntil {triggerActivated _trigger};

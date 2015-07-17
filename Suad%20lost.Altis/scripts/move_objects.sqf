@@ -19,19 +19,13 @@
  */
 
 if (isServer) then {
-	[_this, 0, [], [[]]] call BIS_fnc_param;
-	[_this, 1, [0, 0, 0], [[]], [2, 3]] call BIS_fnc_param;
-	[_this, 2, [0, 0, 0], [[]], [2, 3]] call BIS_fnc_param;
-	[_this, 3, 0, [0]] call BIS_fnc_param;
-	[_this, 4, 0, [0]] call BIS_fnc_param;
+	params[["_objects", [], [[]]],
+		["_reference_position", [0,0,0], [[]], [2, 3]],
+		["_new_position", [0,0,0], [[]], [2, 3]],
+		["_x_delta", 0, [0]],
+		["_y_delta", 0, [0]]];
 
-	private ["_unit", "_reference_position", "_new_position", "_x_delta", "_y_delta", "_relative_positions", "_tempPos", "_x_diff", "_y_diff"];
-
-	_objects = _this select 0;
-	_reference_position = _this select 1;
-	_new_position = _this select 2;
-	_x_delta = _this select 3;
-	_y_delta = _this select 4;
+	private ["_relative_positions", "_tempPos", "_x_diff", "_y_diff"];
 
 	_relative_positions = [];
 	{
