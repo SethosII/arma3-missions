@@ -15,3 +15,12 @@ class Header {
 	minPlayers = 1;
 	maxPlayers = 12;
 };
+
+class Params {
+	class AAallowed {
+		title = "possible enemy AA infantry";
+		values[] = {0,1};
+		texts[] = {"Off","On"};
+		default = 0;
+	};
+};

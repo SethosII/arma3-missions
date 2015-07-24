@@ -1812,6 +1812,8 @@ class Mission
 				items=3;
 				class Item0
 				{
+					presence=0.49870181;
+					presenceCondition="paramsArray select 0 == 1";
 					position[]={24065.426,50.147907,20916.775};
 					placement=1500;
 					id=104;
@@ -1828,7 +1830,7 @@ class Mission
 					id=105;
 					side="EAST";
 					vehicle="O_soldier_AA_F";
-					skill=0.40000001;
+					skill=0.2;
 				};
 				class Item2
 				{
@@ -1848,6 +1850,8 @@ class Mission
 				items=3;
 				class Item0
 				{
+					presence=0.49870181;
+					presenceCondition="paramsArray select 0 == 1";
 					position[]={19633.588,86.832039,9222.374};
 					placement=1500;
 					id=107;
@@ -1864,7 +1868,7 @@ class Mission
 					id=108;
 					side="EAST";
 					vehicle="O_soldier_AA_F";
-					skill=0.40000001;
+					skill=0.2;
 				};
 				class Item2
 				{
@@ -1884,6 +1888,8 @@ class Mission
 				items=3;
 				class Item0
 				{
+					presence=0.49870181;
+					presenceCondition="paramsArray select 0 == 1";
 					position[]={10913.18,111.44085,8487.0703};
 					placement=1500;
 					id=110;
@@ -1900,7 +1906,7 @@ class Mission
 					id=111;
 					side="EAST";
 					vehicle="O_soldier_AA_F";
-					skill=0.40000001;
+					skill=0.2;
 				};
 				class Item2
 				{
@@ -1920,6 +1926,8 @@ class Mission
 				items=3;
 				class Item0
 				{
+					presence=0.49870181;
+					presenceCondition="paramsArray select 0 == 1";
 					position[]={6990.2778,128.37912,13047.493};
 					placement=1500;
 					id=113;
@@ -1936,7 +1944,7 @@ class Mission
 					id=114;
 					side="EAST";
 					vehicle="O_soldier_AA_F";
-					skill=0.40000001;
+					skill=0.2;
 				};
 				class Item2
 				{
@@ -1956,6 +1964,8 @@ class Mission
 				items=3;
 				class Item0
 				{
+					presence=0.49870181;
+					presenceCondition="paramsArray select 0 == 1";
 					position[]={5643.1719,222.48778,20051.4};
 					placement=1500;
 					id=116;
@@ -1972,7 +1982,7 @@ class Mission
 					id=117;
 					side="EAST";
 					vehicle="O_soldier_AA_F";
-					skill=0.40000001;
+					skill=0.2;
 				};
 				class Item2
 				{
@@ -1992,6 +2002,8 @@ class Mission
 				items=3;
 				class Item0
 				{
+					presence=0.49870181;
+					presenceCondition="paramsArray select 0 == 1";
 					position[]={12226.963,133.30132,21026.168};
 					placement=1500;
 					id=119;
@@ -2008,7 +2020,7 @@ class Mission
 					id=120;
 					side="EAST";
 					vehicle="O_soldier_AA_F";
-					skill=0.40000001;
+					skill=0.2;
 				};
 				class Item2
 				{
@@ -3302,6 +3314,8 @@ class Mission
 				items=3;
 				class Item0
 				{
+					presence=0.49870181;
+					presenceCondition="paramsArray select 0 == 1";
 					position[]={9252.9951,121.82592,17055.227};
 					placement=1500;
 					id=189;
@@ -3318,7 +3332,7 @@ class Mission
 					id=190;
 					side="EAST";
 					vehicle="O_soldier_AA_F";
-					skill=0.40000001;
+					skill=0.2;
 				};
 				class Item2
 				{
@@ -3478,6 +3492,8 @@ class Mission
 				items=3;
 				class Item0
 				{
+					presence=0.49870181;
+					presenceCondition="paramsArray select 0 == 1";
 					position[]={19332.973,21.971405,13798.582};
 					placement=1500;
 					id=206;
@@ -3494,7 +3510,7 @@ class Mission
 					id=207;
 					side="EAST";
 					vehicle="O_soldier_AA_F";
-					skill=0.40000001;
+					skill=0.2;
 				};
 				class Item2
 				{
