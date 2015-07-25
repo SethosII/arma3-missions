@@ -4363,7 +4363,7 @@ class Mission
 		};
 		class Item7
 		{
-			position[]={19419.613,0.11749852,4685.5337};
+			position[]={19414.422,0.036590442,4679.918};
 			b=10;
 			angle=30;
 			activationBy="VEHICLE";
@@ -4380,7 +4380,7 @@ class Mission
 		};
 		class Item8
 		{
-			position[]={19571.355,-0.43391925,4600.623};
+			position[]={19565.951,-0.30974734,4595.4302};
 			b=10;
 			angle=30;
 			activationBy="VEHICLE";
