@@ -23,6 +23,7 @@ class Mission
 	class Intel
 	{
 		briefingName="ZvZ 03 ARTS";
+		resistanceWest=0;
 		startWeather=0.29999998;
 		startWind=0.099999994;
 		startWaves=0.099999994;
@@ -40,7 +41,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=9;
+		items=26;
 		class Item0
 		{
 			side="LOGIC";
@@ -55,7 +56,7 @@ class Mission
 						items=4;
 						class Item0
 						{
-							value="bis_curatorUnit";
+							value="bis_curatorBluforUnit";
 							parentCls="ModuleCurator_F";
 							typeName="Owner";
 						};
@@ -67,7 +68,7 @@ class Mission
 						};
 						class Item2
 						{
-							value="2";
+							value="0";
 							parentCls="ModuleCurator_F";
 							typeName="Addons";
 						};
@@ -84,10 +85,10 @@ class Mission
 					leader=1;
 					lock="UNLOCKED";
 					skill=0.60000002;
-					text="bis_curator";
-					init="bis_curator addCuratorEditingArea [1, getMarkerPos ""marker_zone"", 40];";
+					text="bis_curatorBlufor";
+					init="this addCuratorEditingArea [1, getMarkerPos ""marker_zone_blufor"", 40];";
 					syncId=0;
-					synchronizations[]={1,2,5,4,6,3};
+					synchronizations[]={1,2,5,4,6,3,9};
 				};
 			};
 		};
@@ -122,11 +123,11 @@ class Mission
 					position[]={14719.555,17.91,16676.539};
 					id=2;
 					side="LOGIC";
-					vehicle="VirtualCurator_F";
+					vehicle="B_VirtualCurator_F";
 					player="PLAYER COMMANDER";
 					leader=1;
 					skill=0.40000001;
-					text="bis_curatorUnit";
+					text="bis_curatorBluforUnit";
 					syncId=2;
 					synchronizations[]={0};
 				};
@@ -158,7 +159,7 @@ class Mission
 						};
 						class Item2
 						{
-							value="60";
+							value="0";
 							parentCls="ModuleCuratorAddPoints_F";
 							typeName="Repeat";
 						};
@@ -278,7 +279,7 @@ class Mission
 						};
 						class Item1
 						{
-							value="0";
+							value="-1";
 							parentCls="ModuleCuratorSetCoefs_F";
 							typeName="Place";
 						};
@@ -290,7 +291,7 @@ class Mission
 						};
 						class Item3
 						{
-							value="0";
+							value="1";
 							parentCls="ModuleCuratorSetCoefs_F";
 							typeName="Delete";
 						};
@@ -388,7 +389,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					syncId=7;
-					synchronizations[]={8,10};
+					synchronizations[]={8,27};
 				};
 			};
 		};
@@ -407,19 +408,843 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					syncId=8;
-					synchronizations[]={9,7};
+					synchronizations[]={26,7};
+				};
+			};
+		};
+		class Item9
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14718.483,17.91,16682.607};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="";
+							parentCls="ModuleCuratorAddAddons_F";
+							typeName="Curator";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="ModuleCuratorAddAddons_F";
+							typeName="Mode";
+						};
+						class Item2
+						{
+							value="";
+							parentCls="ModuleCuratorAddAddons_F";
+							typeName="Text";
+						};
+						class Item3
+						{
+							value="""A3_Characters_F_BLUFOR""";
+							parentCls="ModuleCuratorAddAddons_F";
+							typeName="Addons";
+						};
+					};
+					id=9;
+					side="LOGIC";
+					vehicle="ModuleCuratorAddAddons_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=9;
+					synchronizations[]={0};
+				};
+			};
+		};
+		class Item10
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14190.035,20.734705,16172.103};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="bis_curatorOpforUnit";
+							parentCls="ModuleCurator_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="";
+							parentCls="ModuleCurator_F";
+							typeName="Name";
+						};
+						class Item2
+						{
+							value="0";
+							parentCls="ModuleCurator_F";
+							typeName="Addons";
+						};
+						class Item3
+						{
+							value="1";
+							parentCls="ModuleCurator_F";
+							typeName="Forced";
+						};
+					};
+					id=10;
+					side="LOGIC";
+					vehicle="ModuleCurator_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="bis_curatorOpfor";
+					init="this addCuratorEditingArea [1, getMarkerPos ""marker_zone_opfor"", 40];";
+					syncId=10;
+					synchronizations[]={11,12,15,14,16,13,17};
+				};
+			};
+		};
+		class Item11
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14190.09,20.690006,16175.821};
+					id=11;
+					side="LOGIC";
+					vehicle="ModuleMPTypeGameMaster_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=11;
+					synchronizations[]={10};
+				};
+			};
+		};
+		class Item12
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14196.693,20.725872,16172.099};
+					id=12;
+					side="LOGIC";
+					vehicle="O_VirtualCurator_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.40000001;
+					text="bis_curatorOpforUnit";
+					syncId=12;
+					synchronizations[]={10};
+				};
+			};
+		};
+		class Item13
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14184.88,20.748362,16172.106};
+					class args
+					{
+						items=3;
+						class Item0
+						{
+							value="";
+							parentCls="ModuleCuratorAddPoints_F";
+							typeName="Curator";
+						};
+						class Item1
+						{
+							value="100";
+							parentCls="ModuleCuratorAddPoints_F";
+							typeName="Value";
+						};
+						class Item2
+						{
+							value="0";
+							parentCls="ModuleCuratorAddPoints_F";
+							typeName="Repeat";
+						};
+					};
+					id=13;
+					side="LOGIC";
+					vehicle="ModuleCuratorAddPoints_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=13;
+					synchronizations[]={10};
+				};
+			};
+		};
+		class Item14
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14195.627,20.830271,16164.696};
+					class args
+					{
+						items=10;
+						class Item0
+						{
+							value="";
+							parentCls="ModuleCuratorSetAttributesPlayer_F";
+							typeName="Curator";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="ModuleCuratorSetAttributesPlayer_F";
+							typeName="Skill";
+						};
+						class Item2
+						{
+							value="1";
+							parentCls="ModuleCuratorSetAttributesPlayer_F";
+							typeName="UnitPos";
+						};
+						class Item3
+						{
+							value="1";
+							parentCls="ModuleCuratorSetAttributesPlayer_F";
+							typeName="Rank";
+						};
+						class Item4
+						{
+							value="1";
+							parentCls="ModuleCuratorSetAttributesPlayer_F";
+							typeName="Damage";
+						};
+						class Item5
+						{
+							value="1";
+							parentCls="ModuleCuratorSetAttributesPlayer_F";
+							typeName="Fuel";
+						};
+						class Item6
+						{
+							value="1";
+							parentCls="ModuleCuratorSetAttributesPlayer_F";
+							typeName="Lock";
+						};
+						class Item7
+						{
+							value="1";
+							parentCls="ModuleCuratorSetAttributesPlayer_F";
+							typeName="RespawnVehicle";
+						};
+						class Item8
+						{
+							value="1";
+							parentCls="ModuleCuratorSetAttributesPlayer_F";
+							typeName="RespawnPosition";
+						};
+						class Item9
+						{
+							value="1";
+							parentCls="ModuleCuratorSetAttributesPlayer_F";
+							typeName="Exec";
+						};
+					};
+					id=14;
+					side="LOGIC";
+					vehicle="ModuleCuratorSetAttributesPlayer_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=14;
+					synchronizations[]={10};
+				};
+			};
+		};
+		class Item15
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14190.023,20.83102,16164.673};
+					class args
+					{
+						items=7;
+						class Item0
+						{
+							value="";
+							parentCls="ModuleCuratorSetCoefs_F";
+							typeName="Curator";
+						};
+						class Item1
+						{
+							value="-1";
+							parentCls="ModuleCuratorSetCoefs_F";
+							typeName="Place";
+						};
+						class Item2
+						{
+							value="0";
+							parentCls="ModuleCuratorSetCoefs_F";
+							typeName="Edit";
+						};
+						class Item3
+						{
+							value="1";
+							parentCls="ModuleCuratorSetCoefs_F";
+							typeName="Delete";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="ModuleCuratorSetCoefs_F";
+							typeName="Destroy";
+						};
+						class Item5
+						{
+							value="0";
+							parentCls="ModuleCuratorSetCoefs_F";
+							typeName="Synchronize";
+						};
+						class Item6
+						{
+							value="0";
+							parentCls="ModuleCuratorSetCoefs_F";
+							typeName="Group";
+						};
+					};
+					id=15;
+					side="LOGIC";
+					vehicle="ModuleCuratorSetCoefs_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=15;
+					synchronizations[]={10};
+				};
+			};
+		};
+		class Item16
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14184.732,20.839903,16164.384};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="";
+							parentCls="ModuleCuratorSetCamera_F";
+							typeName="Curator";
+						};
+						class Item1
+						{
+							value="0";
+							parentCls="ModuleCuratorSetCamera_F";
+							typeName="Pitch";
+						};
+						class Item2
+						{
+							value="0";
+							parentCls="ModuleCuratorSetCamera_F";
+							typeName="Commit";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleCuratorSetCamera_F";
+							typeName="UseAsDefault";
+						};
+					};
+					id=16;
+					side="LOGIC";
+					vehicle="ModuleCuratorSetCamera_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=16;
+					synchronizations[]={10};
+				};
+			};
+		};
+		class Item17
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14195.622,20.656265,16178.167};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="";
+							parentCls="ModuleCuratorAddAddons_F";
+							typeName="Curator";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="ModuleCuratorAddAddons_F";
+							typeName="Mode";
+						};
+						class Item2
+						{
+							value="";
+							parentCls="ModuleCuratorAddAddons_F";
+							typeName="Text";
+						};
+						class Item3
+						{
+							value="""A3_Characters_F_OPFOR""";
+							parentCls="ModuleCuratorAddAddons_F";
+							typeName="Addons";
+						};
+					};
+					id=17;
+					side="LOGIC";
+					vehicle="ModuleCuratorAddAddons_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=17;
+					synchronizations[]={10};
+				};
+			};
+		};
+		class Item18
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15170.307,17.88942,17349.258};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="bis_curatorIndependentUnit";
+							parentCls="ModuleCurator_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="";
+							parentCls="ModuleCurator_F";
+							typeName="Name";
+						};
+						class Item2
+						{
+							value="0";
+							parentCls="ModuleCurator_F";
+							typeName="Addons";
+						};
+						class Item3
+						{
+							value="1";
+							parentCls="ModuleCurator_F";
+							typeName="Forced";
+						};
+					};
+					id=18;
+					side="LOGIC";
+					vehicle="ModuleCurator_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="bis_curatorIndependent";
+					init="this addCuratorEditingArea [1, getMarkerPos ""marker_zone_independent"", 40];";
+					syncId=18;
+					synchronizations[]={19,20,23,22,24,21,25};
+				};
+			};
+		};
+		class Item19
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15170.361,17.894453,17352.977};
+					id=19;
+					side="LOGIC";
+					vehicle="ModuleMPTypeGameMaster_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=19;
+					synchronizations[]={18};
+				};
+			};
+		};
+		class Item20
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15176.965,17.898293,17349.254};
+					id=20;
+					side="LOGIC";
+					vehicle="I_VirtualCurator_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.40000001;
+					text="bis_curatorIndependentUnit";
+					syncId=20;
+					synchronizations[]={18};
+				};
+			};
+		};
+		class Item21
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15165.151,17.882553,17349.262};
+					class args
+					{
+						items=3;
+						class Item0
+						{
+							value="";
+							parentCls="ModuleCuratorAddPoints_F";
+							typeName="Curator";
+						};
+						class Item1
+						{
+							value="100";
+							parentCls="ModuleCuratorAddPoints_F";
+							typeName="Value";
+						};
+						class Item2
+						{
+							value="0";
+							parentCls="ModuleCuratorAddPoints_F";
+							typeName="Repeat";
+						};
+					};
+					id=21;
+					side="LOGIC";
+					vehicle="ModuleCuratorAddPoints_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=21;
+					synchronizations[]={18};
+				};
+			};
+		};
+		class Item22
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15175.898,17.887001,17341.852};
+					class args
+					{
+						items=10;
+						class Item0
+						{
+							value="";
+							parentCls="ModuleCuratorSetAttributesPlayer_F";
+							typeName="Curator";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="ModuleCuratorSetAttributesPlayer_F";
+							typeName="Skill";
+						};
+						class Item2
+						{
+							value="1";
+							parentCls="ModuleCuratorSetAttributesPlayer_F";
+							typeName="UnitPos";
+						};
+						class Item3
+						{
+							value="1";
+							parentCls="ModuleCuratorSetAttributesPlayer_F";
+							typeName="Rank";
+						};
+						class Item4
+						{
+							value="1";
+							parentCls="ModuleCuratorSetAttributesPlayer_F";
+							typeName="Damage";
+						};
+						class Item5
+						{
+							value="1";
+							parentCls="ModuleCuratorSetAttributesPlayer_F";
+							typeName="Fuel";
+						};
+						class Item6
+						{
+							value="1";
+							parentCls="ModuleCuratorSetAttributesPlayer_F";
+							typeName="Lock";
+						};
+						class Item7
+						{
+							value="1";
+							parentCls="ModuleCuratorSetAttributesPlayer_F";
+							typeName="RespawnVehicle";
+						};
+						class Item8
+						{
+							value="1";
+							parentCls="ModuleCuratorSetAttributesPlayer_F";
+							typeName="RespawnPosition";
+						};
+						class Item9
+						{
+							value="1";
+							parentCls="ModuleCuratorSetAttributesPlayer_F";
+							typeName="Exec";
+						};
+					};
+					id=22;
+					side="LOGIC";
+					vehicle="ModuleCuratorSetAttributesPlayer_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=22;
+					synchronizations[]={18};
+				};
+			};
+		};
+		class Item23
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15170.295,17.879999,17341.828};
+					class args
+					{
+						items=7;
+						class Item0
+						{
+							value="";
+							parentCls="ModuleCuratorSetCoefs_F";
+							typeName="Curator";
+						};
+						class Item1
+						{
+							value="-1";
+							parentCls="ModuleCuratorSetCoefs_F";
+							typeName="Place";
+						};
+						class Item2
+						{
+							value="0";
+							parentCls="ModuleCuratorSetCoefs_F";
+							typeName="Edit";
+						};
+						class Item3
+						{
+							value="1";
+							parentCls="ModuleCuratorSetCoefs_F";
+							typeName="Delete";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="ModuleCuratorSetCoefs_F";
+							typeName="Destroy";
+						};
+						class Item5
+						{
+							value="0";
+							parentCls="ModuleCuratorSetCoefs_F";
+							typeName="Synchronize";
+						};
+						class Item6
+						{
+							value="0";
+							parentCls="ModuleCuratorSetCoefs_F";
+							typeName="Group";
+						};
+					};
+					id=23;
+					side="LOGIC";
+					vehicle="ModuleCuratorSetCoefs_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=23;
+					synchronizations[]={18};
+				};
+			};
+		};
+		class Item24
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15165.004,17.879999,17341.539};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="";
+							parentCls="ModuleCuratorSetCamera_F";
+							typeName="Curator";
+						};
+						class Item1
+						{
+							value="0";
+							parentCls="ModuleCuratorSetCamera_F";
+							typeName="Pitch";
+						};
+						class Item2
+						{
+							value="0";
+							parentCls="ModuleCuratorSetCamera_F";
+							typeName="Commit";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleCuratorSetCamera_F";
+							typeName="UseAsDefault";
+						};
+					};
+					id=24;
+					side="LOGIC";
+					vehicle="ModuleCuratorSetCamera_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=24;
+					synchronizations[]={18};
+				};
+			};
+		};
+		class Item25
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15175.894,17.904955,17355.322};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="";
+							parentCls="ModuleCuratorAddAddons_F";
+							typeName="Curator";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="ModuleCuratorAddAddons_F";
+							typeName="Mode";
+						};
+						class Item2
+						{
+							value="";
+							parentCls="ModuleCuratorAddAddons_F";
+							typeName="Text";
+						};
+						class Item3
+						{
+							value="""A3_Characters_F_INDEP""";
+							parentCls="ModuleCuratorAddAddons_F";
+							typeName="Addons";
+						};
+					};
+					id=25;
+					side="LOGIC";
+					vehicle="ModuleCuratorAddAddons_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=25;
+					synchronizations[]={18};
 				};
 			};
 		};
 	};
 	class Markers
 	{
-		items=1;
+		items=3;
 		class Item0
 		{
-			position[]={14841.229,17.91,16701.357};
-			name="marker_zone";
+			position[]={14707.395,17.91,16686.867};
+			name="marker_zone_blufor";
+			text="BLUFOR";
 			type="Empty";
+			colorName="ColorWEST";
+		};
+		class Item1
+		{
+			position[]={14184.533,20.632017,16182.427};
+			name="marker_zone_opfor";
+			text="OPFOR";
+			type="Empty";
+			colorName="ColorEAST";
+		};
+		class Item2
+		{
+			position[]={15164.805,17.894558,17359.582};
+			name="marker_zone_independent";
+			text="Independent";
+			type="Empty";
+			colorName="ColorGUER";
 		};
 	};
 	class Sensors
@@ -436,7 +1261,7 @@ class Mission
 			{
 			};
 			synchronizations[]={8};
-			syncId=9;
+			syncId=26;
 		};
 		class Item1
 		{
@@ -451,7 +1276,7 @@ class Mission
 			{
 			};
 			synchronizations[]={7};
-			syncId=10;
+			syncId=27;
 		};
 	};
 };
