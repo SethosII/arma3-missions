@@ -189,6 +189,7 @@ class Mission
 					vehicle="B_Truck_01_fuel_F";
 					leader=1;
 					skill=0.60000002;
+					text="fuelTruck";
 				};
 			};
 		};
@@ -207,6 +208,7 @@ class Mission
 					vehicle="B_Truck_01_Repair_F";
 					leader=1;
 					skill=0.60000002;
+					text="repairTruck";
 				};
 			};
 		};
@@ -3250,7 +3252,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=16;
+		items=15;
 		class Item0
 		{
 			position[]={10550.032,8.0714054,11380.902};
@@ -3443,22 +3445,6 @@ class Mission
 		};
 		class Item13
 		{
-			position[]={14433.218,18.808048,16280.53};
-			a=0;
-			b=0;
-			repeating=1;
-			timeoutMin=2;
-			timeoutMid=2;
-			timeoutMax=2;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="ammoTruck1 setAmmoCargo 1; ammoTruck2 setAmmoCargo 1; ammoTruck3 setAmmoCargo 1; ";
-			class Effects
-			{
-			};
-		};
-		class Item14
-		{
 			position[]={640.10449,0.5727936,30225.82};
 			a=0;
 			b=0;
@@ -3470,7 +3456,7 @@ class Mission
 			synchronizations[]={15};
 			syncId=23;
 		};
-		class Item15
+		class Item14
 		{
 			position[]={644.98572,0.74038517,30225.904};
 			a=0;

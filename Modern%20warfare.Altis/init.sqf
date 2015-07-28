@@ -15,3 +15,13 @@ waitUntil{!(isNil "BIS_fnc_init")};
 if (!isDedicated) then {
 	player action ["UAVTerminalOpen", player];
 };
+
+[] spawn {
+	while {true} do {
+		ammoTruck1 setRepairCargo 1;
+		ammoTruck2 setFuelCargo 1;
+		fuelTruck setAmmoCargo 1;
+		repairTruck setAmmoCargo 1;
+		sleep 2;
+	};
+};
