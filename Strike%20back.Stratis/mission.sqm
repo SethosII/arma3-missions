@@ -841,7 +841,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={2993.1772,171.32411,1871.5444};
+					position[]={2989.5791,171.17941,1891.5811};
 					class args
 					{
 						items=10;
@@ -1338,7 +1338,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
-					init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
+					init="bis_curator addCuratorEditableObjects [[this], true]; {bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 				};
 			};
 			class Waypoints
@@ -1347,6 +1347,7 @@ class Mission
 				class Item0
 				{
 					position[]={1841.0645,5.5,5567.3945};
+					combatMode="WHITE";
 					combat="SAFE";
 					class Effects
 					{
