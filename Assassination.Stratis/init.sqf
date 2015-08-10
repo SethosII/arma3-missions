@@ -6,7 +6,7 @@ waitUntil{!(isNil "BIS_fnc_init")};
 if (player in units assassins) then {
 	[
 		[
-			[format [" %1 %2", rank player, name player],"align = 'center' shadow = '1' size = '1'"],
+			[format ["%1 %2", rank player, name player],"align = 'center' shadow = '1' size = '1'"],
 			["","<br/>"],
 			["At","align = 'center' shadow = '1' size = '0.7'"],
 			[" Camp Maxwell","align = 'center' shadow = '1' size = '0.7'","#aaaaaa"]
@@ -15,7 +15,7 @@ if (player in units assassins) then {
 } else {
 	[
 		[
-			[format [" %1 %2", rank player, name player],"align = 'center' shadow = '1' size = '1'"],
+			[format ["%1 %2", rank player, name player],"align = 'center' shadow = '1' size = '1'"],
 			["","<br/>"],
 			["At","align = 'center' shadow = '1' size = '0.7'"],
 			[" Stratis airbase","align = 'center' shadow = '1' size = '0.7'","#aaaaaa"]

@@ -42,7 +42,7 @@ if (isServer) then {
 // Intro message
 [
 	[
-		[format [" %1 %2", rank player, name player],"align = 'center' shadow = '1' size = '1'"],
+		[format ["%1 %2", rank player, name player],"align = 'center' shadow = '1' size = '1'"],
 		["","<br/>"],
 		["Hospital of","align = 'center' shadow = '1' size = '0.7'"],
 		[" Kavala","align = 'center' shadow = '1' size = '0.7'","#aaaaaa"]

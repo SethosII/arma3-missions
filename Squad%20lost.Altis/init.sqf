@@ -43,7 +43,7 @@ waitUntil{!(isNil "BIS_fnc_init")};
 if (player in units players) then {
 	[
 		[
-			[format [" %1 %2", rank player, name player],"align = 'center' shadow = '1' size = '1'"],
+			[format ["%1 %2", rank player, name player],"align = 'center' shadow = '1' size = '1'"],
 			["","<br/>"],
 			["Somewhere on","align = 'center' shadow = '1' size = '0.7'"],
 			[" Altis","align = 'center' shadow = '1' size = '0.7'","#aaaaaa"]
@@ -52,7 +52,7 @@ if (player in units players) then {
 } else {
 	[
 		[
-			[format [" %1 %2", rank player, name player],"align = 'center' shadow = '1' size = '1'"],
+			[format ["%1 %2", rank player, name player],"align = 'center' shadow = '1' size = '1'"],
 			["","<br/>"],
 			["Main airfield on","align = 'center' shadow = '1' size = '0.7'"],
 			[" Altis","align = 'center' shadow = '1' size = '0.7'","#aaaaaa"]
