@@ -20,3 +20,34 @@ class Header {
 	minPlayers = 1;
 	maxPlayers = 24;
 };
+
+class Params {
+	class Daytime {
+		title = "Time";
+		texts[] = {"Morning","Day","Evening","Night"};
+		values[] = {6,12,18,0};
+		default = 12;
+		function = "BIS_fnc_paramDaytime";
+ 		isGlobal = 1;
+	};
+	class Weather {
+		title = "Weather";
+		texts[] = {"Sunny","Cloudy","Rainy","Stormy"};
+		values[] = {20,40,65,90};
+		default = 20;
+		function = "BIS_fnc_paramWeather";
+ 		isGlobal = 1;
+	};
+	class Area {
+		title = "Area";
+		texts[] = {"Random","South of Kavala","Military Base near Pyrgos","Factory near Athira","Container","Aktinarki Ruins","Offices in Pyrgos","Street in Pyrgos"};
+		values[] = {0,1,2,3,4,5,6,7};
+		default = 0;
+	};
+	class Size {
+		title = "Size (only relevant if area is random)";
+		texts[] = {"tiny (50x50)","small (100x50)","medium (200x100)","large(400x200)","extralarge(500x500)"};
+		values[] = {0,1,2,3,4};
+		default = 1;
+	};
+};
