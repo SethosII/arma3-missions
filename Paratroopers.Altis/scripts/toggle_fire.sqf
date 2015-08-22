@@ -17,7 +17,7 @@
  */
 
 params[["_fireplace", objNull, [objNull]],
-	["_type", objNull, [objNull]],
+	["_type", "", [""]],
 	["_trigger", objNull, [objNull]]];
 
 private ["_unit"];
