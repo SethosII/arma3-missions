@@ -26,6 +26,49 @@ switch (areaPosition) do {
 	case 7: {[140, 76, 47, 16755, 12872, 22000, 22000] execVM "scripts\generate_tdm_area.sqf";};
 	default {[100, 50, random 360, 0, 0, 22000, 22000] execVM "scripts\generate_tdm_area.sqf";};
 };
+
+[west, "B_Soldier_F"] call BIS_fnc_addRespawnInventory;
+[west, "B_recon_F"] call BIS_fnc_addRespawnInventory;
+[west, "B_Soldier_GL_F"] call BIS_fnc_addRespawnInventory;
+[west, "B_soldier_AR_F"] call BIS_fnc_addRespawnInventory;
+[west, "B_soldier_smg_F"] call BIS_fnc_addRespawnInventory;
+[west, "B_soldier_M_F"] call BIS_fnc_addRespawnInventory;
+[west, "B_soldier_LAT_F"] call BIS_fnc_addRespawnInventory;
+[west, "B_medic_F"] call BIS_fnc_addRespawnInventory;
+[west, "B_soldier_exp_F"] call BIS_fnc_addRespawnInventory;
+[west, "B_soldier_SL_F"] call BIS_fnc_addRespawnInventory;
+[west, "B_soldier_TL_F"] call BIS_fnc_addRespawnInventory;
+[west, "B_sniper_lush"] call BIS_fnc_addRespawnInventory;
+[west, "B_special_F"] call BIS_fnc_addRespawnInventory;
+
+[east, "O_Soldier_F"] call BIS_fnc_addRespawnInventory;
+[east, "O_recon_F"] call BIS_fnc_addRespawnInventory;
+[east, "O_Soldier_GL_F"] call BIS_fnc_addRespawnInventory;
+[east, "O_soldier_AR_F"] call BIS_fnc_addRespawnInventory;
+[east, "O_Soldier_smg_F"] call BIS_fnc_addRespawnInventory;
+[east, "O_soldier_M_F"] call BIS_fnc_addRespawnInventory;
+[east, "O_soldier_LAT_F"] call BIS_fnc_addRespawnInventory;
+[east, "O_medic_F"] call BIS_fnc_addRespawnInventory;
+[east, "O_soldier_exp_F"] call BIS_fnc_addRespawnInventory;
+[east, "O_soldier_SL_F"] call BIS_fnc_addRespawnInventory;
+[east, "O_soldier_TL_F"] call BIS_fnc_addRespawnInventory;
+[east, "O_sniper_lush"] call BIS_fnc_addRespawnInventory;
+[east, "O_special_F"] call BIS_fnc_addRespawnInventory;
+
+[independent, "I_Soldier_F"] call BIS_fnc_addRespawnInventory;
+[independent, "I_recon_F"] call BIS_fnc_addRespawnInventory;
+[independent, "I_Soldier_GL_F"] call BIS_fnc_addRespawnInventory;
+[independent, "I_soldier_AR_F"] call BIS_fnc_addRespawnInventory;
+[independent, "I_soldier_smg_F"] call BIS_fnc_addRespawnInventory;
+[independent, "I_soldier_M_F"] call BIS_fnc_addRespawnInventory;
+[independent, "I_soldier_LAT_F"] call BIS_fnc_addRespawnInventory;
+[independent, "I_medic_F"] call BIS_fnc_addRespawnInventory;
+[independent, "i_soldier_exp_F"] call BIS_fnc_addRespawnInventory;
+[independent, "I_soldier_SL_F"] call BIS_fnc_addRespawnInventory;
+[independent, "I_soldier_TL_F"] call BIS_fnc_addRespawnInventory;
+[independent, "I_sniper_lush"] call BIS_fnc_addRespawnInventory;
+[independent, "I_special_F"] call BIS_fnc_addRespawnInventory;
+
 waitUntil{!(isNil "BIS_fnc_init")};
 
 // set end time
@@ -56,11 +99,12 @@ if(isServer && maxGameTime != 0) then {
 		winner = civilian;
 	};
 
+	hint format["%1\n\n1. %2: %3\n2. %4: %5\n3. %6 %7", message, scores select 0 select 1, scores select 0 select 0, scores select 1 select 1, scores select 1 select 0, scores select 2 select 1, scores select 2 select 0];
+	end = true;
+	sleep 5;
 	if (side player == winner) then {
 		"END1" call BIS_fnc_endMission;
 	} else {
 		["LOSE",false] call BIS_fnc_endMission;
 	};
-	hint format["%1\n\n1. %2: %3\n2. %4: %5\n3. %6 %7", message, scores select 0 select 1, scores select 0 select 0, scores select 1 select 1, scores select 1 select 0, scores select 2 select 1, scores select 2 select 0];
-	end = true;
 };
