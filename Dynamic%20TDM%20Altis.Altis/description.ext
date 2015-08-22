@@ -50,4 +50,16 @@ class Params {
 		values[] = {0,1,2,3,4};
 		default = 1;
 	};
+	class Time {
+		title = "Maximum game time";
+		texts[] = {"Unlimited","5 min","10 min","15 min","20 min","30 min","1 h"};
+		values[] = {0,300,600,900,1200,1800,3600};
+		default = 600;
+	};
+	class Score {
+		title = "Maximum score of one side";
+		texts[] = {"Unlimited","10","20","30","50","100"};
+		values[] = {0,10,20,30,50,100};
+		default = 20;
+	};
 };

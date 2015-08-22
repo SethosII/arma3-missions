@@ -1,6 +1,8 @@
 // params
 areaPosition = paramsArray select 2;
 areaSize = paramsArray select 3;
+maxGameTime = paramsArray select 4;
+maxSideScore = paramsArray select 5;
 
 // position and size
 switch (areaPosition) do {
@@ -26,6 +28,11 @@ switch (areaPosition) do {
 };
 waitUntil{!(isNil "BIS_fnc_init")};
 
+// set end time
+if(isServer && maxGameTime != 0) then {
+	estimatedTimeLeft maxGameTime;
+};
+
 // Intro message
 [
 	[
@@ -35,3 +42,25 @@ waitUntil{!(isNil "BIS_fnc_init")};
 		[" Altis","align = 'center' shadow = '1' size = '0.7'","#aaaaaa"]
 	]
 ] spawn BIS_fnc_typeText2;
+
+[] spawn {
+	waitUntil {maxSideScore != 0 && (scoreSide west >= maxSideScore || scoreSide east >= maxSideScore || scoreSide independent >= maxSideScore) || maxGameTime != 0 && serverTime > estimatedEndServerTime};
+
+	scores = [[scoreSide west,west],[scoreSide east,east],[scoreSide independent, independent]];
+	scores sort false;
+	scores = scores; // scores is otherwise undefined after sorting
+	message = format ["%1 wins with %2 points!", scores select 0 select 1, scores select 0 select 0];
+	winner = scores select 0 select 1;
+	if (scores select 0 select 0 == scores select 1 select 0) then {
+		message = "Tie!";
+		winner = civilian;
+	};
+
+	if (side player == winner) then {
+		"END1" call BIS_fnc_endMission;
+	} else {
+		["LOSE",false] call BIS_fnc_endMission;
+	};
+	hint format["%1\n\n1. %2: %3\n2. %4: %5\n3. %6 %7", message, scores select 0 select 1, scores select 0 select 0, scores select 1 select 1, scores select 1 select 0, scores select 2 select 1, scores select 2 select 0];
+	end = true;
+};
