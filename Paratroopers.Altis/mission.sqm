@@ -2988,7 +2988,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=21;
+		items=20;
 		class Item0
 		{
 			position[]={14201.194,25.908466,19736.311};
@@ -2998,7 +2998,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			idVehicle=15;
-			expActiv="hint ""Good luck!""; _eject_sqf = [players, transport] execVM ""scripts\eject.sqf"";";
+			expActiv="{[_x] execVM ""scripts\backpack_parachute.sqf"";} forEach units players; _eject_sqf = [players, transport] execVM ""scripts\eject.sqf"";";
 			class Effects
 			{
 			};
@@ -3151,20 +3151,6 @@ class Mission
 		};
 		class Item10
 		{
-			position[]={13795.555,23.376589,19588.414};
-			a=0;
-			b=0;
-			interruptable=1;
-			age="UNKNOWN";
-			name="execute_backpack_parachute_sqf";
-			expCond="true";
-			expActiv="{_backack_parachute_sqf = [_x] execVM ""scripts\backpack_parachute.sqf""; } forEach units players;";
-			class Effects
-			{
-			};
-		};
-		class Item11
-		{
 			position[]={14516.467,40.903408,18966.441};
 			a=1;
 			b=1;
@@ -3178,7 +3164,7 @@ class Mission
 			synchronizations[]={19};
 			syncId=37;
 		};
-		class Item12
+		class Item11
 		{
 			position[]={678.89172,0.44848281,30057.74};
 			a=0;
@@ -3191,7 +3177,7 @@ class Mission
 			synchronizations[]={21};
 			syncId=38;
 		};
-		class Item13
+		class Item12
 		{
 			position[]={683.77295,0.65031332,30057.824};
 			a=0;
@@ -3206,7 +3192,7 @@ class Mission
 			synchronizations[]={20};
 			syncId=39;
 		};
-		class Item14
+		class Item13
 		{
 			position[]={14394.566,41.140289,19101.244};
 			a=1;
@@ -3221,7 +3207,7 @@ class Mission
 			synchronizations[]={22};
 			syncId=40;
 		};
-		class Item15
+		class Item14
 		{
 			position[]={14365.638,38.07769,19050.203};
 			a=1;
@@ -3236,7 +3222,7 @@ class Mission
 			synchronizations[]={23};
 			syncId=41;
 		};
-		class Item16
+		class Item15
 		{
 			position[]={14327.905,34.18224,19142.498};
 			a=1;
@@ -3251,7 +3237,7 @@ class Mission
 			synchronizations[]={24};
 			syncId=42;
 		};
-		class Item17
+		class Item16
 		{
 			position[]={14254.674,32.783112,19059.383};
 			a=1;
@@ -3266,7 +3252,7 @@ class Mission
 			synchronizations[]={25};
 			syncId=43;
 		};
-		class Item18
+		class Item17
 		{
 			position[]={14202.789,33.87019,18928.195};
 			a=1;
@@ -3281,7 +3267,7 @@ class Mission
 			synchronizations[]={26};
 			syncId=44;
 		};
-		class Item19
+		class Item18
 		{
 			position[]={14412.393,30.456953,18693.793};
 			a=1;
@@ -3296,7 +3282,7 @@ class Mission
 			synchronizations[]={27};
 			syncId=45;
 		};
-		class Item20
+		class Item19
 		{
 			position[]={14896.68,39.285221,18680.375};
 			a=0;

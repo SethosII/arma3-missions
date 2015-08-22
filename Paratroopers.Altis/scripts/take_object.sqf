@@ -32,7 +32,6 @@ if (isServer) then {
 		_object setVariable ["taken", false, true];
 		_object setVariable ["taken_by", objNull, true];
 		[ [ [_object] , { (_this select 0) addAction ["Take", "scripts\take_object.sqf"] } ], "BIS_fnc_spawn", true, false, false ] spawn BIS_fnc_MP;
-		;
 	} else {
 		hint "Wrong side!";
 	};
