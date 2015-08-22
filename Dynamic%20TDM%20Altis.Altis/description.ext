@@ -1,0 +1,22 @@
+author = SethosII;
+onLoadName = "Dynamic TDM Altis";
+onLoadMission = "Dynamic TDM on Altis with up to eight players on each side.";
+loadScreen = "load.paa";
+enableDebugConsole = 1;
+
+disabledAI = 1;
+
+overviewText = "Dynamic TDM on Altis with up to eight players on each side.";
+overviewPicture = "load.paa"; 
+
+respawn = "BASE";
+respawnDialog = true;
+respawnTemplates[] = {"MenuInventory","MenuSpectator","Tickets"};
+respawnOnStart = 1;
+respawnDelay = 10;
+
+class Header {
+	gameType = TDM;
+	minPlayers = 1;
+	maxPlayers = 24;
+};
