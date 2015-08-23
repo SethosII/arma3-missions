@@ -189,7 +189,7 @@ class Mission
 					vehicle="B_Truck_01_fuel_F";
 					leader=1;
 					skill=0.60000002;
-					text="fuelTruck";
+					text="fuelTruck1";
 				};
 			};
 		};
@@ -208,7 +208,7 @@ class Mission
 					vehicle="B_Truck_01_Repair_F";
 					leader=1;
 					skill=0.60000002;
-					text="repairTruck";
+					text="repairTruck1";
 				};
 			};
 		};
@@ -858,6 +858,7 @@ class Mission
 					vehicle="B_Truck_01_Repair_F";
 					leader=1;
 					skill=0.60000002;
+					text="repairTruck2";
 				};
 			};
 		};
@@ -2122,6 +2123,7 @@ class Mission
 					side="WEST";
 					vehicle="B_Truck_01_Repair_F";
 					skill=0.60000002;
+					text="repairTruck3";
 					init="bis_curator addCuratorEditableObjects [[this], true];";
 				};
 				class Item2
@@ -2145,6 +2147,7 @@ class Mission
 					side="WEST";
 					vehicle="B_Truck_01_fuel_F";
 					skill=0.60000002;
+					text="fuelTruck2";
 					init="bis_curator addCuratorEditableObjects [[this], true];";
 				};
 			};

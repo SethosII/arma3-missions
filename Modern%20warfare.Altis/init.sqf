@@ -18,10 +18,14 @@ if (!isDedicated) then {
 
 [] spawn {
 	while {true} do {
-		ammoTruck1 setRepairCargo 1;
-		ammoTruck2 setFuelCargo 1;
-		fuelTruck setAmmoCargo 1;
-		repairTruck setAmmoCargo 1;
+		ammoTruck1 setAmmoCargo 1;
+		ammoTruck2 setAmmoCargo 1;
+		ammoTruck3 setAmmoCargo 1;
+		fuelTruck1 setFuelCargo 1;
+		fuelTruck2 setFuelCargo 1;
+		repairTruck1 setRepairCargo 1;
+		repairTruck2 setRepairCargo 1;
+		repairTruck3 setRepairCargo 1;
 		sleep 2;
 	};
 };
