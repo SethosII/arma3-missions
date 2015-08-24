@@ -30,6 +30,7 @@ class Mission
 	class Intel
 	{
 		briefingName="TDM 24 Dynamic TDM Altis";
+		resistanceWest=0;
 		startWeather=0.29999998;
 		startWind=0.099999994;
 		startWaves=0.099999994;
