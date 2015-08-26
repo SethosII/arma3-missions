@@ -63,9 +63,8 @@
 	_rightBottomX = cos _angle * (_sizeX / 2) - sin _angle * (- _sizeY / 2) + _centerX;
 	_rightBottomY = sin _angle * (_sizeX / 2) + cos _angle * (- _sizeY / 2) + _centerY;
 
-	// TODO: distance2D will be available with a future game version
 	// create bottom boundary
-	_bottomLength = sqrt ((_leftBottomX - _rightBottomX) ^ 2 + (_leftBottomY - _rightBottomY) ^ 2); // [_leftBottomX, _leftBottomY] distance2D [_rightBottomX, _rightBottomY];
+	_bottomLength = [_leftBottomX, _leftBottomY] distance2D [_rightBottomX, _rightBottomY];
 	_rotationBottom = 180 + _angle;
 	for "_x" from 0 to _bottomLength + _objectWidth step _objectWidth do {
 		_boundary = createVehicle [_objectName, [_leftBottomX + sin _angle * (_objectLength / 2) + cos _angle * _x, _leftBottomY - cos _angle * (_objectLength / 2) + sin _angle * _x, 0], [], 0, "CAN_COLLIDE"];
@@ -75,7 +74,7 @@
 	};
 
 	// create top boundary
-	_topLength = sqrt ((_leftTopX - _rightTopX) ^ 2 + (_leftTopY - _rightTopY) ^ 2); //_topLength = [_leftTopX, _leftTopY] distance2D [_rightTopX, _rightTopY];
+	_topLength = [_leftTopX, _leftTopY] distance2D [_rightTopX, _rightTopY];
 	_rotationTop = 0 + _angle;
 	for "_x" from 0 to _topLength + _objectWidth step _objectWidth do {
 		_boundary = createVehicle [_objectName, [_rightTopX - sin _angle * (_objectLength / 2) - cos _angle * _x, _rightTopY + cos _angle * (_objectLength / 2) - sin _angle * _x, 0], [], 0, "CAN_COLLIDE"];
@@ -85,7 +84,7 @@
 	};
 
 	// create _left boundary
-	_leftLength = sqrt ((_leftBottomX - _leftTopX) ^ 2 + (_leftBottomY - _leftTopY) ^ 2); //_leftLength = [_leftBottomX, _leftBottomY] distance2D [_leftTopX, _leftTopY];
+	_leftLength = [_leftBottomX, _leftBottomY] distance2D [_leftTopX, _leftTopY];
 	_rotationLeft = 90 + _angle;
 	for "_x" from 0 to _leftLength + _objectWidth step _objectWidth do {
 		_boundary = createVehicle [_objectName, [_leftTopX - cos _angle * (_objectLength / 2) + sin _angle * _x, _leftTopY - sin _angle * (_objectLength / 2) - cos _angle * _x, 0], [], 0, "CAN_COLLIDE"];
@@ -95,7 +94,7 @@
 	};
 
 	// create _right boundary
-	_rightLength = sqrt ((_rightBottomX - _rightTopX) ^ 2 + (_rightBottomY - _rightTopY) ^ 2); //_rightLength = [_rightBottomX, _rightBottomY] distance2D [_rightTopX, _rightTopY];
+	_rightLength = [_rightBottomX, _rightBottomY] distance2D [_rightTopX, _rightTopY];
 	_rotationRight = 270 + _angle;
 	for "_x" from 0 to _rightLength + _objectWidth step _objectWidth do {
 		_boundary = createVehicle [_objectName, [_rightBottomX + cos _angle * (_objectLength / 2) - sin _angle * _x, _rightBottomY + sin _angle * (_objectLength / 2) + cos _angle * _x, 0], [], 0, "CAN_COLLIDE"];
@@ -104,7 +103,7 @@
 		_boundary setDir (360 - _rotationRight);
 	};
 
-	/*// onject for edges
+	/*// object for edges
 	createVehicle ["Land_Communication_F", [_leftBottomX, _leftBottomY, 0], [], 0, "CAN_COLLIDE"];
 	createVehicle ["Land_Communication_F", [_leftTopX, _leftTopY, 0], [], 0, "CAN_COLLIDE"];
 	createVehicle ["Land_Communication_F", [_rightBottomX, _rightBottomY, 0], [], 0, "CAN_COLLIDE"];
