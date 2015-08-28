@@ -15,7 +15,7 @@
  * _mortar_fire_sqf = [this, marker1] execVM "scripts\mortar_fire.sqf";
  */
 
-params[["_mortar", objNull, [objNull]],
+params [["_mortar", objNull, [objNull]],
 	["_target", [0,0,0], [[]], [2, 3]]];
 
 while {true} do {

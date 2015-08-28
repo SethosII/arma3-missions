@@ -16,7 +16,7 @@
  */
 
 if (isServer) then {
-	params[["_group", grpNull, [grpNull]],
+	params [["_group", grpNull, [grpNull]],
 		["_vehicle", objNull, [objNull]]];
 
 	private ["_x"];

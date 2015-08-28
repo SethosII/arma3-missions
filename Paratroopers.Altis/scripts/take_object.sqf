@@ -2,7 +2,9 @@
  * Author: SethosII
  * 
  * Purpose:
- * eject a group out of a vehicle with some delay between each group member
+ * simulates object taken by a unit
+ * sets variables on object to check if it is taken and by whom
+ * object will be dropped if the unit dies and the action reattached
  *
  * Parameter:
  * _this select 0: object with action
@@ -17,7 +19,7 @@
  */
 
 if (isServer) then {
-	params[["_object", objNull, [objNull]],
+	params [["_object", objNull, [objNull]],
 		["_caller", objNull, [objNull]],
 		["_action", 0, [0]]];
 

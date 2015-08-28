@@ -17,7 +17,7 @@
  */
 
 if (isServer) then {
-	params[["_marker", "", [""]],
+	params [["_marker", "", [""]],
 		["_unit", objNull, [objNull]],
 		["_interval", 0, [0]]];
 

@@ -15,7 +15,7 @@
  */
 
 if (isServer) then {
-	params[["_unit", objNull, [objNull]]];
+	params [["_unit", objNull, [objNull]]];
 
 	// delay for unit to be placed right
 	sleep 1;

@@ -23,7 +23,7 @@
  */
 
  if (isServer) then {
-	params[
+	params [
 		// zone dimensions
 		["_sizeX", 0, [0]],
 		["_sizeY", 0, [0]],

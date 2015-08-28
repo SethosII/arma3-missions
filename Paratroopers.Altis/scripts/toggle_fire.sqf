@@ -16,7 +16,7 @@
  * _toggle_fire_sqf = [fireplace, "I_soldier_F", seen] execVM "scripts\toggle_fire.sqf";
  */
 
-params[["_fireplace", objNull, [objNull]],
+params [["_fireplace", objNull, [objNull]],
 	["_type", "", [""]],
 	["_trigger", objNull, [objNull]]];
 

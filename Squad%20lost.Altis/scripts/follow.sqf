@@ -16,7 +16,7 @@
  */
 
 if (isServer) then {
-	params[["_follow", grpNull, [grpNull]],
+	params [["_follow", grpNull, [grpNull]],
 		["_followed", grpNull, [grpNull]]];
 
 	while {alive leader _followed} do {

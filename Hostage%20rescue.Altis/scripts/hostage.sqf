@@ -18,7 +18,7 @@
  */
 
 if (isServer) then {
-	params[["_hostage", objNull, [objNull]],
+	params [["_hostage", objNull, [objNull]],
 		["_rescue", grpNull, [grpNull]],
 		["_trigger", objNull, [objNull]],
 		["_guard", objNull, [objNull]]];

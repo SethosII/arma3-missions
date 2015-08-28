@@ -19,7 +19,7 @@
  */
 
 if (isServer) then {
-	params[["_objects", [], [[]]],
+	params [["_objects", [], [[]]],
 		["_reference_position", [0,0,0], [[]], [2, 3]],
 		["_new_position", [0,0,0], [[]], [2, 3]],
 		["_x_delta", 0, [0]],

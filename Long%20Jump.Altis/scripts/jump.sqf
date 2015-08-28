@@ -14,7 +14,7 @@
  * _jump_sqf = [this] execVM "scripts\jump.sqf";
  */
 
-params[["_unit", objNull, [objNull]]];
+params [["_unit", objNull, [objNull]]];
 
 private ["_pos", "_time", "_distance"];
 
