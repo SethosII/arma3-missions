@@ -31,7 +31,9 @@ class Mission
 		"A3_Modules_F_Curator_Misc",
 		"A3_Modules_F",
 		"A3_Modules_F_GroupModifiers",
-		"A3_Modules_F_Curator_Mines"
+		"A3_Modules_F_Curator_Mines",
+		"3DEN",
+		"a3_weapons_f_explosives"
 	};
 	addOnsAuto[]=
 	{
@@ -46,7 +48,8 @@ class Mission
 		"A3_Modules_F_Sites",
 		"A3_Air_F_Beta_Heli_Transport_02",
 		"A3_Modules_F_Intel",
-		"A3_Modules_F_Curator_Curator",
+		"3DEN",
+		"a3_modules_f_curator_curator",
 		"A3_Missions_F_Curator",
 		"A3_Data_F_Curator_Virtual",
 		"A3_Modules_F_Curator_Misc",
@@ -56,6 +59,7 @@ class Mission
 		"A3_Soft_F_Quadbike",
 		"A3_Weapons_F_Ammoboxes",
 		"A3_Modules_F_Curator_Mines",
+		"a3_weapons_f_explosives",
 		"A3_Structures_F_Mil_Helipads",
 		"A3_Structures_F_Civ_Dead",
 		"A3_Structures_F_System",

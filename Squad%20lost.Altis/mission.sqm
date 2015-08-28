@@ -16,13 +16,15 @@ class Mission
 		"A3_Characters_F_OPFOR",
 		"A3_Modules_F_Sites",
 		"A3_Soft_F_MRAP_02",
-		"A3_Characters_F_INDEP"
+		"A3_Characters_F_INDEP",
+		"3DEN"
 	};
 	addOnsAuto[]=
 	{
 		"A3_Modules_F_Curator_Misc",
 		"A3_Modules_F",
-		"A3_Modules_F_Curator_Curator",
+		"3DEN",
+		"a3_modules_f_curator_curator",
 		"A3_Missions_F_Curator",
 		"A3_Data_F_Curator_Virtual",
 		"A3_Modules_F_Intel",

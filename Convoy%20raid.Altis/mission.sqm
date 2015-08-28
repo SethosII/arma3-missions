@@ -34,7 +34,8 @@ class Mission
 		"A3_Structures_F_Civ_Camping",
 		"A3_Structures_F_EPA_Items_Tools",
 		"A3_Structures_F_Items_Tools",
-		"A3_Structures_F_EPA_Mil_Scrapyard"
+		"A3_Structures_F_EPA_Mil_Scrapyard",
+		"3DEN"
 	};
 	addOnsAuto[]=
 	{
@@ -47,7 +48,8 @@ class Mission
 		"A3_Characters_F_Gamma",
 		"A3_Modules_F_Curator_Misc",
 		"A3_Modules_F",
-		"A3_Modules_F_Curator_Curator",
+		"3DEN",
+		"a3_modules_f_curator_curator",
 		"A3_Missions_F_Curator",
 		"A3_Data_F_Curator_Virtual",
 		"A3_Modules_F_Intel",

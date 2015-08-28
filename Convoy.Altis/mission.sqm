@@ -38,7 +38,8 @@ class Mission
 		"A3_Data_F_Curator_Virtual",
 		"a3_characters_f",
 		"A3_Modules_F_Curator_Misc",
-		"A3_Modules_F"
+		"A3_Modules_F",
+		"3DEN"
 	};
 	addOnsAuto[]=
 	{
@@ -56,7 +57,8 @@ class Mission
 		"A3_Armor_F_AMV",
 		"A3_Armor_F_Slammer",
 		"A3_Air_F_Beta_Heli_Transport_01",
-		"A3_Modules_F_Curator_Curator",
+		"3DEN",
+		"a3_modules_f_curator_curator",
 		"A3_Missions_F_Curator",
 		"A3_Data_F_Curator_Virtual",
 		"A3_Modules_F_Curator_Misc",
