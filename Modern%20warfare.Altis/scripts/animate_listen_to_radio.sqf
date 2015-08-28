@@ -19,11 +19,11 @@ if (isServer) then {
 
 	while {true} do {
 		sleep random 60;
-		[ [ [_unit] , { (_this select 0) switchMove "Acts_listeningToRadio_in" } ], "BIS_fnc_spawn", true, false, false ] spawn BIS_fnc_MP;
+		[[_unit], {(_this select 0) switchMove "Acts_listeningToRadio_in"}] remoteExec ["BIS_fnc_spawn"];
 		sleep 0.834;
-		[ [ [_unit] , { (_this select 0) switchMove "Acts_listeningToRadio_loop" } ], "BIS_fnc_spawn", true, false, false ] spawn BIS_fnc_MP;
+		[[_unit], {(_this select 0) switchMove "Acts_listeningToRadio_loop"}] remoteExec ["BIS_fnc_spawn"];
 		sleep 6.165;
-		[ [ [_unit] , { (_this select 0) switchMove "Acts_listeningToRadio_out" } ], "BIS_fnc_spawn", true, false, false ] spawn BIS_fnc_MP;
+		[[_unit], {(_this select 0) switchMove "Acts_listeningToRadio_out"}] remoteExec ["BIS_fnc_spawn"];
 		sleep 1.166;
 	};
 };

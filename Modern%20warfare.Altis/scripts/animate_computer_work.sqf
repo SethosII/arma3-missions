@@ -21,15 +21,15 @@ if (isServer) then {
 		// choose an animation
 		switch (floor random 3) do {
 			case 0: {
-				[ [ [_unit] , { (_this select 0) switchMove "HubSittingAtTableU_idle1" } ], "BIS_fnc_spawn", true, false, false ] spawn BIS_fnc_MP;
+				[[_unit], {(_this select 0) switchMove "HubSittingAtTableU_idle1"}] remoteExec ["BIS_fnc_spawn"];
 				sleep (13.495 + random 20);
 			};
 			case 1: {
-				[ [ [_unit] , { (_this select 0) switchMove "HubSittingAtTableU_idle2" } ], "BIS_fnc_spawn", true, false, false ] spawn BIS_fnc_MP;
+				[[_unit], {(_this select 0) switchMove "HubSittingAtTableU_idle2"}] remoteExec ["BIS_fnc_spawn"];
 				sleep (11.337 + random 20);
 			};
 			case 2: {
-				[ [ [_unit] , { (_this select 0) switchMove "HubSittingAtTableU_idle3" } ], "BIS_fnc_spawn", true, false, false ] spawn BIS_fnc_MP;
+				[[_unit], {(_this select 0) switchMove "HubSittingAtTableU_idle3"}] remoteExec ["BIS_fnc_spawn"];
 				sleep (20.491 + random 10);
 			};
 		};
