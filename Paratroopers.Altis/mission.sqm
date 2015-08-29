@@ -563,7 +563,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="transport";
-					init="this flyInHeight 1000; this allowFleeing 0;";
+					init="this flyInHeight 1000; this allowFleeing 0; this disableAI ""AUTOTARGET"";";
 				};
 			};
 			class Waypoints
