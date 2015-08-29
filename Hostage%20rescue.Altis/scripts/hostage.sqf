@@ -23,36 +23,36 @@ if (isServer) then {
 		["_trigger", objNull, [objNull]],
 		["_guard", objNull, [objNull]]];
 
-	private ["_rescued"];
-
 	_hostage setCaptive true;
 	_hostage disableAI "MOVE";
 	removeAllWeapons _hostage;
-	_hostage switchMove "Acts_AidlPsitMstpSsurWnonDnon_loop";
+	[[_hostage], {(_this select 0) switchMove "Acts_AidlPsitMstpSsurWnonDnon_loop"}] remoteExec ["BIS_fnc_spawn"];
 
+	// shoot the hostage when trigger is activated
 	_nul = [_hostage, _guard, _trigger] spawn {
-		// shoot the hostage when trigger is activated
-		waitUntil{triggerActivated (_this select 2)};
+		params [["_hostage", objNull, [objNull]],
+			["_guard", objNull, [objNull]],
+			["_trigger", objNull, [objNull]]];
+		waitUntil{triggerActivated _trigger};
 
-		_this select 0 setCaptive false;
-		_this select 1 doWatch (_this select 0);
-		_this select 1 doTarget (_this select 0);
-		_this select 1 doFire (_this select 0);
+		_hostage setCaptive false;
+		_guard doWatch _hostage;
+		_guard doTarget _hostage;
+		_guard doFire _hostage;
 	};
-	
-	waitUntil{
-		sleep 1;
-		_rescued = false;
-		{
-			if (_x distance _hostage < 2) then {
-				_rescued = true;
-			};
-		} forEach units _rescue;
-		_rescued
-	};
-	[_hostage] join _rescue;
-	_hostage enableAI "MOVE";
-	_hostage switchMove "Acts_AidlPsitMstpSsurWnonDnon_out";
+
+	// add action to free the hostage and join it to the group of the saviour
+	_hostage addAction ["Free", {
+			params [["_hostage", objNull, [objNull]],
+				["_caller", objNull, [objNull]],
+				["_action", 0, [0]]];
+			hint "Free";
+			_hostage removeAction _action;
+			[_hostage] join group _caller;
+			_hostage setCaptive false;
+			_hostage enableAI "MOVE";
+			[[_hostage], {(_this select 0) switchMove "Acts_AidlPsitMstpSsurWnonDnon_out"}] remoteExec ["BIS_fnc_spawn"];
+		}];
 };
 
 true

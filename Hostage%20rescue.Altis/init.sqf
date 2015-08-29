@@ -1,10 +1,11 @@
 waitUntil{!(isNil "BIS_fnc_init")};
 
-_nul = [] spawn {_hostage_sqf = [hostage, players, detected, guard] execVM "scripts\hostage.sqf";};
+_hostage_sqf = [hostage, players, detected, guard] execVM "scripts\hostage.sqf";
 
 if (isServer) then {
 	positionHostage = [[3795.38,13420.8,8.16792],[3786.25,13408.2,4.53342],[3796.02,13418.5,0.227114]] select floor random 3;
 	hostage setPosATL positionHostage;
+	bis_curator addCuratorEditableObjects [[hostage], true];
 	guard setPosATL [(positionHostage select 0) + 0.5, (positionHostage select 1) - 1.5, positionHostage select 2];
 
 	kidnapper = [];
@@ -20,6 +21,7 @@ if (isServer) then {
 		positions pushBack _x;
 	};
 
+	// shuffle positions
 	for "_x" from 0 to count positions - 1 do {
 		_y = _x + floor random (count positions - _x);
 		_z = positions select _x;
@@ -27,12 +29,25 @@ if (isServer) then {
 		positions set [_y, _z];
 	};
 
+	// place kidnapper
 	for "_x" from 0 to count kidnapper - 1 do {
 		if (kidnapper select _x != guard) then {
 			kidnapper select _x setPosATL ((nearestBuilding [3790,13422]) buildingPos (positions select _x));
 		};
 		group (kidnapper select _x) setBehaviour "SAFE";
 		group (kidnapper select _x) setCombatMode "WHITE";
+	};
+
+	// random patrol
+	for "_x" from 0 to 1 + floor random 2 do {
+		if (kidnapper select _x != guard) then {
+			[_x] spawn {
+				while {alive (kidnapper select (_this select 0))} do {
+					kidnapper select (_this select 0) move ((nearestBuilding [3790,13422]) buildingPos (positions select floor random 60));
+					sleep random 60;
+				};
+			};
+		};
 	};
 };
 

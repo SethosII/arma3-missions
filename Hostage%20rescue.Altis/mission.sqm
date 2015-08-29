@@ -146,6 +146,7 @@ class Mission
 					vehicle="o_survivor_F";
 					leader=1;
 					skill=0.23514369;
+					health=0.5;
 					text="hostage";
 				};
 			};
