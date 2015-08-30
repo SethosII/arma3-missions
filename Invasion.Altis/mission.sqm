@@ -178,7 +178,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.33043641;
 					text="boat1";
-					init="this addWeaponCargoGlobal [""MMG_02_sand_RCO_LP_F"",1]; this addMagazineCargoGlobal [""130Rnd_338_Mag"", 3]; this addWeaponCargoGlobal [""srifle_DMR_03_tan_F"",1]; this addItemCargoGlobal [""acc_pointer_IR"",1]; this addItemCargoGlobal [""optic_AMS_snd"",1]; this addItemCargoGlobal [""20Rnd_762x51_Mag"",5]; this addBackpackCargoGlobal [""O_Mortar_01_support_F"",1]; this addBackpackCargoGlobal [""O_Mortar_01_weapon_F"",1]; this addBackpackCargoGlobal [""O_HMG_01_support_F"",1]; this addBackpackCargoGlobal [""O_HMG_01_weapon_F"",1];";
+					init="this addWeaponCargoGlobal [""MMG_02_sand_RCO_LP_F"",1]; this addMagazineCargoGlobal [""130Rnd_338_Mag"", 3]; this addWeaponCargoGlobal [""srifle_DMR_03_tan_F"",1]; this addItemCargoGlobal [""acc_pointer_IR"",1]; this addItemCargoGlobal [""optic_AMS_snd"",1]; this addItemCargoGlobal [""20Rnd_762x51_Mag"",5]; this addBackpackCargoGlobal [""B_Mortar_01_support_F"",1]; this addBackpackCargoGlobal [""B_Mortar_01_weapon_F"",1]; this addBackpackCargoGlobal [""B_HMG_01_support_F"",1]; this addBackpackCargoGlobal [""B_HMG_01_weapon_F"",1];";
 				};
 			};
 			class Waypoints
@@ -688,7 +688,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="transport1";
-					init="_nul = this setSlingLoad boat1; bis_curator addCuratorEditableObjects [[this], true]; this addWeaponCargoGlobal [""MMG_02_sand_RCO_LP_F"",2]; this addMagazineCargoGlobal [""130Rnd_338_Mag"", 6]; this addWeaponCargoGlobal [""srifle_DMR_03_tan_F"",2]; this addItemCargoGlobal [""acc_pointer_IR"",2]; this addItemCargoGlobal [""optic_AMS_snd"",2]; this addItemCargoGlobal [""20Rnd_762x51_Mag"",10]; this addBackpackCargoGlobal [""O_Mortar_01_support_F"",1]; this addBackpackCargoGlobal [""O_Mortar_01_weapon_F"",1]; this addBackpackCargoGlobal [""O_HMG_01_support_F"",1]; this addBackpackCargoGlobal [""O_HMG_01_weapon_F"",1];";
+					init="_nul = this setSlingLoad boat1; bis_curator addCuratorEditableObjects [[this], true]; this addWeaponCargoGlobal [""MMG_02_sand_RCO_LP_F"",2]; this addMagazineCargoGlobal [""130Rnd_338_Mag"", 6]; this addWeaponCargoGlobal [""srifle_DMR_03_tan_F"",2]; this addItemCargoGlobal [""acc_pointer_IR"",2]; this addItemCargoGlobal [""optic_AMS_snd"",2]; this addItemCargoGlobal [""20Rnd_762x51_Mag"",10]; this addBackpackCargoGlobal [""B_Mortar_01_support_F"",1]; this addBackpackCargoGlobal [""B_Mortar_01_weapon_F"",1]; this addBackpackCargoGlobal [""B_HMG_01_support_F"",1]; this addBackpackCargoGlobal [""B_HMG_01_weapon_F"",1];";
 					syncId=12;
 					synchronizations[]={29};
 				};
@@ -927,7 +927,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.33043641;
 					text="boat2";
-					init="this addWeaponCargoGlobal [""MMG_02_sand_RCO_LP_F"",1]; this addMagazineCargoGlobal [""130Rnd_338_Mag"", 3]; this addWeaponCargoGlobal [""srifle_DMR_03_tan_F"",1]; this addItemCargoGlobal [""acc_pointer_IR"",1]; this addItemCargoGlobal [""optic_AMS_snd"",1]; this addItemCargoGlobal [""20Rnd_762x51_Mag"",5]; this addBackpackCargoGlobal [""O_Mortar_01_support_F"",1]; this addBackpackCargoGlobal [""O_Mortar_01_weapon_F"",1]; this addBackpackCargoGlobal [""O_HMG_01_support_F"",1]; this addBackpackCargoGlobal [""O_HMG_01_weapon_F"",1];";
+					init="this addWeaponCargoGlobal [""MMG_02_sand_RCO_LP_F"",1]; this addMagazineCargoGlobal [""130Rnd_338_Mag"", 3]; this addWeaponCargoGlobal [""srifle_DMR_03_tan_F"",1]; this addItemCargoGlobal [""acc_pointer_IR"",1]; this addItemCargoGlobal [""optic_AMS_snd"",1]; this addItemCargoGlobal [""20Rnd_762x51_Mag"",5]; this addBackpackCargoGlobal [""B_Mortar_01_support_F"",1]; this addBackpackCargoGlobal [""B_Mortar_01_weapon_F"",1]; this addBackpackCargoGlobal [""B_HMG_01_support_F"",1]; this addBackpackCargoGlobal [""B_HMG_01_weapon_F"",1];";
 				};
 			};
 			class Waypoints
@@ -972,7 +972,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="transport2";
-					init="_nul = this setSlingLoad boat2; bis_curator addCuratorEditableObjects [[this], true]; this addWeaponCargoGlobal [""MMG_02_sand_RCO_LP_F"",2]; this addMagazineCargoGlobal [""130Rnd_338_Mag"", 6]; this addWeaponCargoGlobal [""srifle_DMR_03_tan_F"",2]; this addItemCargoGlobal [""acc_pointer_IR"",2]; this addItemCargoGlobal [""optic_AMS_snd"",2]; this addItemCargoGlobal [""20Rnd_762x51_Mag"",10]; this addBackpackCargoGlobal [""O_Mortar_01_support_F"",1]; this addBackpackCargoGlobal [""O_Mortar_01_weapon_F"",1]; this addBackpackCargoGlobal [""O_HMG_01_support_F"",1]; this addBackpackCargoGlobal [""O_HMG_01_weapon_F"",1];";
+					init="_nul = this setSlingLoad boat2; bis_curator addCuratorEditableObjects [[this], true]; this addWeaponCargoGlobal [""MMG_02_sand_RCO_LP_F"",2]; this addMagazineCargoGlobal [""130Rnd_338_Mag"", 6]; this addWeaponCargoGlobal [""srifle_DMR_03_tan_F"",2]; this addItemCargoGlobal [""acc_pointer_IR"",2]; this addItemCargoGlobal [""optic_AMS_snd"",2]; this addItemCargoGlobal [""20Rnd_762x51_Mag"",10]; this addBackpackCargoGlobal [""B_Mortar_01_support_F"",1]; this addBackpackCargoGlobal [""B_Mortar_01_weapon_F"",1]; this addBackpackCargoGlobal [""B_HMG_01_support_F"",1]; this addBackpackCargoGlobal [""B_HMG_01_weapon_F"",1];";
 					syncId=16;
 					synchronizations[]={30};
 				};
