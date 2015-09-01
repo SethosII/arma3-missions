@@ -4375,7 +4375,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			idVehicle=20;
-			expActiv="_nul = transport1 setSlingLoad objNull;";
+			expActiv="{ropeCut [_x, 5];} forEach ropes transport1;";
 			class Effects
 			{
 			};
@@ -4392,7 +4392,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			idVehicle=32;
-			expActiv="_nul = transport2 setSlingLoad objNull;";
+			expActiv="{ropeCut [_x, 5];} forEach ropes transport2;";
 			class Effects
 			{
 			};
