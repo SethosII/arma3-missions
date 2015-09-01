@@ -22,19 +22,19 @@ params [["_object", objNull, [objNull]],
 	["_caller", objNull, [objNull]],
 	["_action", 0, [0]]];
 
-if (side _caller == west) then {
-	_object removeAction _action;
-	_object setPos [0,0,0]; //deleteObject also deletes variables
-	_object setVariable ["taken", true, true];
-	_object setVariable ["taken_by", _caller, true];
-	detach _object;
-	waitUntil {!alive _caller};
-	_object setPos getPos _caller;
-	_object setVariable ["taken", false, true];
-	_object setVariable ["taken_by", objNull, true];
-	[[_object], {(_this select 0) addAction ["Take", "scripts\take_object.sqf"];}] remoteExec ["BIS_fnc_spawn"];
-} else {
-	hint "Wrong side!";
-};
+// move object away and set caller as carrier
+[[_object, _action], {(_this select 0) removeAction (_this select 1);}] remoteExec ["BIS_fnc_spawn"];
+detach _object; // safety measure
+_object setPos [0,0,0]; // deleteObject also deletes variables
+_object setVariable ["taken", true, true];
+_object setVariable ["taken_by", _caller, true];
+
+waitUntil {!alive _caller};
+
+// place object near dead carrier and add the action again
+_object setPos getPos _caller;
+_object setVariable ["taken", false, true];
+_object setVariable ["taken_by", objNull, true];
+[[_object], {(_this select 0) addAction ["Take", "scripts\take_object.sqf"];}] remoteExec ["BIS_fnc_spawn"];
 
 true
