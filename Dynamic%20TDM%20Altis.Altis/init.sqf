@@ -86,6 +86,8 @@ if(isServer && maxGameTime != 0) then {
 	]
 ] spawn BIS_fnc_typeText2;
 
+// scenario ending
+end = false;
 [] spawn {
 	waitUntil {maxSideScore != 0 && (scoreSide west >= maxSideScore || scoreSide east >= maxSideScore || scoreSide independent >= maxSideScore) || maxGameTime != 0 && serverTime > estimatedEndServerTime};
 
