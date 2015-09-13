@@ -27,8 +27,8 @@ class RscTitles {
 		duration = 1000000;
 		fadeIn = 0;
 		fadeOut = 0;
-		onLoad = "FlagNATO = (_this select 0)";
-		onUnLoad = "FlagNATO = nil";
+		onLoad = uiNamespace setVariable ["FlagNATO", _this select 0];
+		onUnLoad = uiNamespace setVariable ["FlagNATO", nil];
 		class controls {
 			class FlagNATOControl {
 				idc = 1000;
@@ -51,13 +51,13 @@ class RscTitles {
 		duration = 1000000;
 		fadeIn = 0;
 		fadeOut = 0;
-		onLoad = "TextNATO = (_this select 0)";
-		onUnLoad = "TextNATO = nil";
+		onLoad = uiNamespace setVariable ["TextNATO",_this select 0];
+		onUnLoad = uiNamespace setVariable ["TextNATO", nil];
 		class controls {
 			class TextNATOControl {
 				idc = 1001;
 				type = 0;
-				style = 2; // 0 (no border picture) + 2 (centred)
+				style = 2; // 0 (singleline box) + 2 (centred)
 				x = (safeZoneX + safeZoneW) * 0.97;
 				y = safeZoneY + safeZoneH * 0.2;
 				w = safeZoneH * 0.03;
@@ -76,8 +76,8 @@ class RscTitles {
 		duration = 1000000;
 		fadeIn = 0;
 		fadeOut = 0;
-		onLoad = "FlagCSAT = (_this select 0)";
-		onUnLoad = "FlagCSAT = nil";
+		onLoad = uiNamespace setVariable ["FlagCSAT", _this select 0];
+		onUnLoad = uiNamespace setVariable ["FlagCSAT", nil];
 		class controls {
 			class FlagCSATControl {
 				idc = 1002;
@@ -100,13 +100,13 @@ class RscTitles {
 		duration = 1000000;
 		fadeIn = 0;
 		fadeOut = 0;
-		onLoad = "TextCSAT = (_this select 0)";
-		onUnLoad = "TextCSAT = nil";
+		onLoad = uiNamespace setVariable ["TextCSAT", _this select 0];
+		onUnLoad = uiNamespace setVariable ["TextCSAT", nil];
 		class controls {
 			class TextCSATControl {
 				idc = 1003;
 				type = 0;
-				style = 2; // 0 (no border picture) + 2 (centred)
+				style = 2; // 0 (singleline box) + 2 (centred)
 				x = (safeZoneX + safeZoneW) * 0.97;
 				y = safeZoneY + safeZoneH * 0.2 + safeZoneW * 0.033;
 				w = safeZoneH * 0.03;
@@ -125,8 +125,8 @@ class RscTitles {
 		duration = 1000000;
 		fadeIn = 0;
 		fadeOut = 0;
-		onLoad = "FlagAAF = (_this select 0)";
-		onUnLoad = "FlagAAF = nil";
+		onLoad = uiNamespace setVariable ["FlagAAF", _this select 0];
+		onUnLoad = uiNamespace setVariable ["FlagAAF", nil];
 		class controls {
 			class FlagAAFControl {
 				idc = 1004;
@@ -149,13 +149,13 @@ class RscTitles {
 		duration = 1000000;
 		fadeIn = 0;
 		fadeOut = 0;
-		onLoad = "TextAAF = (_this select 0)";
-		onUnLoad = "TextAAF = nil";
+		onLoad = uiNamespace setVariable ["TextAAF", _this select 0];
+		onUnLoad = uiNamespace setVariable ["TextAAF", nil];
 		class controls {
 			class TextAAFControl {
 				idc = 1005;
 				type = 0;
-				style = 2; // 0 (no border picture) + 2 (centred)
+				style = 2; // 0 (singleline box) + 2 (centred)
 				x = (safeZoneX + safeZoneW) * 0.97;
 				y = safeZoneY + safeZoneH * 0.2 + safeZoneW * 0.066;
 				w = safeZoneH * 0.03;
@@ -174,8 +174,8 @@ class RscTitles {
 		duration = 1000000;
 		fadeIn = 0;
 		fadeOut = 0;
-		onLoad = "Timer = (_this select 0)";
-		onUnLoad = "Timer = nil";
+		onLoad = uiNamespace setVariable ["Timer", _this select 0];
+		onUnLoad = uiNamespace setVariable ["Timer", nil];
 		class controls {
 			class TimerControl {
 				idc = 1006;
@@ -198,13 +198,13 @@ class RscTitles {
 		duration = 1000000;
 		fadeIn = 0;
 		fadeOut = 0;
-		onLoad = "TextTimer = (_this select 0)";
-		onUnLoad = "TextTimer = nil";
+		onLoad = uiNamespace setVariable ["TextTimer", _this select 0];
+		onUnLoad = uiNamespace setVariable ["TextTimer", nil];
 		class controls {
 			class TextTimerControl {
 				idc = 1007;
 				type = 0;
-				style = 2; // 0 (no border picture) + 2 (centred)
+				style = 2; // 0 (singleline box) + 2 (centred)
 				x = (safeZoneX + safeZoneW) * 0.97;
 				y = safeZoneY + safeZoneH * 0.2 + safeZoneW * 0.099;
 				w = safeZoneH * 0.03;

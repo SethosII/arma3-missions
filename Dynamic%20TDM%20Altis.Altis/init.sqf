@@ -109,4 +109,4 @@ end = false;
 	} else {
 		["LOSE",false] call BIS_fnc_endMission;
 	};
-};
+};[maxGameTime] execVM "scripts\display_tdm.sqf";
