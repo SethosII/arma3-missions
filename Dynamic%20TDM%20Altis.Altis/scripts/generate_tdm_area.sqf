@@ -19,7 +19,7 @@
  * true when completed
  *
  * Example:
- * _generate_tdm_area_sqf = [100, 50, 45, 0, 0] execVM "scripts\generate_tdm_area.sqf";
+ * _generate_tdm_area_sqf = [100, 50, 45, 0, 0, 31000, 31000] execVM "scripts\generate_tdm_area.sqf";
  */
 
  if (isServer) then {

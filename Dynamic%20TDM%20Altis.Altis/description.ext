@@ -40,14 +40,28 @@ class Params {
 	};
 	class Area {
 		title = "Area";
-		texts[] = {"Random","South of Kavala","Military Base near Pyrgos","Factory near Athira","Container","Aktinarki Ruins","Offices in Pyrgos","Street in Pyrgos"};
-		values[] = {0,1,2,3,4,5,6,7};
+		texts[] = {"Random",
+			"Abandoned military outpost 129x50",
+			"Aktinarki Ruins 166x48",
+			"Container 84x218",
+			"Factory near Athira 168x156",
+			"Makrynisi 200x100",
+			"Military Base near Pyrgos 154x212",
+			"Offices in Pyrgos 100x100",
+			"Paros 90x70",
+			"Research base 75x80",
+			"Sofia 88x101",
+			"Solar plant 170x165",
+			"South of Kavala 220x140",
+			"Street in Pyrgos 140x76",
+			"Tourist place 50x130"};
+		values[] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14};
 		default = 0;
 	};
 	class Size {
 		title = "Size (only relevant if area is random)";
-		texts[] = {"tiny (50x50)","small (100x50)","medium (200x100)","large(400x200)","extralarge(500x500)"};
-		values[] = {0,1,2,3,4};
+		texts[] = {"XS (50x50)","S (100x50)","M (200x100)","L (400x200)","XL (500x500)","XXL (1000x500)"};
+		values[] = {0,1,2,3,4,5};
 		default = 1;
 	};
 	class Time {
