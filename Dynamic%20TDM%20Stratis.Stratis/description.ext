@@ -1,0 +1,77 @@
+author = SethosII;
+onLoadName = "Dynamic TDM Stratis";
+onLoadMission = "Dynamic TDM on Stratis with up to eight players on each side.";
+loadScreen = "load.paa";
+enableDebugConsole = 1;
+
+disabledAI = 1;
+
+overviewText = "Dynamic TDM on Stratis with up to eight players on each side.";
+overviewPicture = "load.paa"; 
+
+respawn = "BASE";
+respawnDialog = true;
+respawnTemplates[] = {"MenuInventory","MenuSpectator","Tickets"};
+respawnOnStart = 1;
+respawnDelay = 10;
+
+class Header {
+	gameType = TDM;
+	minPlayers = 1;
+	maxPlayers = 24;
+};
+
+class Params {
+	class Daytime {
+		title = "Time";
+		texts[] = {"Morning","Day","Evening","Night"};
+		values[] = {6,12,18,0};
+		default = 12;
+		function = "BIS_fnc_paramDaytime";
+ 		isGlobal = 1;
+	};
+	class Weather {
+		title = "Weather";
+		texts[] = {"Sunny","Cloudy","Rainy","Stormy"};
+		values[] = {20,40,65,90};
+		default = 20;
+		function = "BIS_fnc_paramWeather";
+ 		isGlobal = 1;
+	};
+	class Area {
+		title = "Area";
+		texts[] = {"Random",
+			"Stratis Air Base 138x82",
+			"Agia Marina 84x100",
+			"Camp Maxwell 77x80",
+			"Girna 57x98"};
+		values[] = {0,1,2,3,4};
+		default = 0;
+	};
+	class Size {
+		title = "Size (only relevant if area is random)";
+		texts[] = {"XS (50x50)","S (100x50)","M (200x100)","L (400x200)","XL (500x500)","XXL (1000x500)"};
+		values[] = {0,1,2,3,4,5};
+		default = 1;
+	};
+	class Time {
+		title = "Maximum game time";
+		texts[] = {"Unlimited","5 min","10 min","15 min","20 min","30 min","1 h"};
+		values[] = {0,300,600,900,1200,1800,3600};
+		default = 600;
+	};
+	class Score {
+		title = "Maximum score of one side";
+		texts[] = {"Unlimited","10","20","30","50","100"};
+		values[] = {0,10,20,30,50,100};
+		default = 20;
+	};
+};
+
+class RscTitles {
+	#include "configs\displayTdmRscTitles.h"
+};
+
+class CfgRespawnInventory {
+	#include "configs\loadoutsTdm.h"
+};
