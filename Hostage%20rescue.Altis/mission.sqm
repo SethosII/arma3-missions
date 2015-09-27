@@ -1824,7 +1824,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			name="detected";
-			expActiv="{group _x setBehaviour ""COMBAT"";} forEach kidnapper;";
+			expActiv="{group _x setBehaviour ""COMBAT"";} forEach (kidnapper + [guard]);";
 			class Effects
 			{
 			};
