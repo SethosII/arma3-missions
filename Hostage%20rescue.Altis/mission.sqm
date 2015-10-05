@@ -1782,7 +1782,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=8;
+		items=7;
 		class Item0
 		{
 			position[]={484.95374,0.0041477829,30109.289};
@@ -1868,21 +1868,6 @@ class Mission
 		};
 		class Item5
 		{
-			position[]={3757.1648,18.602455,13038.575};
-			a=0;
-			b=0;
-			activationBy="ALPHA";
-			repeating=1;
-			interruptable=1;
-			age="UNKNOWN";
-			text="Virtual Arsenal";
-			expActiv="[""Open"",true] call BIS_fnc_arsenal;";
-			class Effects
-			{
-			};
-		};
-		class Item6
-		{
 			position[]={3814.1011,16.084774,13420.717};
 			a=0;
 			b=0;
@@ -1897,7 +1882,7 @@ class Mission
 			{
 			};
 		};
-		class Item7
+		class Item6
 		{
 			position[]={3814.1011,16.083897,13417.927};
 			a=0;
