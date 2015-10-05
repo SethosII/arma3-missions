@@ -14,6 +14,9 @@ _objects pushBack tent2;
 {
 	_objects pushBack _x;
 } forEach units pursuers3;
+{
+	_objects pushBack _x;
+} forEach units pursuers4;
 
 if (isServer) then {
 	// possible positions
@@ -34,6 +37,7 @@ _move_objects_sqf = [_objects, getMarkerPos "reference", new_position, 3000, 300
 _follow_sqf = [pursuers1, players] execVM "scripts\follow.sqf";
 _follow_sqf = [pursuers2, players] execVM "scripts\follow.sqf";
 _follow_sqf = [pursuers3, players] execVM "scripts\follow.sqf";
+_follow_sqf = [pursuers4, players] execVM "scripts\follow.sqf";
 
 // UAV-feed at mission start
 waitUntil{!(isNil "BIS_fnc_init")};
