@@ -46,7 +46,6 @@ if (isServer) then {
 			params [["_hostage", objNull, [objNull]],
 				["_caller", objNull, [objNull]],
 				["_action", 0, [0]]];
-			hint "Free";
 			_hostage removeAction _action;
 			[_hostage] join group _caller;
 			_hostage setCaptive false;
