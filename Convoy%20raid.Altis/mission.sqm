@@ -2370,7 +2370,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=14;
+		items=15;
 		class Item0
 		{
 			position[]={18671.564,19.712038,15110.719};
@@ -2589,6 +2589,19 @@ class Mission
 			name="convoy_arrived";
 			class Effects
 			{
+			};
+		};
+		class Item14
+		{
+			position[]={18474.619,24.224718,14268.599};
+			a=0;
+			b=0;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="true";
+			class Effects
+			{
+				track="BackgroundTrack01_F_EPB";
 			};
 		};
 	};
