@@ -6,7 +6,7 @@ enableDebugConsole = 1;
 
 disabledAI = 1;
 
-overviewText = "Dynamic TDM on Altis with up to eight players on each side.";
+overviewText = "Action shooter TDM style mission with many options such as maximum side score, duration, place and so on. This mission is for Altis with up to eight players on each side.";
 overviewPicture = "load.paa"; 
 
 respawn = "BASE";
