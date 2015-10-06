@@ -23,7 +23,8 @@ class Mission
 		"A3_Characters_F_Civil",
 		"A3_Signs_F",
 		"A3_Structures_F_Walls",
-		"3DEN"
+		"3DEN",
+		"A3_Soft_F_Offroad_01"
 	};
 	addOnsAuto[]=
 	{
@@ -41,7 +42,7 @@ class Mission
 		"A3_Modules_F_Intel",
 		"A3_Characters_F_EPC",
 		"A3_Characters_F_Civil",
-		"A3_Soft_F_MRAP_03",
+		"A3_Soft_F_Offroad_01",
 		"A3_Weapons_F_Ammoboxes",
 		"A3_Weapons_F_Gamma_Ammoboxes",
 		"a3_uav_f_weapons_f_gamma_ammoboxes",
@@ -1163,7 +1164,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3743.772,10.602931,13382.015};
+					position[]={3743.9268,10.601798,13382.361};
 					azimut=-97.644424;
 					special="NONE";
 					id=38;
@@ -1183,7 +1184,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3739.3018,10.613461,13385.097};
+					position[]={3740.2324,10.608392,13385.138};
 					azimut=413.62799;
 					special="NONE";
 					id=39;
@@ -1258,7 +1259,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3816.7651,13.416409,13477.982};
+					position[]={3816.1831,13.394408,13477.674};
 					azimut=321.83939;
 					special="NONE";
 					id=41;
@@ -1278,7 +1279,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3811.8262,13.204685,13479.121};
+					position[]={3812.4082,13.234404,13478.271};
 					azimut=929.31494;
 					special="NONE";
 					id=42;
@@ -1298,7 +1299,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3741.7319,11.224058,13453.157};
+					position[]={3741.4216,11.19831,13452.574};
 					azimut=1244.665;
 					special="NONE";
 					id=43;
@@ -1340,32 +1341,35 @@ class Mission
 			azimut=-81.697098;
 			id=45;
 			side="EMPTY";
-			vehicle="I_MRAP_03_F";
+			vehicle="C_Offroad_01_F";
 			leader=1;
 			lock="LOCKED";
 			skill=0.60000002;
+			init="[this,[""blue"",1],[""hidePolice"",0,""BeaconsStart"",1,""HideBumper2"",0,""HideConstruction"",0,""Proxy"",0,""Destruct"",0]] call BIS_fnc_initVehicle;";
 		};
 		class Item1
 		{
 			position[]={3743.3789,10.595317,13385.065};
-			azimut=-53.518009;
+			azimut=-53.518002;
 			id=46;
 			side="EMPTY";
-			vehicle="I_MRAP_03_F";
+			vehicle="C_Offroad_01_F";
 			leader=1;
 			lock="LOCKED";
 			skill=0.60000002;
+			init="[this,[""blue"",1],[""hidePolice"",0,""BeaconsStart"",1,""HideBumper2"",0,""HideConstruction"",0,""Proxy"",0,""Destruct"",0]] call BIS_fnc_initVehicle;";
 		};
 		class Item2
 		{
 			position[]={3739.4575,11.074927,13449.977};
-			azimut=75.919792;
+			azimut=75.9198;
 			id=47;
 			side="EMPTY";
-			vehicle="I_MRAP_03_F";
+			vehicle="C_Offroad_01_F";
 			leader=1;
 			lock="LOCKED";
 			skill=0.60000002;
+			init="[this,[""blue"",1],[""hidePolice"",0,""BeaconsStart"",1,""HideBumper2"",0,""HideConstruction"",0,""Proxy"",0,""Destruct"",0]] call BIS_fnc_initVehicle;";
 		};
 		class Item3
 		{
@@ -1782,7 +1786,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=7;
+		items=8;
 		class Item0
 		{
 			position[]={484.95374,0.0041477829,30109.289};
@@ -1896,6 +1900,19 @@ class Mission
 			expActiv="[""LOSE"", false] call BIS_fnc_endMission;";
 			class Effects
 			{
+			};
+		};
+		class Item7
+		{
+			position[]={3730.9883,18.137138,13017.444};
+			a=0;
+			b=0;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="true";
+			class Effects
+			{
+				track="BackgroundTrack04_F_EPC";
 			};
 		};
 	};
