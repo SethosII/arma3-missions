@@ -545,7 +545,7 @@ class Mission
 						};
 						class Item3
 						{
-							value="Return to the base";
+							value="Return to the <marker name=""base"">base</marker>.";
 							parentCls="ModuleTaskCreate_F";
 							typeName="Description";
 						};
@@ -716,7 +716,7 @@ class Mission
 						};
 						class Item3
 						{
-							value="Bring the squad back to the base";
+							value="Bring the squad back to the <marker name=""base"">base</marker>.";
 							parentCls="ModuleTaskCreate_F";
 							typeName="Description";
 						};
@@ -3596,7 +3596,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=4;
+		items=5;
 		class Item0
 		{
 			position[]={484.95374,0.0041477829,30109.289};
@@ -3658,6 +3658,19 @@ class Mission
 			expActiv="""END1"" call BIS_fnc_endMission;";
 			class Effects
 			{
+			};
+		};
+		class Item4
+		{
+			position[]={14709.632,17.91,16710.258};
+			a=0;
+			b=0;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="true";
+			class Effects
+			{
+				track="BackgroundTrack01_F_EPC";
 			};
 		};
 	};
