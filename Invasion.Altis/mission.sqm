@@ -2373,7 +2373,7 @@ class Mission
 					vehicle="O_APC_Tracked_02_cannon_F";
 					leader=1;
 					skill=0.28278983;
-					init="bis_curator addCuratorEditableObjects [[this], true]; this setCombatMode ""RED"";";
+					init="bis_curator addCuratorEditableObjects [[this], true]; this setCombatMode ""RED""; this removeMagazineTurret [""2Rnd_GAT_missiles"", [0]];";
 				};
 			};
 		};
