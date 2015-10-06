@@ -4,7 +4,7 @@ onLoadMission = "Use a tank and your squad to attack.";
 loadScreen = "load.paa";
 enableDebugConsole = 1;
 
-overviewText = "Agia Marina is under control by the enemy, we need to change this!";
+overviewText = "Agia Marina is under control by the enemy, we need to change this! Just a small and quick mission to train urban tank and infantry combat.";
 overviewPicture = "load.paa"; 
 
 respawn = "SIDE";

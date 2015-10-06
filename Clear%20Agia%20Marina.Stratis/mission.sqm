@@ -887,7 +887,7 @@ class Mission
 						};
 						class Item4
 						{
-							value="Use the modified Slammer and your squad to eliminate all enemy forces in <marker name=""agia marina"">Agia Marina</marker>";
+							value="Use the modified Slammer and your squad to eliminate all enemy forces in <marker name=""agia marina"">Agia Marina</marker>. The advanced optics aren't ready yet, but this shouldn't be a problem.";
 							parentCls="ModuleCreateDiaryRecord_F";
 							typeName="Description";
 						};
@@ -1402,6 +1402,7 @@ class Mission
 			vehicle="B_MBT_01_TUSK_F";
 			skill=0.40000001;
 			text="slammer";
+			init="this disableTIEquipment true; this disableNVGEquipment true;";
 		};
 		class Item1
 		{
