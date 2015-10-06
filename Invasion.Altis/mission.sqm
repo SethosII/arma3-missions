@@ -810,9 +810,10 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={20193.766,10.202296,5428.2412};
+					position[]={20371.125,3.6189549,5359.5361};
 					completitionRadius=50;
 					type="TR UNLOAD";
+					speed="FULL";
 					class Effects
 					{
 					};
@@ -3612,12 +3613,23 @@ class Mission
 			};
 			class Waypoints
 			{
-				items=1;
+				items=2;
 				class Item0
+				{
+					position[]={20372.855,3.7255006,5360.9121};
+					completitionRadius=50;
+					combat="CARELESS";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
 				{
 					position[]={20494.203,59.396152,5964.2866};
 					completitionRadius=200;
 					type="SAD";
+					combat="AWARE";
 					class Effects
 					{
 					};
