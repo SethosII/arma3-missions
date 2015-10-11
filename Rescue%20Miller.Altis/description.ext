@@ -4,7 +4,7 @@ onLoadMission = "Miller was captured during an operation. We need to rescue him!
 loadScreen = "load.paa";
 enableDebugConsole = 1;
 
-overviewText = "Miller was captured during an operation. We need to rescue him!";
+overviewText = "Miller was captured during an operation. We need to rescue him! Tested on dedicated server. Zeus is optional. As always any feedback will be much appreciated.";
 overviewPicture = "load.paa"; 
 
 respawn = "SIDE";
