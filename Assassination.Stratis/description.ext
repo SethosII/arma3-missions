@@ -4,7 +4,7 @@ onLoadMission = "Kill or be killed.";
 loadScreen = "load.paa";
 enableDebugConsole = 1;
 
-overviewText = "NATO has pushed CSAT into the south of Stratis and attempts to seize the island completely by launching a final attack. CSAT doesn't have enough troops to repel the attack so their only hope is to cut off the head off the operation.";
+overviewText = "NATO has pushed CSAT into the south of Stratis and attempts to seize the island completely by launching a final attack. CSAT doesn't have enough troops to repel the attack so their only hope is to cut off the head off the operation. Tested on dedicated server. Zeus is optional. As always any feedback will be much appreciated.";
 overviewPicture = "load.paa"; 
 
 respawn = "SIDE";

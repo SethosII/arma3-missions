@@ -302,7 +302,7 @@ class Mission
 					skill=0.44999999;
 					init="assassins = group this; {_x unassignItem ""Rangefinder""; _x removeWeapon ""Rangefinder""; _x addWeapon ""Laserdesignator_02""; _x assignItem ""Laserdesignator_02""; _x addItem ""Laserbatteries""; _x linkItem ""O_UavTerminal""; [_x,""MANW""] call BIS_fnc_setUnitInsignia;} forEach units group this; this setFace ""WhiteHead_22_a"";";
 					syncId=4;
-					synchronizations[]={3,27,40,44,42,46,47,48,49};
+					synchronizations[]={3,27,40,44,42,49,48,47,46};
 				};
 				class Item1
 				{
@@ -3324,7 +3324,7 @@ class Mission
 						};
 						class Item4
 						{
-							value="<img image=""pictures\officer.paa"" width=""256"" height=""256"" />";
+							value="<img image=""images\officer.paa"" width=""256"" height=""256"" />";
 							parentCls="ModuleCreateDiaryRecord_F";
 							typeName="Description";
 						};
