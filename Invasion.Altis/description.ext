@@ -4,7 +4,7 @@ onLoadMission = "NATO wants to gain a foothold in the south east of Altis.";
 loadScreen = "load.paa";
 enableDebugConsole = 1;
 
-overviewText = "NATO wants to gain a foothold in the south east of Altis.";
+overviewText = "NATO wants to gain a foothold in the south east of Altis. Tested on dedicated server. Zeus is optional. As always any feedback will be much appreciated.";
 overviewPicture = "load.paa"; 
 
 respawn = "SIDE";
