@@ -654,7 +654,7 @@ class Mission
 						};
 						class Item4
 						{
-							value="You will be inserted via helicopter. Search in the <marker name=""factory"">factory</marker> for the laptop. AAF infantry is expected to be stationed there and hostile. Nearby is also a <marker name=""opfor_camp"">OPFOR camp</marker> so don't draw their attention! When you have found the laptop move southeast and hand over the laptop to an <marker name=""officer_marker"">officer</marker>.";
+							value="You will be inserted via helicopter. Search in the <marker name=""factory"">factory</marker> for the laptop. AAF infantry is expected to be stationed there and hostile. Nearby is also a <marker name=""opfor_camp"">OPFOR camp</marker> so don't draw their attention! When you have found the laptop move southeast and hand the laptop over to an <marker name=""officer_marker"">officer</marker>.";
 							parentCls="ModuleCreateDiaryRecord_F";
 							typeName="Description";
 						};
@@ -1891,9 +1891,10 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={13800.86,23.233492,19577.385};
-					id=0;
-					type="DESTROY";
+					position[]={14473.853,38.850868,18859.066};
+					completitionRadius=200;
+					type="SAD";
+					combatMode="RED";
 					class Effects
 					{
 					};

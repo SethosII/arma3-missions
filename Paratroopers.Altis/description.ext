@@ -4,7 +4,7 @@ onLoadMission = "Find the laptop.";
 loadScreen = "load.paa";
 enableDebugConsole = 1;
 
-overviewText = "Search in a factory near Athira for a laptop with valuable information. You will be inserted via helicopter. AAF infantry is expected to be stationed there and hostile. Nearby is also a OPFOR camp so don't draw their attention! When you have found the laptop move south east and hand other the laptop to an officer.";
+overviewText = "Search in a factory near Athira for a laptop with valuable information. You will be inserted via helicopter. AAF infantry is expected to be stationed there and hostile. Nearby is also a OPFOR camp so don't draw their attention! When you have found the laptop move south east and hand the laptop over to an officer. Tested on dedicated server. Zeus is optional. I'm not a fan of revive/respawn therefore most of my missions have the side/group respawn option. I also like to limit the equipment of the players, so that they have to cooperate, think about there actions and when to use what. Therefore Virtual Arsenal or similar things aren't available. As always any feedback will be much appreciated.";
 overviewPicture = "load.paa"; 
 
 respawn = "SIDE";
