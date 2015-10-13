@@ -4,7 +4,7 @@ onLoadMission = "Transport the supplies to Pyrgos.";
 loadScreen = "load.paa";
 enableDebugConsole = 1;
 
-overviewText = "Our troops near Pyrgos need supplies and the only way to provide these is to transport them through enemy territory. Go for it!";
+overviewText = "Our troops near Pyrgos need supplies and the only way to provide these is to transport them through enemy territory. Go for it! Tested on dedicated server. Zeus is optional. I'm not a fan of revive/respawn therefore most of my missions have the side/group respawn option. I also like to limit the equipment of the players, so that they have to cooperate, think about there actions and when to use what. Therefore Virtual Arsenal or similar things aren't available. As always any feedback will be much appreciated.";
 overviewPicture = "load.paa"; 
 
 respawn = "SIDE";

@@ -1,6 +1,6 @@
 author = SethosII;
 onLoadName = "Template";
-onLoadMission = "Template.";
+onLoadMission = "Template. Tested on dedicated server. Zeus is optional. I'm not a fan of revive/respawn therefore most of my missions have the side/group respawn option. I also like to limit the equipment of the players, so that they have to cooperate, think about there actions and when to use what. Therefore Virtual Arsenal or similar things aren't available. As always any feedback will be much appreciated.";
 loadScreen = "load.paa";
 enableDebugConsole = 1;
 

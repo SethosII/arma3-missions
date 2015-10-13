@@ -6,7 +6,7 @@ enableDebugConsole = 1;
 
 disabledAI = 1;
 
-overviewText = "Action shooter TDM style mission with many options such as maximum side score, duration, place and so on. This mission is for Stratis with up to eight players on each side.";
+overviewText = "Action shooter TDM style mission with many options such as maximum side score, duration, place and so on. This mission is for Stratis with up to eight players on each side. Tested on dedicated server. Zeus is optional. As always any feedback will be much appreciated.";
 overviewPicture = "load.paa"; 
 
 respawn = "BASE";

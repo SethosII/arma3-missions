@@ -4,7 +4,7 @@ onLoadMission = ".";
 loadScreen = "load.paa";
 enableDebugConsole = 1;
 
-overviewText = "Your task is to defend Panagia, which is under attack by CSAT. There are some FIA members in the Village but they need your assistance.";
+overviewText = "Your task is to defend Panagia, which is under attack by CSAT. There are some FIA members in the Village but they need your assistance. Tested on dedicated server. Zeus is optional. I'm not a fan of revive/respawn therefore most of my missions have the side/group respawn option. I also like to limit the equipment of the players, so that they have to cooperate, think about there actions and when to use what. Therefore Virtual Arsenal or similar things aren't available. As always any feedback will be much appreciated.";
 overviewPicture = "load.paa"; 
 
 respawn = "SIDE";

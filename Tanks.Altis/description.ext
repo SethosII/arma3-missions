@@ -4,7 +4,7 @@ onLoadMission = "Use heavy armed forces to attack a base near Pyrgos.";
 loadScreen = "load.paa";
 enableDebugConsole = 1;
 
-overviewText = "You are the leader of our heavy armed forces offensive against a BLUFOR base near Pyrgos. Artillery support is available too.";
+overviewText = "You are the leader of our heavy armed forces offensive against a BLUFOR base near Pyrgos. Artillery support is available too. Tested on dedicated server. Zeus is optional. I'm not a fan of revive/respawn therefore most of my missions have the side/group respawn option. I also like to limit the equipment of the players, so that they have to cooperate, think about there actions and when to use what. Therefore Virtual Arsenal or similar things aren't available. As always any feedback will be much appreciated.";
 overviewPicture = "load.paa"; 
 
 respawn = "SIDE";

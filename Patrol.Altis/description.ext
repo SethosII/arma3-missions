@@ -4,7 +4,7 @@ onLoadMission = "Do your daily duty and patrol around to search for FIA members.
 loadScreen = "load.paa";
 enableDebugConsole = 1;
 
-overviewText = "FIA members are hiding in this area, patrol around to search for and eliminate them.";
+overviewText = "FIA members are hiding in this area, patrol around to search for and eliminate them. Tested on dedicated server. Zeus is optional. The positions of the FIA members are semi-random, so each playthrough can be different. I'm not a fan of revive/respawn therefore most of my missions have the side/group respawn option. I also like to limit the equipment of the players, so that they have to cooperate, think about there actions and when to use what. Therefore Virtual Arsenal or similar things aren't available. As always any feedback will be much appreciated.";
 overviewPicture = "load.paa"; 
 
 respawn = "SIDE";

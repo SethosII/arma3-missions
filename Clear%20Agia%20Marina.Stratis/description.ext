@@ -4,7 +4,7 @@ onLoadMission = "Use a tank and your squad to attack.";
 loadScreen = "load.paa";
 enableDebugConsole = 1;
 
-overviewText = "Agia Marina is under control by the enemy, we need to change this! Just a small and quick mission to train urban tank and infantry combat.";
+overviewText = "Agia Marina is under control by the enemy, we need to change this! Just a small and quick mission to train urban tank and infantry combat. Tested on dedicated server. Zeus is optional. I'm not a fan of revive/respawn therefore most of my missions have the side/group respawn option. I also like to limit the equipment of the players, so that they have to cooperate, think about there actions and when to use what. Therefore Virtual Arsenal or similar things aren't available. As always any feedback will be much appreciated.";
 overviewPicture = "load.paa"; 
 
 respawn = "SIDE";
