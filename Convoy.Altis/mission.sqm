@@ -5338,7 +5338,6 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			idVehicle=0;
-			expActiv="hint ""trigger""";
 			class Effects
 			{
 			};
