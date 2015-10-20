@@ -42,16 +42,18 @@ if (isServer) then {
 	};
 
 	// add action to free the hostage and join it to the group of the saviour
-	_hostage addAction ["Free", {
+	[[_hostage], {
+		(_this select 0) addAction ["Free", {
 			params [["_hostage", objNull, [objNull]],
 				["_caller", objNull, [objNull]],
 				["_action", 0, [0]]];
-			_hostage removeAction _action;
+			[[_hostage, _action], {(_this select 0) removeAction (_this select 1);}] remoteExec ["BIS_fnc_spawn"];
 			[_hostage] join group _caller;
 			_hostage setCaptive false;
 			_hostage enableAI "MOVE";
 			[[_hostage], {(_this select 0) switchMove "Acts_AidlPsitMstpSsurWnonDnon_out"}] remoteExec ["BIS_fnc_spawn"];
 		}];
+	}] remoteExec ["BIS_fnc_spawn"];
 };
 
 true
