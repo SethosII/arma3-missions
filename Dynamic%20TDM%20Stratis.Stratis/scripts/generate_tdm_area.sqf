@@ -12,14 +12,12 @@
  * _this select 2: angle
  * _this select 3: position x
  * _this select 4: position y
- * _this select 5: map dimension x
- * _this select 6: map dimension y
  *
  * Returns:
  * true when completed
  *
  * Example:
- * _generate_tdm_area_sqf = [100, 50, 45, 0, 0, 31000, 31000] execVM "scripts\generate_tdm_area.sqf";
+ * _generate_tdm_area_sqf = [100, 50, 45, 0, 0] execVM "scripts\generate_tdm_area.sqf";
  */
 
  if (isServer) then {
@@ -29,13 +27,14 @@
 		["_sizeY", 0, [0]],
 		["_angle", 0, [0]],
 		["_centerX", 0, [0]],
-		["_centerY", 0, [0]],
-		// map dimensions
-		["_maxSizeX", 0, [0]],
-		["_maxSizeY", 0, [0]]
+		["_centerY", 0, [0]]
 	];
 
-	private ["_objectName", "_objectWidth", "_objectLength", "_objectHeigth", "_inWater", "_leftTopX", "_leftTopY", "_leftBottomX", "_leftBottomY", "_rightTopX", "_rightTopY", "_rightBottomX", "_rightBottomY", "_bottomLength", "_rotationBottom", "_boundary", "_topLength", "_rotationTop", "_leftLength", "_rotationLeft", "_rightLength", "_rotationRight"];
+	private ["_objectName", "_objectWidth", "_objectLength", "_objectHeigth", "_inWater", "_leftTopX", "_leftTopY", "_leftBottomX", "_leftBottomY", "_rightTopX", "_rightTopY", "_rightBottomX", "_rightBottomY", "_bottomLength", "_rotationBottom", "_boundary", "_topLength", "_rotationTop", "_leftLength", "_rotationLeft", "_rightLength", "_rotationRight", "_maxSizeX", "_maxSizeY"];
+
+	// map dimensions
+	_maxSizeX = worldSize;
+	_maxSizeY = worldSize;
 
 	// object for boundary
 	_objectName = "Land_HBarrierWall_corridor_F";
