@@ -1,6 +1,8 @@
 // UAV-feed at mission start
 waitUntil{!(isNil "BIS_fnc_init")};
-[markerPos "marker", "Convoy at Charkia", 300, 200, 180, 0,[]] call BIS_fnc_establishingShot;
+if (player != bis_curatorUnit) then {
+	[markerPos "marker", "Convoy at Charkia", 300, 200, 180, 0,[]] call BIS_fnc_establishingShot;
+};
 
 // Intro message
 [

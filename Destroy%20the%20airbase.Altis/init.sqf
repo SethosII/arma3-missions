@@ -1,6 +1,8 @@
 // UAV-feed at mission start
 waitUntil{!(isNil "BIS_fnc_init")};
-[markerPos "airbase", "Main airbase", 500, 600, 0, 0,[]] call BIS_fnc_establishingShot;
+if (player != bis_curatorUnit) then {
+	[markerPos "airbase", "Main airbase", 500, 600, 0, 0,[]] call BIS_fnc_establishingShot;
+};
 
 // Intro message
 [

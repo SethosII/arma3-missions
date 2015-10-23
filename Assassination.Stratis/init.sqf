@@ -1,6 +1,8 @@
 // UAV-feed at mission start
 waitUntil{!(isNil "BIS_fnc_init")};
-[markerPos "officer", "Airbase of Stratis", 500, 400, 0, 0,[]] call BIS_fnc_establishingShot;
+if (player != bis_curatorUnit) then {
+	[markerPos "officer", "Airbase of Stratis", 500, 400, 0, 0,[]] call BIS_fnc_establishingShot;
+};
 
 // Intro message
 if (player in units assassins) then {

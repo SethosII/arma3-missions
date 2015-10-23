@@ -1,6 +1,8 @@
 // UAV-feed at mission start
 waitUntil{!(isNil "BIS_fnc_init")};
-[markerPos "respawn_west", "Defend", 500, 300, 0, 0,[]] call BIS_fnc_establishingShot;
+if (player != bis_curatorUnit) then {
+	[markerPos "respawn_west", "Defend", 500, 300, 0, 0,[]] call BIS_fnc_establishingShot;
+};
 
 // Intro message
 [

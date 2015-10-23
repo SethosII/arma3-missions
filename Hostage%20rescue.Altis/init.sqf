@@ -22,7 +22,9 @@ if (isServer) then {
 };
 
 // UAV-feed at mission start
-[markerPos "hostage", "Hostage position", 100, 100, 0, 0,[]] call BIS_fnc_establishingShot;
+if (player != bis_curatorUnit) then {
+	[markerPos "hostage", "Hostage position", 100, 100, 0, 0,[]] call BIS_fnc_establishingShot;
+};
 
 // Intro message
 [
