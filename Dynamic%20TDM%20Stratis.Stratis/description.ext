@@ -44,8 +44,9 @@ class Params {
 			"Stratis Air Base 138x82",
 			"Agia Marina 84x100",
 			"Camp Maxwell 77x80",
-			"Girna 57x98"};
-		values[] = {0,1,2,3,4};
+			"Girna 57x98",
+			"Pythos 151x70"};
+		values[] = {0,1,2,3,4,5};
 		default = 0;
 	};
 	class Size {

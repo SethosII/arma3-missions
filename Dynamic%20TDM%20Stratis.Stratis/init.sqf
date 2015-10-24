@@ -21,6 +21,7 @@ switch (areaPosition) do {
 	case 2: {[84, 100, 60, 2940, 5940] execVM "scripts\generate_tdm_area.sqf";}; // Agia Marina
 	case 3: {[77, 80, 0, 3295, 2940] execVM "scripts\generate_tdm_area.sqf";}; // Camp Maxwell
 	case 4: {[57, 98, 55, 2041, 2713] execVM "scripts\generate_tdm_area.sqf";}; // Girna
+	case 5: {[151, 70, 50, 7073, 5958] execVM "scripts\generate_tdm_area.sqf";}; // Pythos
 	default {[100, 50, random 360, 0, 0] execVM "scripts\generate_tdm_area.sqf";}; // random
 };
 
