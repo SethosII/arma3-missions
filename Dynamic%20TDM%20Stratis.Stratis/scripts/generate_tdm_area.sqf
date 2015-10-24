@@ -39,7 +39,7 @@
 	// object for boundary
 	_objectName = "Land_HBarrierWall_corridor_F";
 	_objectWidth = 5.5;
-	_objectLength = 4;
+	_objectLength = 5.5;
 	_objectHeigth = 2.7;
 
 	// find starting position not in water
