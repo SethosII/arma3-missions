@@ -31,6 +31,7 @@ switch (areaPosition) do {
 	case 12: {[220, 140, 60, 3503, 12681] execVM "scripts\generate_tdm_area.sqf";}; // South of Kavala
 	case 13: {[140, 76, 47, 16755, 12872] execVM "scripts\generate_tdm_area.sqf";}; // Street in Pyrgos
 	case 14: {[50, 130, 80, 16036, 16227] execVM "scripts\generate_tdm_area.sqf";}; // Tourist place
+	case 15: {[97, 297, 15, 9447, 11704] execVM "scripts\generate_tdm_area.sqf";}; // Zaros
 	default {[100, 50, random 360, 0, 0] execVM "scripts\generate_tdm_area.sqf";}; // random
 };
 

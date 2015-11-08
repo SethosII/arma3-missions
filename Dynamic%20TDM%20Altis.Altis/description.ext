@@ -54,8 +54,9 @@ class Params {
 			"Solar plant 170x165",
 			"South of Kavala 220x140",
 			"Street in Pyrgos 140x76",
-			"Tourist place 50x130"};
-		values[] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14};
+			"Tourist place 50x130",
+			"Zaros 97x297"};
+		values[] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15};
 		default = 0;
 	};
 	class Size {
