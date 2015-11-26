@@ -2951,6 +2951,7 @@ class Mission
 			timeoutMax=5;
 			interruptable=1;
 			age="UNKNOWN";
+			name="counterattack_defeat";
 			expCond="counter = 0; {if (side _x == east) then {counter = counter + 1;}} forEach thisList; if (counter < 2) then {true} else {false};";
 			class Effects
 			{
