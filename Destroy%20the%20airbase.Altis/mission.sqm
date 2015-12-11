@@ -3009,7 +3009,7 @@ class Mission
 			activationType="NOT PRESENT";
 			interruptable=1;
 			age="UNKNOWN";
-			name="counter";
+			name="counter_defeat";
 			expActiv="hint ""Counterattack defeat!""";
 			class Effects
 			{
@@ -3136,7 +3136,7 @@ class Mission
 			timeoutMax=5;
 			interruptable=1;
 			age="UNKNOWN";
-			expCond="triggerActivated counter && !triggerActivated base1";
+			expCond="triggerActivated counter_defeat && !triggerActivated base1";
 			class Effects
 			{
 			};
