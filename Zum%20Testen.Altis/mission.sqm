@@ -3484,7 +3484,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			text="Hallo";
-			expActiv="officer sideRadio ""Hello"";";
+			expActiv="_nul = [] spawn {officer setRandomLip true; officer sideRadio ""Hello""; sleep 0.5; officer setRandomLip false;}";
 			class Effects
 			{
 			};
@@ -3499,7 +3499,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			text="Hallo";
-			expActiv="officer sideRadio ""Hello2"";";
+			expActiv="_nul = [] spawn {officer setRandomLip true; officer sideRadio ""Hello2""; sleep 0.5; officer setRandomLip false;}";
 			class Effects
 			{
 			};

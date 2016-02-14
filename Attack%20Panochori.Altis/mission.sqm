@@ -4208,7 +4208,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			idVehicle=96;
-			expActiv="_nul = [] spawn {IED4 setDamage 1; sleep 3; leader players groupRadio ""unknown"";}";
+			expActiv="_nul = [] spawn {IED4 setDamage 1; sleep 3; leader players setRandomLip true; leader players groupRadio ""unknown""; sleep 3.7; leader players setRandomLip false;}";
 			class Effects
 			{
 			};
@@ -4259,7 +4259,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			name="church";
-			expActiv="0 = [] spawn {leader players sideRadio ""aa_down""; sleep 4; hq sideRadio ""received"";};";
+			expActiv="_nul = [] spawn {leader players setRandomLip true; leader players sideRadio ""aa_down""; sleep 3.1; leader players setRandomLip false; sleep 0.5; hq sideRadio ""received"";};";
 			class Effects
 			{
 			};
@@ -4280,7 +4280,7 @@ class Mission
 			age="UNKNOWN";
 			name="pano";
 			expCond="counter = 0; {if (side _x == east) then {counter = counter + 1;}} forEach thisList; if (counter < 3) then {true} else {false};";
-			expActiv="0 = [] spawn {leader players sideRadio ""panochori_seized""; sleep 4.5; hq sideRadio ""good_news"";};";
+			expActiv="_nul = [] spawn {leader players setRandomLip true; leader players sideRadio ""panochori_seized""; sleep 3.6; leader players setRandomLip false; sleep 0.5; hq sideRadio ""good_news"";};";
 			class Effects
 			{
 			};
@@ -4445,7 +4445,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			idVehicle=116;
-			expActiv="transport vehicleRadio ""heli"";";
+			expActiv="_nul = [] spawn {transport setRandomLip true; transport vehicleRadio ""heli""; sleep 2.5; transport setRandomLip false;}";
 			class Effects
 			{
 			};

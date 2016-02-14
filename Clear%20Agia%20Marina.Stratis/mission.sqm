@@ -1486,7 +1486,7 @@ class Mission
 			age="UNKNOWN";
 			name="clear";
 			expCond="counter = 0; {if (side _x == east) then {counter = counter + 1;}} forEach thisList; if (counter < 2) then {true} else {false};";
-			expActiv="0 = [] spawn {leader players sideRadio ""clear""; sleep 4.5; hq sideRadio ""rtb"";};";
+			expActiv="_nul = [] spawn {leader players setRandomLip true; leader players sideRadio ""clear""; sleep 4; leader players setRandomLip false; sleep 0.5; hq sideRadio ""rtb"";};";
 			class Effects
 			{
 			};
@@ -1554,7 +1554,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			idVehicle=0;
-			expActiv="0 = [] spawn {hq sideRadio ""start""; sleep 4; leader players sideRadio ""reply"";};";
+			expActiv="_nul = [] spawn {hq sideRadio ""start""; sleep 4; leader players setRandomLip true; leader players sideRadio ""reply""; sleep 1.5; leader players setRandomLip false;};";
 			class Effects
 			{
 			};
@@ -1568,7 +1568,7 @@ class Mission
 			activationType="WEST D";
 			interruptable=1;
 			age="UNKNOWN";
-			expActiv="0 = [] spawn {leader players sideRadio ""contact"";};";
+			expActiv="_nul = [] spawn {leader players setRandomLip true; leader players sideRadio ""contact""; sleep 2.4; leader players setRandomLip false;};";
 			class Effects
 			{
 			};
