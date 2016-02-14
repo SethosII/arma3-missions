@@ -42,7 +42,7 @@ if (isServer) then {
 		_relative_positions pushBack _tempPos;
 	} forEach _objects;
 
-	waitUntil{time > 0};
+	waitUntil {time > 0};
 
 	_x_diff = _x_delta / 2 - random _x_delta;
 	_y_diff = _y_delta / 2 - random _y_delta;

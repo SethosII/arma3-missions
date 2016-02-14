@@ -1,5 +1,5 @@
 // UAV-feed at mission start
-waitUntil{!(isNil "BIS_fnc_init")};
+waitUntil {!(isNil "BIS_fnc_init")};
 if (player != bis_curatorUnit) then {
 	[markerPos "base1", "Military base, north east of Altis", 300, 200, 0, 0,[]] call BIS_fnc_establishingShot;
 };

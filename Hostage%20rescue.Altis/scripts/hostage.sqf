@@ -33,7 +33,7 @@ if (isServer) then {
 		params [["_hostage", objNull, [objNull]],
 			["_guard", objNull, [objNull]],
 			["_trigger", objNull, [objNull]]];
-		waitUntil{triggerActivated _trigger};
+		waitUntil {triggerActivated _trigger};
 
 		_hostage setCaptive false;
 		_guard doWatch _hostage;

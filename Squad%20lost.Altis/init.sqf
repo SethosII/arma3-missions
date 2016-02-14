@@ -40,7 +40,7 @@ _follow_sqf = [pursuers3, players] execVM "scripts\follow.sqf";
 _follow_sqf = [pursuers4, players] execVM "scripts\follow.sqf";
 
 // UAV-feed at mission start
-waitUntil{!(isNil "BIS_fnc_init")};
+waitUntil {!(isNil "BIS_fnc_init")};
 if (player != bis_curatorUnit) then {
 	[markerPos "base", "BLUFOR base", 500, 300, 0, 0,[]] call BIS_fnc_establishingShot;
 };

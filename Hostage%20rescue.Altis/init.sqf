@@ -1,4 +1,4 @@
-waitUntil{!(isNil "BIS_fnc_init")};
+waitUntil {!(isNil "BIS_fnc_init")};
 
 _hostage_sqf = [hostage, players, detected, guard] execVM "scripts\hostage.sqf";
 

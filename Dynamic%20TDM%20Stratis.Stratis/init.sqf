@@ -27,7 +27,7 @@ switch (areaPosition) do {
 
 [] execVM "scripts\loadouts.sqf";
 
-waitUntil{!(isNil "BIS_fnc_init")};
+waitUntil {!(isNil "BIS_fnc_init")};
 
 // Intro message
 [
