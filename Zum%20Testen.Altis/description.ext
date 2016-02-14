@@ -5,16 +5,13 @@ loadScreen = "load.paa";
 enableDebugConsole = 1;
 
 overviewText = "Overview";
-overviewPicture = "load.paa"; 
+overviewPicture = "load.paa";
 
 respawn = "BASE";
-respawnVehicle = "BASE";
-respawnVehicledelay = 60;
-respawnDelay = 5;
-respawnDialog = true;
-respawnTemplates[] = {"Counter","Wave"};
-
-#include "=BTC=_revive\=BTC=_respawn.h"
+respawnTemplates[] = {"Revive","MenuPosition"};
+reviveDelay = 15;
+reviveForceRespawnDelay = 3;
+reviveBleedOutDelay = 300;
 
 class Header {
 	gameType = COOP;
