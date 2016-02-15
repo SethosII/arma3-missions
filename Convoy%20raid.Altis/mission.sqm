@@ -141,12 +141,11 @@ class Mission
 			};
 			class Waypoints
 			{
-				items=3;
+				items=5;
 				class Item0
 				{
 					position[]={18174.723,20.270636,15107.617};
-					formation="COLUMN";
-					speed="NORMAL";
+					combat="SAFE";
 					class Effects
 					{
 					};
@@ -157,15 +156,33 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={19359.451,18.153013,15295.62};
-					synchronizations[]={19,20};
+					position[]={19340.619,18.158213,15276.181};
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					syncId=18;
 				};
 				class Item2
+				{
+					position[]={19359.451,18.153013,15295.62};
+					formation="COLUMN";
+					combat="AWARE";
+					expCond="gate animationPhase ""Door_1_rot"" == 1 || !alive gateKeeper";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item3
+				{
+					position[]={19483.514,19.867897,15404.958};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item4
 				{
 					position[]={20821.5,37.914608,16682.68};
 					class Effects
@@ -202,28 +219,25 @@ class Mission
 					position[]={19367.635,18.178089,15297.764};
 					id=3;
 					combat="SAFE";
-					synchronizations[]={18};
+					expCond="triggerActivated atGate";
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					syncId=19;
 				};
 				class Item1
 				{
 					position[]={19365.297,18.182335,15295.374};
 					expActiv="gate animate [""Door_1_rot"", 1];";
-					synchronizations[]={18};
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					syncId=20;
 				};
 				class Item2
 				{
 					position[]={19364.904,18.180832,15295.794};
-					expCond="triggerActivated strider_passed && triggerActivated truck1_passed && triggerActivated truck2_passed";
+					expCond="!triggerActivated atGate";
 					expActiv="gate animate [""Door_1_rot"", 0];";
 					class Effects
 					{
@@ -232,7 +246,8 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={19370.82,18.193737,15297.259};
+					position[]={19367.979,18.178591,15296.777};
+					type="CYCLE";
 					class Effects
 					{
 					};
@@ -429,7 +444,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					syncId=1;
-					synchronizations[]={2,23};
+					synchronizations[]={2,20};
 				};
 			};
 		};
@@ -448,7 +463,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					syncId=2;
-					synchronizations[]={22,1};
+					synchronizations[]={19,1};
 				};
 			};
 		};
@@ -970,7 +985,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					syncId=13;
-					synchronizations[]={14,24};
+					synchronizations[]={14,21};
 				};
 			};
 		};
@@ -1066,7 +1081,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					syncId=15;
-					synchronizations[]={25,14};
+					synchronizations[]={22,14};
 				};
 			};
 		};
@@ -1096,7 +1111,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					syncId=16;
-					synchronizations[]={26,17};
+					synchronizations[]={23,17};
 				};
 			};
 		};
@@ -1322,12 +1337,12 @@ class Mission
 					position[]={18205.664,47.492897,15523.096};
 					completitionRadius=10;
 					type="HOLD";
-					synchronizations[]={27};
+					synchronizations[]={24};
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					syncId=21;
+					syncId=18;
 				};
 				class Item1
 				{
@@ -2503,24 +2518,8 @@ class Mission
 	};
 	class Sensors
 	{
-		items=15;
+		items=13;
 		class Item0
-		{
-			position[]={18671.564,19.712038,15110.719};
-			a=700;
-			b=200;
-			rectangular=1;
-			activationBy="VEHICLE";
-			activationType="NOT PRESENT";
-			interruptable=1;
-			age="UNKNOWN";
-			idVehicle=0;
-			name="strider_passed";
-			class Effects
-			{
-			};
-		};
-		class Item1
 		{
 			position[]={484.95374,0.00349994,30109.289};
 			a=0;
@@ -2531,9 +2530,9 @@ class Mission
 			{
 			};
 			synchronizations[]={2};
-			syncId=22;
+			syncId=19;
 		};
-		class Item2
+		class Item1
 		{
 			position[]={489.83499,-0.096859716,30109.373};
 			a=0;
@@ -2546,9 +2545,9 @@ class Mission
 			{
 			};
 			synchronizations[]={1};
-			syncId=23;
+			syncId=20;
 		};
-		class Item3
+		class Item2
 		{
 			position[]={18478.74,24.578335,14275.218};
 			a=0;
@@ -2564,9 +2563,9 @@ class Mission
 			{
 			};
 			synchronizations[]={13};
-			syncId=24;
+			syncId=21;
 		};
-		class Item4
+		class Item3
 		{
 			position[]={18478.992,24.579693,14283.965};
 			activationBy="VEHICLE";
@@ -2578,7 +2577,7 @@ class Mission
 			{
 			};
 		};
-		class Item5
+		class Item4
 		{
 			position[]={18474.838,24.396282,14283.896};
 			activationBy="VEHICLE";
@@ -2590,7 +2589,7 @@ class Mission
 			{
 			};
 		};
-		class Item6
+		class Item5
 		{
 			position[]={18127.838,18.962845,15094.799};
 			a=0;
@@ -2606,7 +2605,7 @@ class Mission
 			{
 			};
 		};
-		class Item7
+		class Item6
 		{
 			position[]={18458.816,23.445444,14275.256};
 			a=0;
@@ -2622,9 +2621,9 @@ class Mission
 			{
 			};
 			synchronizations[]={15};
-			syncId=25;
+			syncId=22;
 		};
-		class Item8
+		class Item7
 		{
 			position[]={19364.928,18.158848,15302.09};
 			a=20;
@@ -2641,41 +2640,9 @@ class Mission
 			{
 			};
 			synchronizations[]={16};
-			syncId=26;
+			syncId=23;
 		};
-		class Item9
-		{
-			position[]={18672.104,19.712379,15111.164};
-			a=700;
-			b=200;
-			rectangular=1;
-			activationBy="VEHICLE";
-			activationType="NOT PRESENT";
-			interruptable=1;
-			age="UNKNOWN";
-			idVehicle=1;
-			name="truck1_passed";
-			class Effects
-			{
-			};
-		};
-		class Item10
-		{
-			position[]={18670.979,19.715527,15111.2};
-			a=700;
-			b=200;
-			rectangular=1;
-			activationBy="VEHICLE";
-			activationType="NOT PRESENT";
-			interruptable=1;
-			age="UNKNOWN";
-			idVehicle=2;
-			name="truck2_passed";
-			class Effects
-			{
-			};
-		};
-		class Item11
+		class Item8
 		{
 			position[]={18479.787,24.684141,14270.405};
 			a=0;
@@ -2691,7 +2658,7 @@ class Mission
 			{
 			};
 		};
-		class Item12
+		class Item9
 		{
 			position[]={18219.025,47.466457,15527.729};
 			a=0;
@@ -2703,10 +2670,10 @@ class Mission
 			class Effects
 			{
 			};
-			synchronizations[]={21};
-			syncId=27;
+			synchronizations[]={18};
+			syncId=24;
 		};
-		class Item13
+		class Item10
 		{
 			position[]={20807.854,37.717991,16674.5};
 			a=100;
@@ -2724,7 +2691,7 @@ class Mission
 			{
 			};
 		};
-		class Item14
+		class Item11
 		{
 			position[]={18474.619,24.224718,14268.599};
 			a=0;
@@ -2735,6 +2702,26 @@ class Mission
 			class Effects
 			{
 				track="BackgroundTrack01_F_EPB";
+			};
+		};
+		class Item12
+		{
+			position[]={19364.215,18.161211,15301.647};
+			a=30;
+			b=3;
+			angle=-45;
+			rectangular=1;
+			activationBy="MEMBER";
+			repeating=1;
+			timeoutMin=2;
+			timeoutMid=2;
+			timeoutMax=2;
+			interruptable=1;
+			age="UNKNOWN";
+			idVehicle=0;
+			name="atGate";
+			class Effects
+			{
 			};
 		};
 	};
