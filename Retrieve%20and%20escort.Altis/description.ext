@@ -1,0 +1,17 @@
+author = SethosII;
+onLoadName = "Retrieve and escort";
+onLoadMission = "Work together as a team.";
+loadScreen = "load.paa";
+enableDebugConsole = 1;
+
+overviewText = "Template";
+overviewPicture = "load.paa"; 
+
+respawn = "SIDE";
+respawnDialog = true;
+
+class Header {
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 11;
+};
