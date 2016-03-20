@@ -50,8 +50,8 @@ if (isServer) then {
 			[[_hostage, _action], {(_this select 0) removeAction (_this select 1);}] remoteExec ["BIS_fnc_spawn"];
 			[_hostage] join group _caller;
 			_hostage setCaptive false;
+			[[_hostage], {(_this select 0) playMove "Acts_AidlPsitMstpSsurWnonDnon_out"}] remoteExec ["BIS_fnc_spawn"];
 			_hostage enableAI "MOVE";
-			[[_hostage], {(_this select 0) switchMove "Acts_AidlPsitMstpSsurWnonDnon_out"}] remoteExec ["BIS_fnc_spawn"];
 		}];
 	}] remoteExec ["BIS_fnc_spawn"];
 };
