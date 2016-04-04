@@ -1195,7 +1195,7 @@ class Mission
 						};
 						class Item4
 						{
-							value="Execution";
+							value="Neutralize the FIA cell at the old <marker name=""mine"">mine</marker> and return the trucks to our base. There they will get repaired and new drivers. As soon as you are ready move out and escort the trucks to our <marker name=""base_near_chalkeia"">base near chalkeia</marker>. If at any time a truck is immobelized and you can't repair, destroy it. It's better to lose one then to let them be captured by the FIA.";
 							parentCls="ModuleCreateDiaryRecord_F";
 							typeName="Description";
 						};
@@ -1249,7 +1249,7 @@ class Mission
 						};
 						class Item4
 						{
-							value="Mission";
+							value="The captured supplies could boost the FIA rebellion significantly. Your task is to secure and afterwards escort them to our <marker name=""base_near_chalkeia"">base near Chalkeia</marker>.";
 							parentCls="ModuleCreateDiaryRecord_F";
 							typeName="Description";
 						};
@@ -1303,7 +1303,7 @@ class Mission
 						};
 						class Item4
 						{
-							value="Situation";
+							value="The FIA managed to raid one of our supply convoys. We located the stolen trucks at an old <marker name=""mine"">mine</marker>.";
 							parentCls="ModuleCreateDiaryRecord_F";
 							typeName="Description";
 						};
@@ -1464,7 +1464,7 @@ class Mission
 						};
 						class Item3
 						{
-							value="Escort at least one truck to <marker name=""base_near_chalkeia"">base near chalkeia</marker>.";
+							value="Escort at least one truck to <marker name=""base_near_chalkeia"">base near Chalkeia</marker>. The supplies are cruical to the FIA, so expect some resistance on your way.";
 							parentCls="ModuleTaskCreate_F";
 							typeName="Description";
 						};

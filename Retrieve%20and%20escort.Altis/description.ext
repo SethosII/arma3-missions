@@ -4,7 +4,7 @@ onLoadMission = "Work together as a team.";
 loadScreen = "load.paa";
 enableDebugConsole = 1;
 
-overviewText = "Template";
+overviewText = "The FIA managed to raid an AAF supply convoy. The captured supplies could boost the FIA rebellion significantly. AAF located the stolen trucks at an old mine. Your task is to secure and afterwards escort these trucks to another AAF base.";
 overviewPicture = "load.paa"; 
 
 respawn = "SIDE";
