@@ -34,7 +34,8 @@ class Mission
 		"A3_Soft_F_Car",
 		"A3_Characters_F_Civil",
 		"A3_Soft_F_Truck",
-		"A3_Soft_F_SUV"
+		"A3_Soft_F_SUV",
+		"A3_Soft_F_Gamma_TruckHeavy"
 	};
 	addOnsAuto[]=
 	{
@@ -68,6 +69,7 @@ class Mission
 		"A3_Structures_F_Items_Tools",
 		"A3_Soft_F_TruckHeavy",
 		"A3_Supplies_F_Heli_CargoNets",
+		"A3_Soft_F_Gamma_TruckHeavy",
 		"a3_map_altis"
 	};
 	randomSeed=7077427;
@@ -3270,7 +3272,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=30;
+		items=33;
 		class Item0
 		{
 			position[]={17497.092,14.325157,13134.013};
@@ -3573,6 +3575,39 @@ class Mission
 			init="bis_curator addCuratorEditableObjects [[this], true];";
 			syncId=23;
 			synchronizations[]={14};
+		};
+		class Item30
+		{
+			position[]={17563.861,12.757483,13270.62};
+			azimut=-43.237;
+			id=141;
+			side="EMPTY";
+			vehicle="I_Truck_02_box_F";
+			leader=1;
+			lock="LOCKEDPLAYER";
+			skill=0.5;
+		};
+		class Item31
+		{
+			position[]={17571.076,12.795205,13263.337};
+			azimut=-46.706402;
+			id=142;
+			side="EMPTY";
+			vehicle="I_Truck_02_fuel_F";
+			leader=1;
+			lock="LOCKEDPLAYER";
+			skill=0.5;
+		};
+		class Item32
+		{
+			position[]={17578.469,12.852495,13256.642};
+			azimut=-49.952099;
+			id=143;
+			side="EMPTY";
+			vehicle="I_Truck_02_ammo_F";
+			leader=1;
+			lock="LOCKEDPLAYER";
+			skill=0.5;
 		};
 	};
 	class Markers
