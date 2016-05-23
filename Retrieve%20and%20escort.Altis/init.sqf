@@ -7,7 +7,7 @@ waitUntil {!(isNil "BIS_fnc_init")};
 	[
 		[format ["%1 %2", rank player, name player],"align = 'center' shadow = '1' size = '1'"],
 		["","<br/>"],
-		["Somewhere on","align = 'center' shadow = '1' size = '0.7'"],
-		[" Altis","align = 'center' shadow = '1' size = '0.7'","#aaaaaa"]
+		["AAF base near","align = 'center' shadow = '1' size = '0.7'"],
+		[" Pyrgos","align = 'center' shadow = '1' size = '0.7'","#aaaaaa"]
 	]
 ] spawn BIS_fnc_typeText2;

@@ -1197,7 +1197,7 @@ class Mission
 						};
 						class Item4
 						{
-							value="Neutralize the FIA cell at the old <marker name=""mine"">mine</marker> and return the trucks to our base. There they will get repaired and new drivers. As soon as you are ready move out and escort the trucks to our <marker name=""base_near_chalkeia"">base near chalkeia</marker>. If at any time a truck is immobelized and you can't repair, destroy it. It's better to lose one then to let them be captured by the FIA.";
+							value="Neutralize the FIA cell at the old <marker name=""mine"">mine</marker> and return the trucks to our base. There they will get repaired and new drivers. As soon as you are ready move out and escort the trucks to our <marker name=""base_near_chalkeia"">base near chalkeia</marker>. If at any time a truck is immobilized and you can't repair, destroy it. It's better to lose one then to let them be captured by the FIA.";
 							parentCls="ModuleCreateDiaryRecord_F";
 							typeName="Description";
 						};
@@ -3730,7 +3730,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=18;
+		items=19;
 		class Item0
 		{
 			position[]={484.95374,0.0041477829,30109.289};
@@ -4026,6 +4026,19 @@ class Mission
 			};
 			synchronizations[]={33,32};
 			syncId=46;
+		};
+		class Item18
+		{
+			position[]={17482.736,13.981544,13140.89};
+			a=0;
+			b=0;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="true";
+			class Effects
+			{
+				track="LeadTrack06_F";
+			};
 		};
 	};
 };
