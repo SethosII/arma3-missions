@@ -1,21 +1,3 @@
-author = SethosII;
-onLoadName = "Squad lost";
-onLoadMission = "Make your way back home.";
-loadScreen = "load.paa";
-enableDebugConsole = 1;
-
-overviewText = "An AAF squad has lost orientation on Altis and has to be rescued by NATO forces. Tested on dedicated server. Zeus is optional. The positions of the squad and pursuers are semi-random, so each playthrough is different. I'm not a fan of revive/respawn therefore most of my missions have the side/group respawn option. I also like to limit the equipment of the players, so that they have to cooperate, think about there actions and when to use what. Therefore Virtual Arsenal or similar things aren't available. As always any feedback will be much appreciated.";
-overviewPicture = "load.paa"; 
-
-respawn = "GROUP";
-respawnDialog = true;
-
-class Header {
-	gameType = COOP;
-	minPlayers = 1;
-	maxPlayers = 12;
-};
-
 class Params {
 	class AAallowed {
 		title = "possible enemy AA infantry";
