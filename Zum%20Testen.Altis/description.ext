@@ -1,23 +1,7 @@
-author = SethosII;
-onLoadName = "Zum Testen";
-onLoadMission = "Explanation";
-loadScreen = "load.paa";
-enableDebugConsole = 1;
-
-overviewText = "Overview";
-overviewPicture = "load.paa";
-
-respawn = "BASE";
-respawnTemplates[] = {"Revive","MenuPosition"};
+respawnOnStart = 0;
 reviveDelay = 15;
 reviveForceRespawnDelay = 3;
 reviveBleedOutDelay = 300;
-
-class Header {
-	gameType = COOP;
-	minPlayers = 1;
-	maxPlayers = 4;
-};
 
 class Params {
 	class Daytime {
@@ -32,7 +16,7 @@ class Params {
 		title = "Weather";
 		texts[] = {"Sunny","Cloudy","Rainy","Stormy"};
 		values[] = {20,40,65,90};
-		default = 2;
+		default = 20;
 		function = "BIS_fnc_paramWeather";
  		isGlobal = 1;
 	};
@@ -42,12 +26,6 @@ class Params {
 		values[] = {-1,0,1,2};
 		default = 1;
 		function = "BIS_fnc_paramGuerFriendly";
-	};
-	class Revive {
-		title = "Enable revive script";
-		values[] = {0,1};
-		texts[] = {"Off","On"};
-		default = 0;
 	};
 };
 
