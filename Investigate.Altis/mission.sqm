@@ -1,37 +1,178 @@
-version=12;
+version=52;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=268;
+	};
+	class MarkerIDProvider
+	{
+		nextID=4;
+	};
+	class Camera
+	{
+		pos[]={17545.611,60.465931,13162.334};
+		dir[]={0.040925208,-0.62958735,0.77585882};
+		up[]={0.033164233,0.77692097,0.62871981};
+		aside[]={0.99861604,-2.1479536e-008,-0.052675314};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Air_F_EPB_Heli_Light_03",
+	"A3_Soft_F_MRAP_03",
+	"A3_Structures_F_Items_Stationery",
+	"A3_Characters_F_INDEP",
+	"a3_characters_f",
+	"A3_Modules_F_Curator_Curator",
+	"A3_Missions_F_Curator",
+	"A3_Data_F_Curator_Virtual",
+	"A3_Modules_F_Curator_Misc",
+	"A3_Modules_F"
+};
+randomSeed=13834882;
+class ScenarioData
+{
+	author="Sethos II";
+	overviewText="Investigate.";
+	overViewPicture="load.paa";
+	onLoadMission="Investigate.";
+	respawn=5;
+	class Header
+	{
+		gameType="Coop";
+		minPlayers=1;
+		maxPlayers=8;
+	};
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Multiplayer";
+		class Attribute0
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+					class value
+					{
+						items=2;
+						class Item0
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="EndMission";
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="SwitchPlayer";
+							};
+						};
+					};
+				};
+			};
+		};
+		class Attribute2
+		{
+			property="SharedObjectives";
+			expression="if (isMultiplayer) then {[_value] spawn bis_fnc_sharedObjectives;};";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		nAttributes=3;
+	};
+	class Category1
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="EnableDebugConsole";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		nAttributes=1;
+	};
+};
 class Mission
 {
-	addOns[]=
-	{
-		"A3_Characters_F_INDEP",
-		"a3_air_f_epb_heli_light_03",
-		"a3_map_altis",
-		"A3_Soft_F_MRAP_03",
-		"A3_Structures_F_Items_Stationery",
-		"a3_characters_f",
-		"A3_Modules_F_Curator_Curator",
-		"A3_Missions_F_Curator",
-		"A3_Data_F_Curator_Virtual",
-		"A3_Modules_F_Curator_Misc",
-		"A3_Modules_F",
-		"3DEN"
-	};
-	addOnsAuto[]=
-	{
-		"A3_Characters_F_INDEP",
-		"a3_characters_f",
-		"3DEN",
-		"a3_modules_f_curator_curator",
-		"A3_Missions_F_Curator",
-		"A3_Data_F_Curator_Virtual",
-		"A3_Modules_F_Curator_Misc",
-		"A3_Modules_F",
-		"A3_Air_F_EPB_Heli_Light_03",
-		"A3_Soft_F_MRAP_03",
-		"A3_Structures_F_Items_Stationery",
-		"a3_map_altis"
-	};
-	randomSeed=11860681;
 	class Intel
 	{
 		briefingName="COOP 08 Investigate";
@@ -50,611 +191,420 @@ class Mission
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
 	};
-	class Groups
+	class Entities
 	{
-		items=12;
+		items=15;
 		class Item0
 		{
-			side="GUER";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={17538.859,13.022915,13239.378};
-					azimut=129.62601;
-					id=0;
-					side="GUER";
-					vehicle="I_Soldier_exp_F";
-					player="PLAYER COMMANDER";
-					leader=1;
-					skill=0.60000002;
-				};
-			};
+			dataType="Marker";
+			position[]={16578.682,11,12770.587};
+			name="investigate";
+			type="Empty";
+			id=246;
 		};
 		class Item1
 		{
-			side="GUER";
-			class Vehicles
+			dataType="Trigger";
+			position[]={16586.064,11,12767.54};
+			class Attributes
 			{
-				items=1;
-				class Item0
-				{
-					position[]={16588.285,11,12764.14};
-					azimut=-38.723396;
-					id=1;
-					side="GUER";
-					vehicle="I_soldier_F";
-					leader=1;
-					skill=0.60000002;
-				};
+				condition="true";
+				onActivation="bomb=""M_Mo_82mm_AT_LG"" createVehicle (getPos IED1); deleteVehicle IED1;";
+				sizeA=0;
+				sizeB=0;
+				interuptable=1;
 			};
+			id=247;
+			type="EmptyDetector";
 		};
 		class Item2
 		{
-			side="GUER";
-			class Vehicles
+			dataType="Trigger";
+			position[]={523.74097,0.41920006,30242.148};
+			class Attributes
 			{
-				items=1;
-				class Item0
-				{
-					position[]={16590.436,11.001163,12768.042};
-					azimut=-57.031826;
-					id=2;
-					side="GUER";
-					vehicle="I_Soldier_TL_F";
-					leader=1;
-					skill=0.60000002;
-				};
+				sizeA=0;
+				sizeB=0;
+				interuptable=1;
 			};
+			id=248;
+			type="EmptyDetector";
+			atlOffset=187.07721;
 		};
 		class Item3
 		{
-			side="LOGIC";
-			class Vehicles
+			dataType="Trigger";
+			position[]={528.62219,0.07863915,30242.232};
+			class Attributes
 			{
-				items=1;
-				class Item0
-				{
-					position[]={17547.768,14.250208,13191.87};
-					class args
-					{
-						items=4;
-						class Item0
-						{
-							value="bis_curatorUnit";
-							parentCls="ModuleCurator_F";
-							typeName="Owner";
-						};
-						class Item1
-						{
-							value="";
-							parentCls="ModuleCurator_F";
-							typeName="Name";
-						};
-						class Item2
-						{
-							value="2";
-							parentCls="ModuleCurator_F";
-							typeName="Addons";
-						};
-						class Item3
-						{
-							value="1";
-							parentCls="ModuleCurator_F";
-							typeName="Forced";
-						};
-					};
-					id=3;
-					side="LOGIC";
-					vehicle="ModuleCurator_F";
-					leader=1;
-					lock="UNLOCKED";
-					skill=0.60000002;
-					text="bis_curator";
-					syncId=0;
-					synchronizations[]={1,2,5,4,6,3};
-				};
+				condition="sunOrMoon < 1";
+				sizeA=0;
+				sizeB=0;
+				interuptable=1;
+				repeatable=1;
 			};
+			id=249;
+			type="EmptyDetector";
+			atlOffset=187.1967;
 		};
 		class Item4
 		{
-			side="LOGIC";
-			class Vehicles
+			dataType="Object";
+			class PositionInfo
 			{
-				items=1;
-				class Item0
-				{
-					position[]={17547.822,14.200449,13195.587};
-					id=4;
-					side="LOGIC";
-					vehicle="ModuleMPTypeGameMaster_F";
-					leader=1;
-					lock="UNLOCKED";
-					skill=0.60000002;
-					syncId=1;
-					synchronizations[]={0};
-				};
+				position[]={17542.35,14.715799,13230.265};
+				angles[]={0.018663859,0,0.0039967569};
 			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+			};
+			id=250;
+			type="I_Heli_light_03_F";
 		};
 		class Item5
 		{
-			side="LOGIC";
-			class Vehicles
+			dataType="Object";
+			class PositionInfo
 			{
-				items=1;
-				class Item0
-				{
-					position[]={17554.43,14.206433,13191.864};
-					id=5;
-					side="LOGIC";
-					vehicle="VirtualCurator_F";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.40000001;
-					text="bis_curatorUnit";
-					syncId=2;
-					synchronizations[]={0};
-				};
+				position[]={16590.535,12.833357,12765.813};
+				angles[]={0,5.0997658,0.0026520467};
 			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+			};
+			id=251;
+			type="I_MRAP_03_F";
 		};
 		class Item6
 		{
-			side="LOGIC";
-			class Vehicles
+			dataType="Object";
+			class PositionInfo
 			{
-				items=1;
-				class Item0
-				{
-					position[]={17542.611,14.254969,13191.875};
-					class args
-					{
-						items=3;
-						class Item0
-						{
-							value="";
-							parentCls="ModuleCuratorAddPoints_F";
-							typeName="Curator";
-						};
-						class Item1
-						{
-							value="100";
-							parentCls="ModuleCuratorAddPoints_F";
-							typeName="Value";
-						};
-						class Item2
-						{
-							value="60";
-							parentCls="ModuleCuratorAddPoints_F";
-							typeName="Repeat";
-						};
-					};
-					id=6;
-					side="LOGIC";
-					vehicle="ModuleCuratorAddPoints_F";
-					leader=1;
-					lock="UNLOCKED";
-					skill=0.60000002;
-					syncId=3;
-					synchronizations[]={0};
-				};
+				position[]={16586.391,11.004184,12767.605};
+				angles[]={0,5.0812435,0};
 			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.2;
+				name="IED1";
+			};
+			id=252;
+			type="Land_PencilYellow_F";
 		};
 		class Item7
 		{
-			side="LOGIC";
-			class Vehicles
+			dataType="Group";
+			side="Independent";
+			class Entities
 			{
 				items=1;
 				class Item0
 				{
-					position[]={17553.363,14.382962,13184.462};
-					class args
+					dataType="Object";
+					class PositionInfo
 					{
-						items=10;
-						class Item0
-						{
-							value="";
-							parentCls="ModuleCuratorSetAttributesPlayer_F";
-							typeName="Curator";
-						};
-						class Item1
-						{
-							value="1";
-							parentCls="ModuleCuratorSetAttributesPlayer_F";
-							typeName="Skill";
-						};
-						class Item2
-						{
-							value="1";
-							parentCls="ModuleCuratorSetAttributesPlayer_F";
-							typeName="UnitPos";
-						};
-						class Item3
-						{
-							value="1";
-							parentCls="ModuleCuratorSetAttributesPlayer_F";
-							typeName="Rank";
-						};
-						class Item4
-						{
-							value="1";
-							parentCls="ModuleCuratorSetAttributesPlayer_F";
-							typeName="Damage";
-						};
-						class Item5
-						{
-							value="1";
-							parentCls="ModuleCuratorSetAttributesPlayer_F";
-							typeName="Fuel";
-						};
-						class Item6
-						{
-							value="1";
-							parentCls="ModuleCuratorSetAttributesPlayer_F";
-							typeName="Lock";
-						};
-						class Item7
-						{
-							value="1";
-							parentCls="ModuleCuratorSetAttributesPlayer_F";
-							typeName="RespawnVehicle";
-						};
-						class Item8
-						{
-							value="1";
-							parentCls="ModuleCuratorSetAttributesPlayer_F";
-							typeName="RespawnPosition";
-						};
-						class Item9
-						{
-							value="1";
-							parentCls="ModuleCuratorSetAttributesPlayer_F";
-							typeName="Exec";
-						};
+						position[]={17538.859,13.024025,13239.478};
+						angles[]={0.0066682254,2.2624006,0.0039967569};
 					};
-					id=7;
-					side="LOGIC";
-					vehicle="ModuleCuratorSetAttributesPlayer_F";
-					leader=1;
-					lock="UNLOCKED";
-					skill=0.60000002;
-					syncId=4;
-					synchronizations[]={0};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						isPlayer=1;
+						isPlayable=1;
+					};
+					id=254;
+					type="I_Soldier_exp_F";
 				};
 			};
+			class Attributes
+			{
+			};
+			id=253;
 		};
 		class Item8
 		{
-			side="LOGIC";
-			class Vehicles
+			dataType="Group";
+			side="Independent";
+			class Entities
 			{
 				items=1;
 				class Item0
 				{
-					position[]={17547.758,14.358897,13184.438};
-					class args
+					dataType="Object";
+					class PositionInfo
 					{
-						items=7;
-						class Item0
-						{
-							value="";
-							parentCls="ModuleCuratorSetCoefs_F";
-							typeName="Curator";
-						};
-						class Item1
-						{
-							value="0";
-							parentCls="ModuleCuratorSetCoefs_F";
-							typeName="Place";
-						};
-						class Item2
-						{
-							value="0";
-							parentCls="ModuleCuratorSetCoefs_F";
-							typeName="Edit";
-						};
-						class Item3
-						{
-							value="0";
-							parentCls="ModuleCuratorSetCoefs_F";
-							typeName="Delete";
-						};
-						class Item4
-						{
-							value="0";
-							parentCls="ModuleCuratorSetCoefs_F";
-							typeName="Destroy";
-						};
-						class Item5
-						{
-							value="0";
-							parentCls="ModuleCuratorSetCoefs_F";
-							typeName="Synchronize";
-						};
-						class Item6
-						{
-							value="0";
-							parentCls="ModuleCuratorSetCoefs_F";
-							typeName="Group";
-						};
+						position[]={16588.285,11.001439,12764.239};
+						angles[]={0,5.6073346,0};
 					};
-					id=8;
-					side="LOGIC";
-					vehicle="ModuleCuratorSetCoefs_F";
-					leader=1;
-					lock="UNLOCKED";
-					skill=0.60000002;
-					syncId=5;
-					synchronizations[]={0};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+					};
+					id=256;
+					type="I_soldier_F";
 				};
 			};
+			class Attributes
+			{
+			};
+			id=255;
 		};
 		class Item9
 		{
-			side="LOGIC";
-			class Vehicles
+			dataType="Group";
+			side="Independent";
+			class Entities
 			{
 				items=1;
 				class Item0
 				{
-					position[]={17542.465,14.283687,13184.149};
-					class args
+					dataType="Object";
+					class PositionInfo
 					{
-						items=4;
-						class Item0
-						{
-							value="";
-							parentCls="ModuleCuratorSetCamera_F";
-							typeName="Curator";
-						};
-						class Item1
-						{
-							value="0";
-							parentCls="ModuleCuratorSetCamera_F";
-							typeName="Pitch";
-						};
-						class Item2
-						{
-							value="0";
-							parentCls="ModuleCuratorSetCamera_F";
-							typeName="Commit";
-						};
-						class Item3
-						{
-							value="0";
-							parentCls="ModuleCuratorSetCamera_F";
-							typeName="UseAsDefault";
-						};
+						position[]={16590.436,11.002602,12768.142};
+						angles[]={0,5.2877922,0.0026520467};
 					};
-					id=9;
-					side="LOGIC";
-					vehicle="ModuleCuratorSetCamera_F";
-					leader=1;
-					lock="UNLOCKED";
-					skill=0.60000002;
-					syncId=6;
-					synchronizations[]={0};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+					};
+					id=258;
+					type="I_Soldier_TL_F";
 				};
 			};
+			class Attributes
+			{
+			};
+			id=257;
 		};
 		class Item10
 		{
-			side="LOGIC";
-			class Vehicles
+			dataType="Logic";
+			class PositionInfo
 			{
-				items=1;
-				class Item0
+				position[]={17547.768,14.250208,13191.87};
+			};
+			name="bis_curator";
+			id=259;
+			type="ModuleCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
 				{
-					position[]={526.96069,0.18665196,30242.219};
-					id=10;
-					side="LOGIC";
-					vehicle="ModuleCoverMap_F";
-					leader=1;
-					lock="UNLOCKED";
-					skill=0.60000002;
-					syncId=7;
-					synchronizations[]={8,10};
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="bis_curatorUnit";
+						};
+					};
 				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=2;
+						};
+					};
+				};
+				nAttributes=5;
 			};
 		};
 		class Item11
 		{
-			side="LOGIC";
-			class Vehicles
+			dataType="Logic";
+			class PositionInfo
 			{
-				items=1;
-				class Item0
+				position[]={17547.822,14.200449,13195.587};
+			};
+			id=260;
+			type="ModuleMPTypeGameMaster_F";
+		};
+		class Item12
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={17554.43,14.206433,13191.864};
+			};
+			name="bis_curatorUnit";
+			isPlayable=1;
+			id=261;
+			type="VirtualCurator_F";
+		};
+		class Item13
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={526.96069,0.058487929,30242.219};
+			};
+			id=266;
+			type="ModuleCoverMap_F";
+			atlOffset=187.02417;
+		};
+		class Item14
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={525.29956,0.095917732,30242.188};
+			};
+			id=267;
+			type="LocationArea_F";
+			atlOffset=186.91626;
+		};
+	};
+	class Connections
+	{
+		class LinkIDProvider
+		{
+			nextID=5;
+		};
+		class Links
+		{
+			items=5;
+			class Item0
+			{
+				linkID=0;
+				item0=267;
+				item1=248;
+				class CustomData
 				{
-					position[]={525.29956,0.30610135,30242.188};
-					id=11;
-					side="LOGIC";
-					vehicle="LocationArea_F";
-					leader=1;
-					skill=0.60000002;
-					syncId=8;
-					synchronizations[]={9,7};
+					type="Sync";
+				};
+			};
+			class Item1
+			{
+				linkID=1;
+				item0=266;
+				item1=249;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item2
+			{
+				linkID=2;
+				item0=260;
+				item1=259;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item3
+			{
+				linkID=3;
+				item0=261;
+				item1=259;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item4
+			{
+				linkID=4;
+				item0=267;
+				item1=266;
+				class CustomData
+				{
+					type="Sync";
 				};
 			};
 		};
-	};
-	class Vehicles
-	{
-		items=3;
-		class Item0
-		{
-			position[]={17542.355,13.185002,13230.236};
-			id=12;
-			side="EMPTY";
-			vehicle="I_Heli_light_03_F";
-			skill=0.60000002;
-		};
-		class Item1
-		{
-			position[]={16590.541,11.001446,12765.813};
-			azimut=-67.804939;
-			id=13;
-			side="EMPTY";
-			vehicle="I_MRAP_03_F";
-			leader=1;
-			skill=0.60000002;
-		};
-		class Item2
-		{
-			position[]={16586.391,11,12767.605};
-			azimut=-68.866203;
-			special="NONE";
-			id=14;
-			side="EMPTY";
-			vehicle="Land_PencilYellow_F";
-			leader=1;
-			skill=0.2;
-			text="IED1";
-		};
-	};
-	class Markers
-	{
-		items=1;
-		class Item0
-		{
-			position[]={16578.682,11,12770.587};
-			name="investigate";
-			type="Empty";
-		};
-	};
-	class Sensors
-	{
-		items=3;
-		class Item0
-		{
-			position[]={16586.064,11,12767.54};
-			a=0;
-			b=0;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="true";
-			expActiv="bomb=""M_Mo_82mm_AT_LG"" createVehicle (getPos IED1); deleteVehicle IED1;";
-			class Effects
-			{
-			};
-		};
-		class Item1
-		{
-			position[]={523.74097,0.41920006,30242.148};
-			a=0;
-			b=0;
-			interruptable=1;
-			age="UNKNOWN";
-			class Effects
-			{
-			};
-			synchronizations[]={8};
-			syncId=9;
-		};
-		class Item2
-		{
-			position[]={528.62219,0.07863915,30242.232};
-			a=0;
-			b=0;
-			repeating=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="sunOrMoon < 1";
-			class Effects
-			{
-			};
-			synchronizations[]={7};
-			syncId=10;
-		};
-	};
-};
-class Intro
-{
-	addOns[]=
-	{
-		"a3_map_altis"
-	};
-	addOnsAuto[]=
-	{
-		"a3_map_altis"
-	};
-	randomSeed=13173943;
-	class Intel
-	{
-		timeOfChanges=1800.0002;
-		startWeather=0.30000001;
-		startWind=0.1;
-		startWaves=0.1;
-		forecastWeather=0.30000001;
-		forecastWind=0.1;
-		forecastWaves=0.1;
-		forecastLightnings=0.1;
-		year=2035;
-		month=6;
-		day=24;
-		hour=12;
-		minute=0;
-		startFogDecay=0.013;
-		forecastFogDecay=0.013;
-	};
-};
-class OutroWin
-{
-	addOns[]=
-	{
-		"a3_map_altis"
-	};
-	addOnsAuto[]=
-	{
-		"a3_map_altis"
-	};
-	randomSeed=9170562;
-	class Intel
-	{
-		timeOfChanges=1800.0002;
-		startWeather=0.30000001;
-		startWind=0.1;
-		startWaves=0.1;
-		forecastWeather=0.30000001;
-		forecastWind=0.1;
-		forecastWaves=0.1;
-		forecastLightnings=0.1;
-		year=2035;
-		month=6;
-		day=24;
-		hour=12;
-		minute=0;
-		startFogDecay=0.013;
-		forecastFogDecay=0.013;
-	};
-};
-class OutroLoose
-{
-	addOns[]=
-	{
-		"a3_map_altis"
-	};
-	addOnsAuto[]=
-	{
-		"a3_map_altis"
-	};
-	randomSeed=4907150;
-	class Intel
-	{
-		timeOfChanges=1800.0002;
-		startWeather=0.30000001;
-		startWind=0.1;
-		startWaves=0.1;
-		forecastWeather=0.30000001;
-		forecastWind=0.1;
-		forecastWaves=0.1;
-		forecastLightnings=0.1;
-		year=2035;
-		month=6;
-		day=24;
-		hour=12;
-		minute=0;
-		startFogDecay=0.013;
-		forecastFogDecay=0.013;
 	};
 };
