@@ -1,21 +1,3 @@
-author = SethosII;
-onLoadName = "Assassination";
-onLoadMission = "Kill or be killed.";
-loadScreen = "load.paa";
-enableDebugConsole = 1;
-
-overviewText = "NATO has pushed CSAT into the south of Stratis and attempts to seize the island completely by launching a final attack. CSAT doesn't have enough troops to repel the attack so their only hope is to cut off the head off the operation. Tested on dedicated server. Zeus is optional. I'm not a fan of revive/respawn therefore most of my missions have the side/group respawn option. I also like to limit the equipment of the players, so that they have to cooperate, think about there actions and when to use what. Therefore Virtual Arsenal or similar things aren't available. As always any feedback will be much appreciated.";
-overviewPicture = "load.paa"; 
-
-respawn = "SIDE";
-respawnDialog = true;
-
-class Header {
-	gameType = TVT;
-	minPlayers = 1;
-	maxPlayers = 3;
-};
-
 class Params {
 	class Daytime {
 		title = "Time";
