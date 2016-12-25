@@ -25,21 +25,97 @@ class EditorData
 binarizationWanted=0;
 addons[]=
 {
-	"A3_Soft_F_HEMTT",
+	"A3_Ui_F",
+	"A3_Soft_F_Beta_Truck_01",
+	"A3_Weapons_F_Explosives",
 	"A3_Modules_F_Curator_Mines",
-	"a3_weapons_f_explosives",
-	"A3_Armor_F_Panther",
-	"A3_Characters_F_BLUFOR",
-	"a3_characters_f",
+	"A3_Armor_F_Beta_APC_Tracked_01",
+	"A3_Characters_F",
 	"A3_Armor_F_EPC_MBT_01",
 	"A3_Modules_F_ObjectModifiers",
 	"A3_Modules_F_Sites",
-	"A3_Characters_F_OPFOR",
 	"A3_Modules_F_Curator_Curator",
 	"A3_Missions_F_Curator",
 	"A3_Data_F_Curator_Virtual",
 	"A3_Modules_F_Curator_Misc",
 	"A3_Modules_F"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=10;
+		class Item0
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Soft_F_Beta";
+			name="Arma 3 Beta - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item2
+		{
+			className="A3_Weapons_F";
+			name="Arma 3 Alpha - Weapons and Accessories";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item3
+		{
+			className="A3_Modules_F_Curator";
+			name="Arma 3 Zeus Update - Scripted Modules";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item4
+		{
+			className="A3_Armor_F_Beta";
+			name="Arma 3 Beta - Armored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item5
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item6
+		{
+			className="A3_Armor_F_EPC";
+			name="Arma 3 Win Episode - Armored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item7
+		{
+			className="A3_Modules_F";
+			name="Arma 3 Alpha - Scripted Modules";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item8
+		{
+			className="A3_Missions_F_Curator";
+			name="Arma 3 Zeus Update - Playable Content";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item9
+		{
+			className="A3_Data_F_Curator";
+			name="Arma 3 Zeus Update - Main Configuration";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+	};
 };
 randomSeed=1626955;
 class ScenarioData
@@ -550,7 +626,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				class Attribute3
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=4;
 			};
 		};
 		class Item12
@@ -621,7 +716,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				class Attribute3
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=4;
 			};
 		};
 		class Item13
@@ -1467,7 +1581,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				class Attribute3
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=4;
 			};
 		};
 		class Item21
@@ -2176,6 +2309,7 @@ class Mission
 			{
 				position[]={449.38257,0.027105257,30148.002};
 			};
+			flags=1;
 			id=96;
 			type="ModuleCoverMap_F";
 			atlOffset=193.37323;

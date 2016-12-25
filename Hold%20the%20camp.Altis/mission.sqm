@@ -25,6 +25,7 @@ class EditorData
 binarizationWanted=0;
 addons[]=
 {
+	"A3_Ui_F",
 	"A3_Weapons_F_Ammoboxes",
 	"A3_Weapons_F_Bootcamp_Ammoboxes",
 	"A3_Soft_F_MRAP_01",
@@ -32,16 +33,119 @@ addons[]=
 	"A3_Structures_F_Mil_Flags",
 	"A3_Structures_F_Civ_Camping",
 	"A3_Boat_F_Boat_Transport_01",
-	"A3_Characters_F_BLUFOR",
-	"a3_characters_f",
+	"A3_Characters_F",
 	"A3_Modules_F_Curator_Curator",
 	"A3_Missions_F_Curator",
 	"A3_Data_F_Curator_Virtual",
 	"A3_Modules_F_Curator_Misc",
 	"A3_Modules_F",
-	"A3_Modules_F_Heli",
-	"a3_modules_f_heli_spawnai",
+	"A3_Modules_F_Heli_Misc",
 	"A3_Modules_F_Multiplayer"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=14;
+		class Item0
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Weapons_F";
+			name="Arma 3 Alpha - Weapons and Accessories";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item2
+		{
+			className="A3_Weapons_F_Bootcamp";
+			name="Arma 3 Bootcamp Update - Weapons and Accessories";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item3
+		{
+			className="A3_Soft_F";
+			name="Arma 3 Alpha - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item4
+		{
+			className="A3_Structures_F_EPA";
+			name="Arma 3 Survive Episode - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item5
+		{
+			className="A3_Structures_F_Mil";
+			name="Arma 3 - Military Buildings and Structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item6
+		{
+			className="A3_Structures_F";
+			name="Arma 3 - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item7
+		{
+			className="A3_Boat_F";
+			name="Arma 3 Alpha - Boats and Submersibles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item8
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item9
+		{
+			className="A3_Modules_F_Curator";
+			name="Arma 3 Zeus Update - Scripted Modules";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item10
+		{
+			className="A3_Missions_F_Curator";
+			name="Arma 3 Zeus Update - Playable Content";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item11
+		{
+			className="A3_Data_F_Curator";
+			name="Arma 3 Zeus Update - Main Configuration";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item12
+		{
+			className="A3_Modules_F";
+			name="Arma 3 Alpha - Scripted Modules";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item13
+		{
+			className="A3_Modules_F_Heli";
+			name="Arma 3 Helicopters - Scripted Modules";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+	};
 };
 randomSeed=4373585;
 class ScenarioData
@@ -1078,6 +1182,7 @@ class Mission
 			{
 				position[]={643.5293,0.24328414,30194.084};
 			};
+			flags=1;
 			id=881;
 			type="ModuleCoverMap_F";
 			atlOffset=186.86304;
@@ -1100,6 +1205,7 @@ class Mission
 			{
 				position[]={9313.374,43.477779,8062.7134};
 			};
+			flags=1;
 			id=883;
 			type="ModuleCuratorAddEditingArea_F";
 			class CustomAttributes
@@ -1604,6 +1710,7 @@ class Mission
 			{
 				position[]={8293.751,76.684853,10066.551};
 			};
+			flags=1;
 			id=890;
 			type="ModuleSector_F";
 			class CustomAttributes

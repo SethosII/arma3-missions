@@ -25,6 +25,7 @@ class EditorData
 binarizationWanted=0;
 addons[]=
 {
+	"A3_Ui_F",
 	"A3_Air_F_Gamma_Plane_Fighter_03",
 	"A3_Air_F_Heli_Light_01",
 	"A3_Air_F_Beta_Heli_Attack_01",
@@ -32,66 +33,275 @@ addons[]=
 	"A3_Air_F_Beta_Heli_Attack_02",
 	"A3_Air_F_Heli_Light_02",
 	"A3_Air_F_Beta_Heli_Transport_01",
-	"A3_Armor_F_T100K",
-	"A3_Armor_F_APC_Wheeled_03",
-	"A3_Armor_F_AMV",
-	"A3_armor_f_beta_APC_Tracked_02",
-	"A3_Armor_F_Panther",
-	"A3_Armor_F_Slammer",
-	"A3_Armor_F_Marid",
+	"A3_Armor_F_Gamma_MBT_02",
+	"A3_Armor_F_Gamma_APC_Wheeled_03",
+	"A3_Armor_F_Beta_APC_Wheeled_01",
+	"A3_Armor_F_Beta_APC_Tracked_02",
+	"A3_Armor_F_Beta_APC_Tracked_01",
+	"A3_Armor_F_Gamma_MBT_01",
+	"A3_Armor_F_Beta_APC_Wheeled_02",
 	"A3_Weapons_F_Ammoboxes",
-	"A3_Weapons_F_Beta_Ammoboxes",
+	"A3_Supplies_F_Exp_Ammoboxes",
 	"A3_Static_F",
 	"A3_Static_F_Mortar_01",
-	"A3_Static_F_Gamma_AA",
-	"A3_Static_F_Gamma_AT",
-	"A3_Weapons_F_Gamma_Ammoboxes",
-	"a3_uav_f_weapons_f_gamma_ammoboxes",
-	"A3_Soft_F_Car",
-	"A3_Soft_F_Gamma_HEMTT",
-	"A3_Soft_F_HEMTT",
+	"A3_Static_F_AA_01",
+	"A3_Static_F_AT_01",
+	"A3_Drones_F_Weapons_F_Gamma_Ammoboxes",
+	"A3_Soft_F_Gamma_Hatchback_01",
+	"A3_Soft_F_Gamma_Truck_01",
+	"A3_Soft_F_Beta_Truck_01",
 	"A3_Soft_F_MRAP_01",
 	"A3_Soft_F_MRAP_02",
-	"A3_Soft_F_Gamma_Offroad",
-	"a3_soft_f_offroad_01",
-	"A3_Soft_F_Quadbike",
-	"A3_Soft_F_MRAP_03",
-	"A3_Soft_F_SUV",
-	"A3_Soft_F_Truck",
-	"A3_Soft_F_TruckHeavy",
+	"A3_Soft_F_Offroad_01",
+	"A3_Soft_F_Quadbike_01",
+	"A3_Soft_F_Beta_MRAP_03",
+	"A3_Soft_F_Gamma_SUV_01",
+	"A3_Soft_F_Gamma_Van_01",
+	"A3_Soft_F_Beta_Truck_02",
 	"A3_Boat_F_Boat_Transport_01",
-	"A3_Boat_F_Civilian_Boat",
+	"A3_Boat_F_Gamma_Boat_Civil_01",
 	"A3_Boat_F_Boat_Armed_01",
-	"A3_Boat_F_SDV_01",
+	"A3_Boat_F_Beta_SDV_01",
 	"A3_Structures_F_Wrecks",
 	"A3_Structures_F_Civ_Dead",
 	"A3_Armor_F_EPB_MBT_03",
-	"A3_Armor_F_EPB_APC_tracked_03",
+	"A3_Armor_F_EPB_APC_Tracked_03",
 	"A3_Air_F_EPB_Heli_Light_03",
 	"A3_Armor_F_EPC_MBT_01",
 	"A3_Air_F_EPC_Plane_CAS_01",
 	"A3_Air_F_EPC_Plane_CAS_02",
 	"A3_Soft_F_EPC_Truck_03",
 	"A3_Structures_F_Items_Electronics",
-	"A3_Weapons_F_EPA_Ammoboxes",
 	"A3_Weapons_F_Bootcamp_Ammoboxes",
-	"A3_Air_F_Heli_Heli_Light_01",
 	"A3_Air_F_Heli_Heli_Transport_04",
 	"A3_Air_F_Heli_Heli_Transport_03",
 	"A3_Structures_F_Heli_Items_Luggage",
-	"A3_Characters_F_BLUFOR",
-	"a3_characters_f",
-	"A3_Characters_F_Gamma",
+	"A3_Characters_F",
 	"A3_Characters_F_Common",
-	"A3_Air_F_Gamma_UAV_02",
-	"A3_Air_F_Gamma_UAV_01",
-	"A3_Soft_F_Crusher_UGV",
-	"A3_Characters_F_Civil",
-	"A3_Characters_F_INDEP",
+	"A3_Drones_F_Air_F_Gamma_UAV_02",
+	"A3_Drones_F_Air_F_Gamma_UAV_01",
+	"A3_Drones_F_Soft_F_Gamma_UGV_01",
 	"A3_Modules_F_Curator_Curator",
 	"A3_Missions_F_Curator",
 	"A3_Modules_F_Curator_Misc",
 	"A3_Modules_F"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=30;
+		class Item0
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Air_F_Gamma";
+			name="Arma 3 - Aircrafts";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item2
+		{
+			className="A3_Air_F";
+			name="Arma 3 Alpha - Aircrafts";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item3
+		{
+			className="A3_Air_F_Beta";
+			name="Arma 3 Beta - Aircrafts";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item4
+		{
+			className="A3_Armor_F_Gamma";
+			name="Arma 3 - Armored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item5
+		{
+			className="A3_Armor_F_Beta";
+			name="Arma 3 Beta - Armored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item6
+		{
+			className="A3_Weapons_F";
+			name="Arma 3 Alpha - Weapons and Accessories";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item7
+		{
+			className="A3_Supplies_F_Exp";
+			name="Arma 3 Apex - Ammoboxes and Supplies";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item8
+		{
+			className="A3_Static_F";
+			name="Arma 3 Alpha - Turrets";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item9
+		{
+			className="A3_Drones_F";
+			name="Arma 3 Beta - Drones";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item10
+		{
+			className="A3_Soft_F_Gamma";
+			name="Arma 3 - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item11
+		{
+			className="A3_Soft_F_Beta";
+			name="Arma 3 Beta - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item12
+		{
+			className="A3_Soft_F";
+			name="Arma 3 Alpha - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item13
+		{
+			className="A3_Boat_F";
+			name="Arma 3 Alpha - Boats and Submersibles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item14
+		{
+			className="A3_Boat_F_Gamma";
+			name="Arma 3 - Boats and Submersibles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item15
+		{
+			className="A3_Boat_F_Beta";
+			name="Arma 3 Beta - Boats and Submersibles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item16
+		{
+			className="A3_Structures_F_Wrecks";
+			name="Arma 3 - Vehicle Wrecks";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item17
+		{
+			className="A3_Structures_F";
+			name="Arma 3 - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item18
+		{
+			className="A3_Armor_F_EPB";
+			name="Arma 3 Adapt Episode - Armored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item19
+		{
+			className="A3_Air_F_EPB";
+			name="Arma 3 Adapt Episode - Aircrafts";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item20
+		{
+			className="A3_Armor_F_EPC";
+			name="Arma 3 Win Episode - Armored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item21
+		{
+			className="A3_Air_F_EPC";
+			name="Arma 3 Win Episode - Aircrafts";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item22
+		{
+			className="A3_Soft_F_EPC";
+			name="Arma 3 Win Episode - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item23
+		{
+			className="A3_Weapons_F_Bootcamp";
+			name="Arma 3 Bootcamp Update - Weapons and Accessories";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item24
+		{
+			className="A3_Air_F_Heli";
+			name="Arma 3 Helicopters - Aircrafts";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item25
+		{
+			className="A3_Structures_F_Heli";
+			name="Arma 3 Helicopters - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item26
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item27
+		{
+			className="A3_Modules_F_Curator";
+			name="Arma 3 Zeus Update - Scripted Modules";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item28
+		{
+			className="A3_Missions_F_Curator";
+			name="Arma 3 Zeus Update - Playable Content";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item29
+		{
+			className="A3_Modules_F";
+			name="Arma 3 Alpha - Scripted Modules";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+	};
 };
 randomSeed=7316115;
 class ScenarioData
@@ -288,7 +498,7 @@ class Mission
 			fillName="Border";
 			a=27;
 			b=55;
-			angle=223.72568;
+			angle=223.72566;
 			drawBorder=1;
 			id=1;
 		};
@@ -5647,6 +5857,7 @@ class Mission
 			{
 				position[]={488.17346,-0.0569456,30109.359};
 			};
+			flags=1;
 			id=312;
 			type="ModuleCoverMap_F";
 			atlOffset=195.08388;

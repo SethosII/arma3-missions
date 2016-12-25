@@ -25,9 +25,9 @@ class EditorData
 binarizationWanted=0;
 addons[]=
 {
-	"A3_Armor_F_APC_Wheeled_03",
-	"A3_Soft_F_Gamma_Offroad",
-	"a3_soft_f_offroad_01",
+	"A3_Ui_F",
+	"A3_Armor_F_Gamma_APC_Wheeled_03",
+	"A3_Soft_F_Offroad_01",
 	"A3_Weapons_F_Bootcamp_Ammoboxes",
 	"A3_Structures_F_EPB_Civ_Accessories",
 	"A3_Structures_F_Civ_Accessories",
@@ -35,27 +35,150 @@ addons[]=
 	"A3_Structures_F_Civ_Camping",
 	"A3_Structures_F_EPA_Items_Tools",
 	"A3_Structures_F_Items_Tools",
-	"A3_Soft_F_TruckHeavy",
+	"A3_Soft_F_Beta_Truck_02",
 	"A3_Supplies_F_Heli_CargoNets",
-	"A3_Soft_F_Car",
-	"A3_Soft_F_Gamma_TruckHeavy",
+	"A3_Soft_F_Gamma_Hatchback_01",
+	"A3_Soft_F_Gamma_Truck_02",
 	"A3_Modules_F_Curator_Misc",
 	"A3_Modules_F",
 	"A3_Modules_F_Curator_Curator",
 	"A3_Missions_F_Curator",
 	"A3_Data_F_Curator_Virtual",
 	"A3_Modules_F_Intel",
-	"A3_Characters_F_INDEP",
-	"a3_characters_f",
-	"A3_Characters_F_Gamma",
-	"A3_Data_F_Curator_Characters",
+	"A3_Characters_F",
 	"A3_Modules_F_GroupModifiers",
 	"A3_Modules_F_Sites",
 	"A3_Air_F_EPB_Heli_Light_03",
 	"A3_Modules_F_ObjectModifiers",
-	"A3_Characters_F_Civil",
-	"A3_Soft_F_SUV",
-	"A3_Soft_F_Truck"
+	"A3_Characters_F_Exp_Civil",
+	"A3_Soft_F_Gamma_SUV_01",
+	"A3_Soft_F_Gamma_Van_01"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=17;
+		class Item0
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Armor_F_Gamma";
+			name="Arma 3 - Armored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item2
+		{
+			className="A3_Soft_F";
+			name="Arma 3 Alpha - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item3
+		{
+			className="A3_Weapons_F_Bootcamp";
+			name="Arma 3 Bootcamp Update - Weapons and Accessories";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item4
+		{
+			className="A3_Structures_F_EPB";
+			name="Arma 3 Adapt Episode - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item5
+		{
+			className="A3_Structures_F";
+			name="Arma 3 - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item6
+		{
+			className="A3_Structures_F_EPA";
+			name="Arma 3 Survive Episode - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item7
+		{
+			className="A3_Soft_F_Beta";
+			name="Arma 3 Beta - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item8
+		{
+			className="A3_Supplies_F_Heli";
+			name="Arma 3 Helicopters - Ammoboxes and Supplies";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item9
+		{
+			className="A3_Soft_F_Gamma";
+			name="Arma 3 - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item10
+		{
+			className="A3_Modules_F_Curator";
+			name="Arma 3 Zeus Update - Scripted Modules";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item11
+		{
+			className="A3_Modules_F";
+			name="Arma 3 Alpha - Scripted Modules";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item12
+		{
+			className="A3_Missions_F_Curator";
+			name="Arma 3 Zeus Update - Playable Content";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item13
+		{
+			className="A3_Data_F_Curator";
+			name="Arma 3 Zeus Update - Main Configuration";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item14
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item15
+		{
+			className="A3_Air_F_EPB";
+			name="Arma 3 Adapt Episode - Aircrafts";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item16
+		{
+			className="A3_Characters_F_Exp";
+			name="Arma 3 Apex - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+	};
 };
 randomSeed=5614234;
 class ScenarioData
@@ -245,7 +368,7 @@ class Mission
 			text="FIA hideout";
 			type="mil_arrow2";
 			colorName="ColorWEST";
-			angle=227.92792;
+			angle=227.9279;
 			id=1089;
 		};
 		class Item3
@@ -502,7 +625,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={19831.777,78.262123,12171.392};
-			angle=1.6352073;
+			angle=1.6352072;
 			class Attributes
 			{
 				sizeB=150;
@@ -516,7 +639,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={18268.09,70.718414,11491.104};
-			angle=0.77588761;
+			angle=0.77588755;
 			class Attributes
 			{
 				sizeB=150;
@@ -1148,6 +1271,7 @@ class Mission
 			{
 				position[]={488.17346,-0.1138912,30109.359};
 			};
+			flags=1;
 			id=1144;
 			type="ModuleCoverMap_F";
 			atlOffset=195.02693;
@@ -1308,6 +1432,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="ModuleTaskSetState_F_State";
 					expression="_this setVariable ['State',_value,true];";
 					class Value
@@ -1325,7 +1468,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item63
@@ -1360,6 +1503,25 @@ class Mission
 				};
 				class Attribute1
 				{
+					property="ModuleTaskCreate_F_Type";
+					expression="_this setVariable ['Type',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Default";
+						};
+					};
+				};
+				class Attribute2
+				{
 					property="ModuleTaskCreate_F_Marker";
 					expression="_this setVariable ['Marker',_value,true];";
 					class Value
@@ -1377,7 +1539,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute2
+				class Attribute3
 				{
 					property="ModuleTaskCreate_F_Title";
 					expression="_this setVariable ['Title',_value,true];";
@@ -1396,7 +1558,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute3
+				class Attribute4
 				{
 					property="ModuleTaskCreate_F_Description";
 					expression="_this setVariable ['Description',_value,true];";
@@ -1415,7 +1577,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute4
+				class Attribute5
 				{
 					property="ModuleTaskCreate_F_ID";
 					expression="_this setVariable ['ID',_value,true];";
@@ -1434,7 +1596,26 @@ class Mission
 						};
 					};
 				};
-				class Attribute5
+				class Attribute6
+				{
+					property="ModuleTaskCreate_F_AlwaysVisible";
+					expression="_this setVariable ['AlwaysVisible',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute7
 				{
 					property="ModuleTaskCreate_F_Owner";
 					expression="_this setVariable ['Owner',_value,true];";
@@ -1453,7 +1634,26 @@ class Mission
 						};
 					};
 				};
-				class Attribute6
+				class Attribute8
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute9
 				{
 					property="ModuleTaskCreate_F_State";
 					expression="_this setVariable ['State',_value,true];";
@@ -1472,7 +1672,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=7;
+				nAttributes=10;
 			};
 		};
 		class Item64
@@ -1754,7 +1954,7 @@ class Mission
 						init="this setCombatMode ""RED""; {bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 					};
 					id=1170;
-					type="b_g_soldier_unarmed_f";
+					type="B_G_Soldier_unarmed_F";
 				};
 			};
 			class Attributes
@@ -1785,7 +1985,7 @@ class Mission
 						init="this setCombatMode ""RED""; {bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 					};
 					id=1172;
-					type="b_g_survivor_F";
+					type="B_G_Survivor_F";
 				};
 			};
 			class Attributes
@@ -2476,7 +2676,7 @@ class Mission
 						init="this setDamage 1; [position this, 0.1, 1] call BIS_fnc_flies;";
 					};
 					id=1203;
-					type="i_survivor_F";
+					type="I_Survivor_F";
 				};
 			};
 			class Attributes
@@ -2552,7 +2752,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				class Attribute3
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=4;
 			};
 		};
 		class Item80
@@ -2661,7 +2880,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=5;
+				class Attribute5
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=6;
 			};
 		};
 		class Item81
@@ -2770,7 +3008,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=5;
+				class Attribute5
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=6;
 			};
 		};
 		class Item82
@@ -2879,7 +3136,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=5;
+				class Attribute5
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=6;
 			};
 		};
 		class Item83
@@ -2906,7 +3182,7 @@ class Mission
 						name="sentry";
 					};
 					id=1209;
-					type="i_soldier_unarmed_f";
+					type="I_Soldier_unarmed_F";
 				};
 				class Item1
 				{
@@ -2923,7 +3199,7 @@ class Mission
 						skill=0.44999999;
 					};
 					id=1210;
-					type="i_soldier_unarmed_f";
+					type="I_Soldier_unarmed_F";
 				};
 				class Item2
 				{
@@ -3018,6 +3294,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="ModuleTaskSetState_F_State";
 					expression="_this setVariable ['State',_value,true];";
 					class Value
@@ -3035,7 +3330,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item86
@@ -3070,6 +3365,25 @@ class Mission
 				};
 				class Attribute1
 				{
+					property="ModuleTaskCreate_F_Type";
+					expression="_this setVariable ['Type',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Default";
+						};
+					};
+				};
+				class Attribute2
+				{
 					property="ModuleTaskCreate_F_Marker";
 					expression="_this setVariable ['Marker',_value,true];";
 					class Value
@@ -3087,7 +3401,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute2
+				class Attribute3
 				{
 					property="ModuleTaskCreate_F_Title";
 					expression="_this setVariable ['Title',_value,true];";
@@ -3106,7 +3420,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute3
+				class Attribute4
 				{
 					property="ModuleTaskCreate_F_Description";
 					expression="_this setVariable ['Description',_value,true];";
@@ -3125,7 +3439,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute4
+				class Attribute5
 				{
 					property="ModuleTaskCreate_F_ID";
 					expression="_this setVariable ['ID',_value,true];";
@@ -3144,7 +3458,26 @@ class Mission
 						};
 					};
 				};
-				class Attribute5
+				class Attribute6
+				{
+					property="ModuleTaskCreate_F_AlwaysVisible";
+					expression="_this setVariable ['AlwaysVisible',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute7
 				{
 					property="ModuleTaskCreate_F_Owner";
 					expression="_this setVariable ['Owner',_value,true];";
@@ -3163,7 +3496,26 @@ class Mission
 						};
 					};
 				};
-				class Attribute6
+				class Attribute8
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute9
 				{
 					property="ModuleTaskCreate_F_State";
 					expression="_this setVariable ['State',_value,true];";
@@ -3182,7 +3534,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=7;
+				nAttributes=10;
 			};
 		};
 		class Item87
@@ -3198,8 +3550,8 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="ModuleTaskSetState_F_State";
-					expression="_this setVariable ['State',_value,true];";
+					property="ModuleInfo";
+					expression="false";
 					class Value
 					{
 						class data
@@ -3208,28 +3560,14 @@ class Mission
 							{
 								type[]=
 								{
-									"STRING"
+									"BOOL"
 								};
 							};
-							value="FAILED";
+							value=1;
 						};
 					};
 				};
-				nAttributes=1;
-			};
-		};
-		class Item88
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={20440.266,45.300293,11056.359};
-			};
-			id=1219;
-			type="ModuleTaskSetState_F";
-			class CustomAttributes
-			{
-				class Attribute0
+				class Attribute1
 				{
 					property="ModuleTaskSetState_F_State";
 					expression="_this setVariable ['State',_value,true];";
@@ -3248,7 +3586,59 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
+			};
+		};
+		class Item88
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={20440.266,45.300293,11056.359};
+			};
+			id=1219;
+			type="ModuleTaskSetState_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleTaskSetState_F_State";
+					expression="_this setVariable ['State',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="FAILED";
+						};
+					};
+				};
+				nAttributes=2;
 			};
 		};
 		class Item89
@@ -6034,7 +6424,7 @@ class Mission
 					showWP="NEVER";
 					id=1392;
 					type="Move";
-					atlOffset=0.14543915;
+					atlOffset=0.59480286;
 				};
 				class Item8
 				{
@@ -6208,7 +6598,7 @@ class Mission
 					showWP="NEVER";
 					id=1404;
 					type="Move";
-					atlOffset=0.22986603;
+					atlOffset=0.66069794;
 				};
 				class Item8
 				{
