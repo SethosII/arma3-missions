@@ -27,7 +27,7 @@ if (isServer) then {
 			_x action ["EJECT", _vehicle];
 			
 			// delay so the units don't pop out at the same time and damage each other
-			sleep 0.75;
+			sleep 0.25;
 		}
 	} forEach units _group;
 };
