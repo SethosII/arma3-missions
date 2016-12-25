@@ -730,8 +730,8 @@ class Mission
 		class Item32
 		{
 			dataType="Trigger";
-			position[]={19364.215,18.161211,15301.647};
-			angle=-0.78539819;
+			position[]={19354.342,18.145859,15291.262};
+			angle=5.4628806;
 			class Attributes
 			{
 				name="atGate";
@@ -1421,6 +1421,7 @@ class Mission
 				{
 					dataType="Waypoint";
 					position[]={18174.723,20.270636,15107.617};
+					formation="FILE";
 					combat="SAFE";
 					class Effects
 					{
