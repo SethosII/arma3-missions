@@ -8,11 +8,11 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=136;
+		nextID=184;
 	};
 	class MarkerIDProvider
 	{
-		nextID=7;
+		nextID=8;
 	};
 	class Camera
 	{
@@ -288,7 +288,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=60;
+		items=71;
 		class Item0
 		{
 			dataType="Marker";
@@ -1286,6 +1286,7 @@ class Mission
 					};
 					id=52;
 					type="O_crew_F";
+					atlOffset=9.5367432e-007;
 				};
 				class Item7
 				{
@@ -1302,6 +1303,7 @@ class Mission
 					};
 					id=53;
 					type="O_crew_F";
+					atlOffset=9.5367432e-007;
 				};
 				class Item8
 				{
@@ -1318,6 +1320,7 @@ class Mission
 					};
 					id=54;
 					type="O_crew_F";
+					atlOffset=9.5367432e-007;
 				};
 			};
 			class Attributes
@@ -1491,7 +1494,7 @@ class Mission
 			};
 			id=51;
 			type="O_MBT_02_arty_F";
-			atlOffset=-0.0021905899;
+			atlOffset=-0.0022125244;
 		};
 		class Item31
 		{
@@ -4378,6 +4381,1879 @@ class Mission
 					};
 				};
 				nAttributes=6;
+			};
+		};
+		class Item60
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={17967.682,21.758101,15094.162};
+			};
+			id=139;
+			type="Site_Independent";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Site_Independent_interactive";
+					expression="_this setVariable ['interactive',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="No";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="Site_Independent_buildingOccupationIndex";
+					expression="_this setVariable ['buildingOccupationIndex',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0.5";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="Site_Independent_faction";
+					expression="_this setVariable ['faction',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Green_army";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="Site_Independent_siteType";
+					expression="_this setVariable ['siteType',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Military_Base";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="Site_Independent_fastTravel";
+					expression="_this setVariable ['fastTravel',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Disabled";
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="Site_Independent_axisA";
+					expression="_this setVariable ['axisA',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="200";
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="Site_Independent_axisB";
+					expression="_this setVariable ['axisB',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="200";
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="Site_Independent_shape";
+					expression="_this setVariable ['shape',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ellipse";
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="Site_Independent_conditionOfPresence";
+					expression="_this setVariable ['conditionOfPresence',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="TRUE";
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="Site_Independent_description";
+					expression="_this setVariable ['description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=10;
+			};
+		};
+		class Item61
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={18164.568,30.283279,15348.816};
+			};
+			id=140;
+			type="Site_Independent";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Site_Independent_interactive";
+					expression="_this setVariable ['interactive',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="No";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="Site_Independent_buildingOccupationIndex";
+					expression="_this setVariable ['buildingOccupationIndex',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0.5";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="Site_Independent_faction";
+					expression="_this setVariable ['faction',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Green_army";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="Site_Independent_siteType";
+					expression="_this setVariable ['siteType',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Military_OP";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="Site_Independent_fastTravel";
+					expression="_this setVariable ['fastTravel',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Disabled";
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="Site_Independent_axisA";
+					expression="_this setVariable ['axisA',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="200";
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="Site_Independent_axisB";
+					expression="_this setVariable ['axisB',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="200";
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="Site_Independent_shape";
+					expression="_this setVariable ['shape',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ellipse";
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="Site_Independent_conditionOfPresence";
+					expression="_this setVariable ['conditionOfPresence',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="TRUE";
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="Site_Independent_description";
+					expression="_this setVariable ['description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=10;
+			};
+		};
+		class Item62
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={18184.15,20.549,15110.676};
+				angles[]={6.2432065,0,0.017332481};
+			};
+			id=142;
+			type="Site_Independent";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Site_Independent_interactive";
+					expression="_this setVariable ['interactive',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="No";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="Site_Independent_buildingOccupationIndex";
+					expression="_this setVariable ['buildingOccupationIndex',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0.5";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="Site_Independent_faction";
+					expression="_this setVariable ['faction',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Green_army";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="Site_Independent_siteType";
+					expression="_this setVariable ['siteType',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Military_Base";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="Site_Independent_fastTravel";
+					expression="_this setVariable ['fastTravel',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Disabled";
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="Site_Independent_axisA";
+					expression="_this setVariable ['axisA',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="200";
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="Site_Independent_axisB";
+					expression="_this setVariable ['axisB',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="200";
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="Site_Independent_shape";
+					expression="_this setVariable ['shape',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ellipse";
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="Site_Independent_conditionOfPresence";
+					expression="_this setVariable ['conditionOfPresence',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="TRUE";
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="Site_Independent_description";
+					expression="_this setVariable ['description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=10;
+			};
+		};
+		class Item63
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={19264.703,28.874172,13366.018};
+				angles[]={0.10626491,0,0.091741994};
+			};
+			id=144;
+			type="Site_Independent";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Site_Independent_interactive";
+					expression="_this setVariable ['interactive',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="No";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="Site_Independent_buildingOccupationIndex";
+					expression="_this setVariable ['buildingOccupationIndex',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0.5";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="Site_Independent_faction";
+					expression="_this setVariable ['faction',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Green_army";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="Site_Independent_siteType";
+					expression="_this setVariable ['siteType',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Military_OP";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="Site_Independent_fastTravel";
+					expression="_this setVariable ['fastTravel',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Disabled";
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="Site_Independent_axisA";
+					expression="_this setVariable ['axisA',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="200";
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="Site_Independent_axisB";
+					expression="_this setVariable ['axisB',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="200";
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="Site_Independent_shape";
+					expression="_this setVariable ['shape',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ellipse";
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="Site_Independent_conditionOfPresence";
+					expression="_this setVariable ['conditionOfPresence',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="TRUE";
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="Site_Independent_description";
+					expression="_this setVariable ['description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=10;
+			};
+		};
+		class Item64
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={19403.109,38.894855,13247.787};
+				angles[]={6.2818484,0,0.034652505};
+			};
+			id=145;
+			type="Site_Independent";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Site_Independent_interactive";
+					expression="_this setVariable ['interactive',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="No";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="Site_Independent_buildingOccupationIndex";
+					expression="_this setVariable ['buildingOccupationIndex',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0.5";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="Site_Independent_faction";
+					expression="_this setVariable ['faction',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Green_army";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="Site_Independent_siteType";
+					expression="_this setVariable ['siteType',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Military_Base";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="Site_Independent_fastTravel";
+					expression="_this setVariable ['fastTravel',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Disabled";
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="Site_Independent_axisA";
+					expression="_this setVariable ['axisA',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="200";
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="Site_Independent_axisB";
+					expression="_this setVariable ['axisB',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="200";
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="Site_Independent_shape";
+					expression="_this setVariable ['shape',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ellipse";
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="Site_Independent_conditionOfPresence";
+					expression="_this setVariable ['conditionOfPresence',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="TRUE";
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="Site_Independent_description";
+					expression="_this setVariable ['description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=10;
+			};
+		};
+		class Item65
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={16588.945,15.067544,16119.844};
+			};
+			id=147;
+			type="Site_OPFOR";
+			atlOffset=0.0006685257;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Site_OPFOR_axisA";
+					expression="_this setVariable ['axisA',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="300";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="Site_OPFOR_axisB";
+					expression="_this setVariable ['axisB',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="300";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="Site_OPFOR_shape";
+					expression="_this setVariable ['shape',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ellipse";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="Site_OPFOR_description";
+					expression="_this setVariable ['description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="Site_OPFOR_siteType";
+					expression="_this setVariable ['siteType',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Military_Base";
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="Site_OPFOR_faction";
+					expression="_this setVariable ['faction',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Red";
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="Site_OPFOR_interactive";
+					expression="_this setVariable ['interactive',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="No";
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="Site_OPFOR_conditionOfPresence";
+					expression="_this setVariable ['conditionOfPresence',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="TRUE";
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="Site_OPFOR_buildingOccupationIndex";
+					expression="_this setVariable ['buildingOccupationIndex',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1";
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="Site_OPFOR_fastTravel";
+					expression="_this setVariable ['fastTravel',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Disabled";
+						};
+					};
+				};
+				nAttributes=10;
+			};
+		};
+		class Item66
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={18849.393,31.367144,16643.525};
+			};
+			id=148;
+			type="Site_OPFOR";
+			atlOffset=0.0013523102;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Site_OPFOR_axisA";
+					expression="_this setVariable ['axisA',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="300";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="Site_OPFOR_axisB";
+					expression="_this setVariable ['axisB',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="300";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="Site_OPFOR_shape";
+					expression="_this setVariable ['shape',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ellipse";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="Site_OPFOR_description";
+					expression="_this setVariable ['description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="Site_OPFOR_siteType";
+					expression="_this setVariable ['siteType',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Military_Base";
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="Site_OPFOR_faction";
+					expression="_this setVariable ['faction',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Red";
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="Site_OPFOR_interactive";
+					expression="_this setVariable ['interactive',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="No";
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="Site_OPFOR_conditionOfPresence";
+					expression="_this setVariable ['conditionOfPresence',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="TRUE";
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="Site_OPFOR_buildingOccupationIndex";
+					expression="_this setVariable ['buildingOccupationIndex',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1";
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="Site_OPFOR_fastTravel";
+					expression="_this setVariable ['fastTravel',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Disabled";
+						};
+					};
+				};
+				nAttributes=10;
+			};
+		};
+		class Item67
+		{
+			dataType="Marker";
+			position[]={17807.709,33.860352,15871.86};
+			name="marker_7";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorEAST";
+			fillName="FDiagonal";
+			a=2000;
+			b=50;
+			angle=346.88443;
+			id=179;
+			atlOffset=-5.4109573;
+		};
+		class Item68
+		{
+			dataType="Marker";
+			position[]={17840.98,-7.9865357e-027,15733.692};
+			name="marker_8";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorWEST";
+			fillName="FDiagonal";
+			a=2000;
+			b=50;
+			angle=346.88495;
+			id=180;
+			atlOffset=-64.764961;
+		};
+		class Item69
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={18459.342,23.887478,14287.297};
+				angles[]={6.2525201,0,0.039985489};
+			};
+			id=181;
+			type="Site_BLUFOR";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Site_BLUFOR_fastTravel";
+					expression="_this setVariable ['fastTravel',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Disabled";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="Site_BLUFOR_conditionOfPresence";
+					expression="_this setVariable ['conditionOfPresence',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="TRUE";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="Site_BLUFOR_faction";
+					expression="_this setVariable ['faction',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Blue";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="Site_BLUFOR_axisA";
+					expression="_this setVariable ['axisA',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="200";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="Site_BLUFOR_description";
+					expression="_this setVariable ['description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="Site_BLUFOR_shape";
+					expression="_this setVariable ['shape',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ellipse";
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="Site_BLUFOR_axisB";
+					expression="_this setVariable ['axisB',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="200";
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="Site_BLUFOR_siteType";
+					expression="_this setVariable ['siteType',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Military_OP";
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="Site_BLUFOR_interactive";
+					expression="_this setVariable ['interactive',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="No";
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="Site_BLUFOR_buildingOccupationIndex";
+					expression="_this setVariable ['buildingOccupationIndex',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0.5";
+						};
+					};
+				};
+				nAttributes=10;
+			};
+		};
+		class Item70
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={19451.273,20.00773,15421.678};
+				angles[]={6.2179446,0,6.2007008};
+			};
+			id=182;
+			type="Site_BLUFOR";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Site_BLUFOR_fastTravel";
+					expression="_this setVariable ['fastTravel',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Disabled";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="Site_BLUFOR_conditionOfPresence";
+					expression="_this setVariable ['conditionOfPresence',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="TRUE";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="Site_BLUFOR_faction";
+					expression="_this setVariable ['faction',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Blue";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="Site_BLUFOR_axisA";
+					expression="_this setVariable ['axisA',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="200";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="Site_BLUFOR_description";
+					expression="_this setVariable ['description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="Site_BLUFOR_shape";
+					expression="_this setVariable ['shape',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ellipse";
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="Site_BLUFOR_axisB";
+					expression="_this setVariable ['axisB',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="200";
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="Site_BLUFOR_siteType";
+					expression="_this setVariable ['siteType',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Military_OP";
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="Site_BLUFOR_interactive";
+					expression="_this setVariable ['interactive',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="No";
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="Site_BLUFOR_buildingOccupationIndex";
+					expression="_this setVariable ['buildingOccupationIndex',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0.5";
+						};
+					};
+				};
+				nAttributes=10;
 			};
 		};
 	};
