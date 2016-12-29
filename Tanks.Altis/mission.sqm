@@ -133,7 +133,7 @@ randomSeed=3192278;
 class ScenarioData
 {
 	author="Sethos II";
-	overviewText="You are the leader of our heavy armed forces offensive against a BLUFOR base near Pyrgos. Artillery support is available too. Tested on dedicated server. Zeus is optional. I'm not a fan of revive/respawn therefore most of my missions have the side/group respawn option. I also like to limit the equipment of the players, so that they have to cooperate, think about there actions and when to use what. Therefore Virtual Arsenal or similar things aren't available. As always any feedback will be much appreciated.";
+	overviewText="You are the leader of our heavy armed forces offensive against a BLUFOR base near Pyrgos. Artillery support is available too." \n "" \n "Tested on dedicated server." \n "" \n "Zeus is optional." \n "" \n "I'm not a fan of revive/respawn therefore most of my missions have the side/group respawn option. I also like to limit the equipment of the players, so that they have to cooperate, think about there actions and when to use what. Therefore Virtual Arsenal or similar things aren't available." \n "" \n "As always any feedback will be much appreciated." \n "" \n "Featured in Armaholic's Top 100 Tactical Cooperative Missions: https://www.youtube.com/watch?v=e7OMRuWhPzc.";
 	overViewPicture="load.paa";
 	onLoadMission="Use heavy armed forces to attack a base near Pyrgos.";
 	respawn=5;

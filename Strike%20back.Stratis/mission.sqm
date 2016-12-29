@@ -146,7 +146,7 @@ randomSeed=3696697;
 class ScenarioData
 {
 	author="Sethos II";
-	overviewText="We are under attack by enemy mortars. Attack their position to neutralize this threat. Tested on dedicated server. Zeus is optional. I'm not a fan of revive/respawn therefore most of my missions have the side/group respawn option. I also like to limit the equipment of the players, so that they have to cooperate, think about there actions and when to use what. Therefore Virtual Arsenal or similar things aren't available. Any feedback will be much appreciated. You can watch two friends and me playing an early version of the mission on YouTube: https://www.youtube.com/watch?v=EwX1XGaTxh4";
+	overviewText="We are under attack by enemy mortars. Attack their position to neutralize this threat." \n "" \n "Tested on dedicated server." \n "" \n "Zeus is optional." \n "" \n "I'm not a fan of revive/respawn therefore most of my missions have the side/group respawn option. I also like to limit the equipment of the players, so that they have to cooperate, think about there actions and when to use what. Therefore Virtual Arsenal or similar things aren't available." \n "" \n "Any feedback will be much appreciated." \n "" \n "You can watch two friends and me playing an early version of the mission on YouTube: https://www.youtube.com/watch?v=EwX1XGaTxh4";
 	overViewPicture="load.paa";
 	onLoadMission="Your task is to attack an enemy mortar camp.";
 	respawn=5;
@@ -353,7 +353,7 @@ class Mission
 			fillName="FDiagonal";
 			a=90;
 			b=150;
-			angle=345.15952;
+			angle=345.15948;
 			id=4;
 		};
 		class Item5

@@ -154,7 +154,7 @@ randomSeed=6165956;
 class ScenarioData
 {
 	author="Sethos II";
-	overviewText="A mission completely played with drones. Tested on dedicated server. Zeus is optional. I'm not a fan of revive/respawn therefore most of my missions have the side/group respawn option. I also like to limit the equipment of the players, so that they have to cooperate, think about there actions and when to use what. Therefore Virtual Arsenal or similar things aren't available. As always any feedback will be much appreciated.";
+	overviewText="A mission completely played with drones." \n "" \n "Tested on dedicated server." \n "" \n "Zeus is optional." \n "" \n "I'm not a fan of revive/respawn therefore most of my missions have the side/group respawn option. I also like to limit the equipment of the players, so that they have to cooperate, think about there actions and when to use what. Therefore Virtual Arsenal or similar things aren't available." \n "" \n "As always any feedback will be much appreciated.";
 	overViewPicture="load.paa";
 	onLoadMission="Be an American. Use drones.";
 	respawn=5;
@@ -338,7 +338,7 @@ class Mission
 			position[]={11040.841,31.819565,11585.404};
 			name="b1";
 			type="Empty";
-			angle=350.11887;
+			angle=350.11884;
 			id=1085;
 		};
 		class Item4
@@ -347,7 +347,7 @@ class Mission
 			position[]={11108.365,25.425489,11327.037};
 			name="b2";
 			type="Empty";
-			angle=350.11887;
+			angle=350.11884;
 			id=1086;
 		};
 		class Item5
@@ -356,7 +356,7 @@ class Mission
 			position[]={11102.698,27.102001,11104.392};
 			name="b3";
 			type="Empty";
-			angle=350.11887;
+			angle=350.11884;
 			id=1087;
 		};
 		class Item6
@@ -486,7 +486,7 @@ class Mission
 			text="BLUFOR camp";
 			type="mil_arrow2";
 			colorName="ColorWEST";
-			angle=222.42441;
+			angle=222.42439;
 			id=1099;
 		};
 		class Item18
@@ -497,7 +497,7 @@ class Mission
 			text="BLUFOR camp";
 			type="mil_arrow2";
 			colorName="ColorWEST";
-			angle=222.42397;
+			angle=222.42395;
 			id=1100;
 		};
 		class Item19
@@ -508,7 +508,7 @@ class Mission
 			text="BLUFOR camp";
 			type="mil_arrow2";
 			colorName="ColorWEST";
-			angle=222.42397;
+			angle=222.42395;
 			id=1101;
 		};
 		class Item20
@@ -559,7 +559,7 @@ class Mission
 			name="attack3";
 			type="mil_arrow";
 			colorName="ColorEAST";
-			angle=298.94162;
+			angle=298.94159;
 			id=1106;
 		};
 		class Item25

@@ -137,7 +137,7 @@ randomSeed=1514112;
 class ScenarioData
 {
 	author="Sethos II";
-	overviewText="FIA members are hiding in this area, patrol around to search for and eliminate them. Tested on dedicated server. Zeus is optional. The positions of the FIA members are semi-random, so each playthrough can be different. I'm not a fan of revive/respawn therefore most of my missions have the side/group respawn option. I also like to limit the equipment of the players, so that they have to cooperate, think about there actions and when to use what. Therefore Virtual Arsenal or similar things aren't available. As always any feedback will be much appreciated.";
+	overviewText="FIA members are hiding in this area, patrol around to search for and eliminate them. The positions of the FIA members are semi-random, so each playthrough can be different." \n "" \n "Tested on dedicated server." \n "" \n "Zeus is optional." \n "" \n "I'm not a fan of revive/respawn therefore most of my missions have the side/group respawn option. I also like to limit the equipment of the players, so that they have to cooperate, think about there actions and when to use what. Therefore Virtual Arsenal or similar things aren't available." \n "" \n "As always any feedback will be much appreciated.";
 	overViewPicture="load.paa";
 	onLoadMission="Do your daily duty and patrol around to search for FIA members.";
 	respawn=5;

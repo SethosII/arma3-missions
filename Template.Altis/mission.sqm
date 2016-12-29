@@ -87,7 +87,7 @@ randomSeed=9322619;
 class ScenarioData
 {
 	author="Sethos II";
-	overviewText="Template. Tested on dedicated server. Zeus is optional. I'm not a fan of revive/respawn therefore most of my missions have the side/group respawn option. I also like to limit the equipment of the players, so that they have to cooperate, think about there actions and when to use what. Therefore Virtual Arsenal or similar things aren't available. As always any feedback will be much appreciated.";
+	overviewText="Template." \n "" \n "Tested on a dedicated server." \n "" \n "Zeus is optional. " \n "" \n "I'm not a fan of revive/respawn therefore most of my missions have the side/group respawn option. I also like to limit the equipment of the players, so that they have to cooperate, think about there actions and when to use what. Therefore Virtual Arsenal or similar things aren't available." \n "" \n "As always any feedback will be much appreciated.";
 	overViewPicture="load.paa";
 	onLoadMission="Template.";
 	respawn=5;

@@ -184,7 +184,7 @@ randomSeed=6616615;
 class ScenarioData
 {
 	author="Sethos II";
-	overviewText="NATO has pushed CSAT into the south of Stratis and attempts to seize the island completely by launching a final attack. CSAT doesn't have enough troops to repel the attack so their only hope is to cut off the head off the operation. Tested on dedicated server. Zeus is optional. I'm not a fan of revive/respawn therefore most of my missions have the side/group respawn option. I also like to limit the equipment of the players, so that they have to cooperate, think about there actions and when to use what. Therefore Virtual Arsenal or similar things aren't available. As always any feedback will be much appreciated.";
+	overviewText="NATO has pushed CSAT into the south of Stratis and attempts to seize the island completely by launching a final attack. CSAT doesn't have enough troops to repel the attack so their only hope is to cut off the head off the operation." \n "" \n "Tested on dedicated server." \n "" \n "Zeus is optional." \n "" \n "I'm not a fan of revive/respawn therefore most of my missions have the side/group respawn option. I also like to limit the equipment of the players, so that they have to cooperate, think about there actions and when to use what. Therefore Virtual Arsenal or similar things aren't available." \n "" \n "As always any feedback will be much appreciated.";
 	overViewPicture="load.paa";
 	onLoadMission="Kill or be killed.";
 	respawn=5;
@@ -430,7 +430,7 @@ class Mission
 			fillName="FDiagonal";
 			a=1500;
 			b=50;
-			angle=343.75787;
+			angle=343.75784;
 			id=6;
 		};
 		class Item7

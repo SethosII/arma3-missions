@@ -156,7 +156,7 @@ randomSeed=8080351;
 class ScenarioData
 {
 	author="Sethos II";
-	overviewText="We need to destroy an OPFOR airbase. Infiltrate via boat, search for a good overwatch position and eliminate the enemies at the airbase with CAS. Tested on dedicated server. Zeus is optional. I'm not a fan of revive/respawn therefore most of my missions have the side/group respawn option. I also like to limit the equipment of the players, so that they have to cooperate, think about there actions and when to use what. Therefore Virtual Arsenal or similar things aren't available. As always any feedback will be much appreciated.";
+	overviewText="We need to destroy an OPFOR airbase. Infiltrate via boat, search for a good overwatch position and eliminate the enemies at the airbase with CAS." \n "" \n "Tested on dedicated server." \n "" \n "Zeus is optional." \n "" \n "I'm not a fan of revive/respawn therefore most of my missions have the side/group respawn option. I also like to limit the equipment of the players, so that they have to cooperate, think about there actions and when to use what. Therefore Virtual Arsenal or similar things aren't available." \n "" \n "As always any feedback will be much appreciated.";
 	overViewPicture="load.paa";
 	onLoadMission="Use close air support and drones to destroy an OPFOR airbase.";
 	respawn=5;
@@ -343,7 +343,7 @@ class Mission
 			text="OPFOR outpost";
 			type="mil_arrow2";
 			colorName="ColorEAST";
-			angle=226.72131;
+			angle=226.7213;
 			id=2;
 		};
 		class Item3
@@ -368,7 +368,7 @@ class Mission
 			fillName="FDiagonal";
 			a=1300;
 			b=700;
-			angle=331.81671;
+			angle=331.81668;
 			id=4;
 		};
 		class Item5

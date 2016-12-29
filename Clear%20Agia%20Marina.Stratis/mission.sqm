@@ -111,7 +111,7 @@ randomSeed=11467796;
 class ScenarioData
 {
 	author="Sethos II";
-	overviewText="Agia Marina is under control by the enemy, we need to change this! Just a small and quick mission to train urban tank and infantry combat. Tested on dedicated server. Zeus is optional. I'm not a fan of revive/respawn therefore most of my missions have the side/group respawn option. I also like to limit the equipment of the players, so that they have to cooperate, think about there actions and when to use what. Therefore Virtual Arsenal or similar things aren't available. As always any feedback will be much appreciated.";
+	overviewText="Agia Marina is under control by the enemy, we need to change this! Just a small and quick mission to train urban tank and infantry combat." \n "" \n "Tested on dedicated server." \n "" \n "Zeus is optional." \n "" \n "I'm not a fan of revive/respawn therefore most of my missions have the side/group respawn option. I also like to limit the equipment of the players, so that they have to cooperate, think about there actions and when to use what. Therefore Virtual Arsenal or similar things aren't available." \n "" \n "As always any feedback will be much appreciated.";
 	overViewPicture="load.paa";
 	onLoadMission="Use a tank and your squad to attack.";
 	respawn=5;

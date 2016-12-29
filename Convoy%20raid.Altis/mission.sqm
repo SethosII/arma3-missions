@@ -182,7 +182,7 @@ randomSeed=4998709;
 class ScenarioData
 {
 	author="Sethos II";
-	overviewText="A local FIA group in the east of Altis is running out of weapons and supplies. Luckily a good opportunity opened up: an AAF convoy is moving from Charkia to Paros. Go and get the supplies from this convoy. Tested on dedicated server. Zeus is optional. I'm not a fan of revive/respawn therefore most of my missions have the side/group respawn option. I also like to limit the equipment of the players, so that they have to cooperate, think about there actions and when to use what. Therefore Virtual Arsenal or similar things aren't available. As always any feedback will be much appreciated.";
+	overviewText="A local FIA group in the east of Altis is running out of weapons and supplies. Luckily a good opportunity opened up: an AAF convoy is moving from Charkia to Paros. Go and get the supplies from this convoy." \n "" \n "Tested on dedicated server." \n "" \n "Zeus is optional." \n "" \n "I'm not a fan of revive/respawn therefore most of my missions have the side/group respawn option. I also like to limit the equipment of the players, so that they have to cooperate, think about there actions and when to use what. Therefore Virtual Arsenal or similar things aren't available." \n "" \n "As always any feedback will be much appreciated." \n "" \n "Featured in Armaholic's Top 100 Tactical Cooperative Missions: https://www.youtube.com/watch?v=I7FOoMkaAJU.";
 	overViewPicture="load.paa";
 	onLoadMission="Get supplies from an AAF convoy.";
 	respawn=5;
@@ -344,7 +344,7 @@ class Mission
 			name="convoy_route";
 			type="mil_arrow2";
 			colorName="ColorGUER";
-			angle=111.8761;
+			angle=111.87608;
 			id=265;
 		};
 		class Item1
@@ -354,7 +354,7 @@ class Mission
 			name="convoy_route_1";
 			type="mil_arrow2";
 			colorName="ColorGUER";
-			angle=111.8761;
+			angle=111.87608;
 			id=266;
 		};
 		class Item2
@@ -394,7 +394,7 @@ class Mission
 			name="convoy_route_5";
 			type="mil_arrow2";
 			colorName="ColorGUER";
-			angle=46.618923;
+			angle=46.618916;
 			id=270;
 		};
 		class Item6
@@ -404,7 +404,7 @@ class Mission
 			name="convoy_route_6";
 			type="mil_arrow2";
 			colorName="ColorGUER";
-			angle=53.655651;
+			angle=53.655643;
 			id=271;
 		};
 		class Item7
@@ -464,7 +464,7 @@ class Mission
 			name="convoy_route_12";
 			type="mil_arrow2";
 			colorName="ColorGUER";
-			angle=53.248886;
+			angle=53.248878;
 			id=277;
 		};
 		class Item13
@@ -516,7 +516,7 @@ class Mission
 			text="FIA hideout";
 			type="mil_arrow2";
 			colorName="ColorWEST";
-			angle=227.92792;
+			angle=227.92789;
 			id=282;
 			atlOffset=0.00019454956;
 		};
@@ -542,7 +542,7 @@ class Mission
 			text="AAF checkpoint";
 			type="mil_arrow2";
 			colorName="ColorGUER";
-			angle=223.50827;
+			angle=223.50824;
 			id=284;
 		};
 		class Item20

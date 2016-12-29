@@ -132,7 +132,7 @@ randomSeed=10151088;
 class ScenarioData
 {
 	author="Sethos II";
-	overviewText="We need to capture the main airbase of Altis. Intel reports that a weak observation post with plenty of vehicles is near. Capture and use them against their former owners. Tested on dedicated server. Zeus is optional. Zeus is optional. I'm not a fan of revive/respawn therefore most of my missions have the side/group respawn option. I also like to limit the equipment of the players, so that they have to cooperate, think about there actions and when to use what. Therefore Virtual Arsenal or similar things aren't available. As always any feedback will be much appreciated.";
+	overviewText="We need to capture the main airbase of Altis. Intel reports that a weak observation post with plenty of vehicles is near. Capture and use them against their former owners." \n "" \n "Tested on dedicated server." \n "" \n "Zeus is optional." \n "" \n "I'm not a fan of revive/respawn therefore most of my missions have the side/group respawn option. I also like to limit the equipment of the players, so that they have to cooperate, think about there actions and when to use what. Therefore Virtual Arsenal or similar things aren't available." \n "" \n "As always any feedback will be much appreciated.";
 	overViewPicture="load.paa";
 	onLoadMission="Attack an airbase with captured vehicles.";
 	respawn=5;
@@ -320,7 +320,7 @@ class Mission
 			text="OPFOR outpost";
 			type="mil_arrow2";
 			colorName="ColorOPFOR";
-			angle=223.29742;
+			angle=223.29741;
 			id=2;
 		};
 		class Item3
@@ -367,7 +367,7 @@ class Mission
 			text="OPFOR base";
 			type="mil_arrow2";
 			colorName="ColorOPFOR";
-			angle=216.5636;
+			angle=216.56358;
 			id=6;
 		};
 		class Item7
@@ -449,7 +449,7 @@ class Mission
 			text="OPFOR airbase";
 			type="mil_arrow2";
 			colorName="ColorOPFOR";
-			angle=220.82982;
+			angle=220.8298;
 			id=14;
 		};
 		class Item15
@@ -548,7 +548,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={15603.751,-0.034988072,15253.788};
-			angle=-1.9531975;
+			angle=-1.9531974;
 			class Attributes
 			{
 				condition="triggerActivated base1 AND triggerActivated base2 AND triggerActivated base3";

@@ -145,7 +145,7 @@ randomSeed=713778;
 class ScenarioData
 {
 	author="Sethos II";
-	overviewText="Your task is to attack Panochori. In order to do that you first attack an outpost at a church. Be prepared for some surprises. Tested on dedicated server. Zeus is optional. I'm not a fan of revive/respawn therefore most of my missions have the side/group respawn option. I also like to limit the equipment of the players, so that they have to cooperate, think about there actions and when to use what. Therefore Virtual Arsenal or similar things aren't available. This is my first mission so any feedback will be much appreciated. You can watch a friend and me playing an early version of the mission on YouTube: https://www.youtube.com/playlist?list=PLlpwdi59qNnldGyZLc2q_N_YEozG3nN0s";
+	overviewText="Your task is to attack Panochori. In order to do that you first attack an outpost at a church. Be prepared for some surprises." \n "" \n "Tested on dedicated server." \n "" \n "Zeus is optional." \n "" \n "I'm not a fan of revive/respawn therefore most of my missions have the side/group respawn option. I also like to limit the equipment of the players, so that they have to cooperate, think about there actions and when to use what. Therefore Virtual Arsenal or similar things aren't available." \n "" \n "This is my first mission so any feedback will be much appreciated." \n "" \n "You can watch a friend and me playing an early version of the mission on YouTube: https://www.youtube.com/playlist?list=PLlpwdi59qNnldGyZLc2q_N_YEozG3nN0s";
 	overViewPicture="load.paa";
 	onLoadMission="This is my first mission, I hope you enjoy it anyway.";
 	respawn=5;
@@ -385,7 +385,7 @@ class Mission
 			text="Supply";
 			type="mil_arrow2";
 			colorName="ColorBLUFOR";
-			angle=213.99493;
+			angle=213.99492;
 			id=209;
 		};
 		class Item7
@@ -418,7 +418,7 @@ class Mission
 			text="Enemy Outpost";
 			type="mil_arrow2";
 			colorName="ColorOPFOR";
-			angle=219.45715;
+			angle=219.45714;
 			id=212;
 		};
 		class Item10
@@ -429,7 +429,7 @@ class Mission
 			text="Panochori";
 			type="mil_arrow2";
 			colorName="ColorOPFOR";
-			angle=219.73848;
+			angle=219.73846;
 			id=213;
 		};
 		class Item11
@@ -520,7 +520,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={6917.4756,11.11585,11109.776};
-			angle=0.23542041;
+			angle=0.23542039;
 			class Attributes
 			{
 				condition="this AND alive spotter";
@@ -536,7 +536,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={6895.2476,11.790108,11115.106};
-			angle=0.23542041;
+			angle=0.23542039;
 			class Attributes
 			{
 				condition="this AND alive spotter";
@@ -617,7 +617,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={8245.9697,34.899536,11280.057};
-			angle=-1.7521529;
+			angle=-1.7521528;
 			class Attributes
 			{
 				onActivation="transport setDamage 1;";
@@ -666,7 +666,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={10105.13,1.5617714,10862.033};
-			angle=-1.5201001;
+			angle=-1.5201;
 			class Attributes
 			{
 				condition="true";
@@ -714,7 +714,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={5788.4121,26.542929,10828.448};
-			angle=-3.2546716;
+			angle=-3.2546713;
 			class Attributes
 			{
 				sizeA=10;

@@ -184,7 +184,7 @@ randomSeed=5614234;
 class ScenarioData
 {
 	author="Sethos II";
-	overviewText="The FIA managed to raid an AAF supply convoy. The captured supplies could boost the FIA rebellion significantly. AAF located the stolen trucks at an old mine. Your task is to secure and afterwards escort these trucks to another AAF base.";
+	overviewText="The FIA managed to raid an AAF supply convoy. The captured supplies could boost the FIA rebellion significantly. AAF located the stolen trucks at an old mine. Your task is to secure and afterwards escort these trucks to another AAF base." \n "" \n "Tested on a dedicated server." \n "" \n "Zeus is optional." \n "" \n "I'm not a fan of revive/respawn therefore most of my missions have the side/group respawn option. I also like to limit the equipment of the players, so that they have to cooperate, think about there actions and when to use what. Therefore Virtual Arsenal or similar things aren't available." \n "" \n "As always any feedback will be much appreciated.";
 	overViewPicture="load.paa";
 	onLoadMission="Work together as a team.";
 	respawn=5;
@@ -368,7 +368,7 @@ class Mission
 			text="FIA hideout";
 			type="mil_arrow2";
 			colorName="ColorWEST";
-			angle=227.9279;
+			angle=227.92789;
 			id=1089;
 		};
 		class Item3
@@ -639,7 +639,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={18268.09,70.718414,11491.104};
-			angle=0.77588755;
+			angle=0.77588749;
 			class Attributes
 			{
 				sizeB=150;
@@ -6424,7 +6424,7 @@ class Mission
 					showWP="NEVER";
 					id=1392;
 					type="Move";
-					atlOffset=0.59480286;
+					atlOffset=0.14543915;
 				};
 				class Item8
 				{
@@ -6598,7 +6598,7 @@ class Mission
 					showWP="NEVER";
 					id=1404;
 					type="Move";
-					atlOffset=0.66069794;
+					atlOffset=0.22986603;
 				};
 				class Item8
 				{

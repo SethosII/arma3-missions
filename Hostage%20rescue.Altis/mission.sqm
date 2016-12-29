@@ -151,7 +151,7 @@ randomSeed=11540662;
 class ScenarioData
 {
 	author="Sethos II";
-	overviewText="The FIA has taken a hostage and the police and AAF were unable to end the hostage-taking. So it has come to our team to rescue our man. The only problem is that the FIA will shot the hostage if they detect you. Tested on dedicated server. Zeus is optional. The positions of the hostage and kidnappers are semi-random, so each playthrough is different. I'm not a fan of revive/respawn therefore most of my missions have the side/group respawn option. I also like to limit the equipment of the players, so that they have to cooperate, think about there actions and when to use what. Therefore Virtual Arsenal or similar things aren't available. As always any feedback will be much appreciated.";
+	overviewText="The FIA has taken a hostage and the police and AAF were unable to end the hostage-taking. So it has come to our team to rescue our man. The only problem is that the FIA will shot the hostage if they detect you. The positions of the hostage and kidnappers are semi-random, so each playthrough is different." \n "" \n "Tested on dedicated server." \n "" \n "Zeus is optional." \n "" \n "I'm not a fan of revive/respawn therefore most of my missions have the side/group respawn option. I also like to limit the equipment of the players, so that they have to cooperate, think about there actions and when to use what. Therefore Virtual Arsenal or similar things aren't available." \n "" \n "As always any feedback will be much appreciated.";
 	overViewPicture="load.paa";
 	onLoadMission="Rescue a hostage taken by the FIA.";
 	respawn=5;
