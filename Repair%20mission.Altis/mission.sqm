@@ -1886,24 +1886,48 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14016.355,26.204987,18729.453};
-						angles[]={6.2405448,1.7992774,0.0066682254};
+						position[]={14016.355,26.651772,18729.453};
+						angles[]={0,1.7992774,0};
 					};
 					side="West";
-					flags=6;
+					flags=2;
 					class Attributes
 					{
 						skill=0.54484463;
 						rank="CORPORAL";
-						init="this setPosATL(this modelToWorld[0,0,1]); this setUnitPos ""middle""";
+						init="this setUnitPos ""middle""";
 					};
 					id=72;
 					type="B_soldier_AR_F";
+					atlOffset=0.44678497;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item1
 				{
 					dataType="Waypoint";
-					position[]={14016.355,26.703548,18729.402};
+					position[]={14016.355,27.150333,18729.402};
 					type="Hold";
 					combat="COMBAT";
 					class Effects
@@ -1911,7 +1935,7 @@ class Mission
 					};
 					showWP="NEVER";
 					id=73;
-					atlOffset=0.5;
+					atlOffset=0.24974442;
 					class AttachedTo
 					{
 						id=72;
@@ -1940,6 +1964,7 @@ class Mission
 			{
 			};
 			id=71;
+			atlOffset=0.44678497;
 		};
 		class Item24
 		{

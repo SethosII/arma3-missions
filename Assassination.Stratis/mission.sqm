@@ -1141,8 +1141,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3298.7153,229.67915,2900.0732};
-				angles[]={6.1539097,6.2182708,0.0024897563};
+				position[]={3298.7153,229.66629,2900.0732};
+				angles[]={6.2806959,6.2182708,0.0024897563};
 			};
 			side="Empty";
 			flags=4;
@@ -1152,26 +1152,23 @@ class Mission
 			};
 			id=49;
 			type="Land_BagFence_Round_F";
-			atlOffset=0.012863159;
 		};
 		class Item50
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3308.3079,229.7843,2900.5894};
-				angles[]={0.0075011365,0.081496745,0.089758366};
+				position[]={3308.3081,229.78261,2900.5891};
+				angles[]={0.0075011365,0.081489421,0.089758366};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this setPosATL(this modelToWorld[0,0,-0.65]);";
 			};
 			id=50;
 			type="Land_BagFence_Round_F";
-			atlOffset=0.0017089844;
 		};
 		class Item51
 		{

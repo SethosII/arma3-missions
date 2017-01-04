@@ -474,57 +474,74 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8281.9971,77.47406,10091.704};
-				angles[]={6.2110157,2.8929143,6.2585402};
+				position[]={8282.2139,77.541801,10091.293};
+				angles[]={6.0183058,2.8929181,6.1677918};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this setPosATL(this modelToWorld[0,0,0.5]);";
 			};
 			id=856;
 			type="Box_FIA_Wps_F";
-			atlOffset=0.020179749;
 		};
 		class Item12
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8283.6768,77.451981,10092.727};
-				angles[]={0.051953323,2.5738544,0.025327841};
+				position[]={8283.6768,77.777939,10092.726};
+				angles[]={6.2668333,2.5738544,6.2228661};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this setPosATL(this modelToWorld[0,0,0.5]);";
 			};
 			id=857;
 			type="Box_FIA_Support_F";
-			atlOffset=0.019218445;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""MineDetector""],[1]],[[],[]],[[""Binocular"",""FirstAidKit"",""acc_flashlight"",""optic_ACO_grn"",""optic_MRCO"",""H_Shemag_olive"",""G_Balaclava_blk"",""G_Bandanna_blk"",""V_TacVest_blk"",""V_Chestrig_blk""],[2,10,5,5,2,1,1,1,2,2]],[[""B_Bergen_blk""],[2]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item13
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8279.8584,77.626404,10092.073};
-				angles[]={0.077179179,4.0431075,0.041309625};
+				position[]={8279.8584,77.989853,10092.073};
+				angles[]={6.1673818,4.0431075,6.2509408};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this setPosATL(this modelToWorld[0,0,0.5]);";
 			};
 			id=858;
 			type="Box_FIA_Ammo_F";
-			atlOffset=0.017997742;
 		};
 		class Item14
 		{
@@ -600,15 +617,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8321.5615,76.22406,10052.718};
-				angles[]={0,5.726563,0};
+				position[]={8321.5615,91.58744,10052.718};
+				angles[]={0,5.7265649,6.282495};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this setPosATL(this modelToWorld[0,0,15]);";
 			};
 			id=863;
 			type="Box_NATO_Ammo_F";
@@ -618,15 +634,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8320.6318,76.128731,10054.231};
-				angles[]={0,5.7265649,0};
+				position[]={8320.6152,91.49276,10054.196};
+				angles[]={0,5.7265649,6.282495};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this setPosATL(this modelToWorld[0,0,15]);";
 			};
 			id=864;
 			type="Box_NATO_Wps_F";

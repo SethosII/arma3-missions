@@ -346,7 +346,7 @@ class Mission
 			position[]={11040.841,31.819565,11585.404};
 			name="b1";
 			type="Empty";
-			angle=350.11884;
+			angle=350.1188;
 			id=1085;
 		};
 		class Item4
@@ -355,7 +355,7 @@ class Mission
 			position[]={11108.365,25.425489,11327.037};
 			name="b2";
 			type="Empty";
-			angle=350.11884;
+			angle=350.1188;
 			id=1086;
 		};
 		class Item5
@@ -364,7 +364,7 @@ class Mission
 			position[]={11102.698,27.102001,11104.392};
 			name="b3";
 			type="Empty";
-			angle=350.11884;
+			angle=350.1188;
 			id=1087;
 		};
 		class Item6
@@ -494,7 +494,7 @@ class Mission
 			text="BLUFOR camp";
 			type="mil_arrow2";
 			colorName="ColorWEST";
-			angle=222.42439;
+			angle=222.42438;
 			id=1099;
 		};
 		class Item18
@@ -505,7 +505,7 @@ class Mission
 			text="BLUFOR camp";
 			type="mil_arrow2";
 			colorName="ColorWEST";
-			angle=222.42395;
+			angle=222.42393;
 			id=1100;
 		};
 		class Item19
@@ -516,7 +516,7 @@ class Mission
 			text="BLUFOR camp";
 			type="mil_arrow2";
 			colorName="ColorWEST";
-			angle=222.42395;
+			angle=222.42393;
 			id=1101;
 		};
 		class Item20
@@ -567,7 +567,7 @@ class Mission
 			name="attack3";
 			type="mil_arrow";
 			colorName="ColorEAST";
-			angle=298.94159;
+			angle=298.94156;
 			id=1106;
 		};
 		class Item25
@@ -6376,18 +6376,40 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={16076.192,13.416124,16914.725};
-						angles[]={6.2791886,1.8408165,6.2658563};
+						position[]={16076.192,14.060613,16914.725};
+						angles[]={0,1.8408163,6.2815661};
 					};
 					side="Civilian";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this setPosATL(this modelToWorld[0,0,1]);";
 					};
 					id=1345;
 					type="C_scientist_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			class Attributes

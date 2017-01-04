@@ -678,15 +678,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14393.212,37.5009,18961.914};
-				angles[]={6.233892,2.3015656,0.051953323};
+				position[]={14393.212,37.833549,18961.914};
+				angles[]={0,2.3015656,6.2826972};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.46666664;
-				init="this setPosATL(this modelToWorld[0,0,0.3]);";
 			};
 			id=896;
 			type="Land_ChairWood_F";
@@ -696,35 +695,32 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14392.102,37.936153,18963.037};
-				angles[]={6.233892,2.3015656,0.042640556};
+				position[]={14392.335,38.269093,18962.766};
+				angles[]={0,2.3015656,6.2826972};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.46666664;
-				init="this setPosATL(this modelToWorld[0,0,0.1]);";
 				name="desk1";
 			};
 			id=897;
 			type="Land_WoodenTable_small_F";
-			atlOffset=0.00094985962;
 		};
 		class Item27
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14393.485,37.609173,18963.82};
-				angles[]={0,0.96486282,6.2826972};
+				position[]={14393.485,37.833416,18963.82};
+				angles[]={0,0.96487039,6.2826972};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.46666664;
-				init="this setPosATL(this modelToWorld[0,0,0.3]);";
 			};
 			id=898;
 			type="Land_ChairWood_F";
@@ -753,53 +749,50 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14329.182,37.530773,18946.652};
-				angles[]={6.253859,2.3553696,6.2711854};
+				position[]={14329.182,46.273151,18946.652};
+				angles[]={0,2.3553743,6.2826972};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.46666664;
-				init="this setPosATL(this modelToWorld[0,0,9]);";
 				name="desk2";
 			};
 			id=900;
 			type="Land_WoodenTable_large_F";
+			atlOffset=8.7425423;
 		};
 		class Item30
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14290.407,37.026047,18867.811};
-				angles[]={6.2685208,2.475328,0.010664274};
+				position[]={14290.407,37.534973,18867.811};
+				angles[]={0,2.4753308,6.2826972};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.46666664;
-				init="this setPosATL(this modelToWorld[0,0,0.1]);";
 				name="desk3";
 			};
 			id=901;
 			type="Land_TableDesk_F";
+			atlOffset=0.50899124;
 		};
 		class Item31
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14390.41,37.150497,18905.254};
-				angles[]={0,5.5525317,0.0093286335};
+				position[]={14390.41,41.256924,18905.254};
+				angles[]={0,5.5525379,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.46666664;
-				init="this setPosATL(this modelToWorld[0,0,4]);";
 				name="desk4";
 			};
 			id=902;
@@ -810,33 +803,32 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14330.031,37.119511,18947.658};
-				angles[]={6.2405448,1.0275798,0.0013372133};
+				position[]={14330.031,45.861969,18947.66};
+				angles[]={0,1.02758,6.2826972};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.46666664;
-				init="this setPosATL(this modelToWorld[0,0,9]);";
 			};
 			id=903;
 			type="Land_ChairWood_F";
+			atlOffset=0.028831482;
 		};
 		class Item33
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14327.841,37.165588,18948.42};
-				angles[]={6.253859,5.5658302,6.2711854};
+				position[]={14327.841,45.907967,18948.42};
+				angles[]={0,5.5658374,6.2826972};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.46666664;
-				init="this setPosATL(this modelToWorld[0,0,9]);";
 			};
 			id=904;
 			type="Land_ChairWood_F";
@@ -863,36 +855,34 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14293.032,36.810589,18855.289};
-				angles[]={6.2645216,0,0.015998369};
+				position[]={14293.032,40.866768,18855.289};
+				angles[]={0,0,6.2826972};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.46666664;
-				init="this setPosATL(this modelToWorld[0,0,4]);";
 			};
 			id=906;
 			type="Land_CampingTable_small_F";
+			atlOffset=3.3338547;
 		};
 		class Item36
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14291.952,36.830215,18857.268};
-				angles[]={6.2645216,4.9904203,0.015998369};
+				position[]={14291.953,40.867413,18857.268};
+				angles[]={0,4.9904199,6.2826972};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.46666664;
-				init="this setPosATL(this modelToWorld[0,0,4]);";
 			};
 			id=907;
 			type="Land_CampingTable_F";
+			atlOffset=3.3338547;
 		};
 		class Item37
 		{
@@ -970,69 +960,65 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14301.265,40.697651,18860.744};
+				position[]={14301.265,40.574146,18860.744};
 				angles[]={0,0,6.2826972};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.46666664;
 			};
 			id=912;
 			type="Land_Camping_Light_F";
-			atlOffset=0.12350464;
 		};
 		class Item42
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14298.726,36.838692,18849.158};
-				angles[]={6.2525291,2.4024885,6.2738566};
+				position[]={14298.726,37.744934,18849.158};
+				angles[]={0,2.4024804,6.2826972};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.24943733;
-				init="this setPosATL(this modelToWorld[0,0,0.1]);";
 			};
 			id=913;
 			type="Land_Icebox_F";
+			atlOffset=0.90659332;
 		};
 		class Item43
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14304.121,37.153332,18852.502};
-				angles[]={6.2418771,3.9749436,0};
+				position[]={14304.121,37.935673,18852.502};
+				angles[]={0,3.9749348,6.2826972};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.24943733;
-				init="this setPosATL(this modelToWorld[0,0,0.1]);";
 			};
 			id=914;
 			type="Land_Rack_F";
-			atlOffset=0.00067138672;
 		};
 		class Item44
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14302.813,36.406437,18854.203};
-				angles[]={6.2418771,0,0};
+				position[]={14302.813,37.117805,18854.203};
+				angles[]={0,0,6.2826972};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.24943733;
-				init="this setPosATL(this modelToWorld[0,0,0.6]);";
 			};
 			id=915;
 			type="Land_ChairWood_F";
@@ -1042,88 +1028,82 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14288.929,36.47715,18862.549};
-				angles[]={6.2605233,0,0.018663859};
+				position[]={14288.929,40.461163,18862.549};
+				angles[]={0,0,6.2826972};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.24943733;
-				init="this setPosATL(this modelToWorld[0,0,4.6]);";
 			};
 			id=916;
 			type="Land_ChairWood_F";
+			atlOffset=3.3329544;
 		};
 		class Item46
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14289.973,36.459381,18860.807};
-				angles[]={6.2618537,1.9469846,0.018667053};
+				position[]={14289.973,40.460606,18860.807};
+				angles[]={0,1.9469846,6.2826972};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.24943733;
-				init="this setPosATL(this modelToWorld[0,0,4.6]);";
 			};
 			id=917;
 			type="Land_ChairWood_F";
+			atlOffset=3.3330193;
 		};
 		class Item47
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14298.017,36.820271,18861.213};
-				angles[]={6.2578578,5.5972519,0.0053377044};
+				position[]={14297.949,37.369965,18860.775};
+				angles[]={0,5.5972533,6.282495};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.24943733;
-				init="this setPosATL(this modelToWorld[0,0,0.3]);";
 			};
 			id=918;
 			type="Land_Bench_F";
+			atlOffset=0.561203;
 		};
 		class Item48
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14294.729,37.588688,18864.717};
-				angles[]={6.2685208,2.4110503,0.010664274};
+				position[]={14294.12,38.094643,18865.066};
+				angles[]={0,2.4110503,6.2826972};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.24943733;
-				init="this setPosATL(this modelToWorld[0,0,0.1]);";
 			};
 			id=919;
 			type="Land_MapBoard_F";
-			atlOffset=0.00018692017;
 		};
 		class Item49
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14291.724,36.6245,18867.279};
-				angles[]={6.2685208,1.6970005,0.010664274};
+				position[]={14291.724,37.125866,18867.279};
+				angles[]={0,1.6970011,6.2826972};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.24943733;
-				init="this setPosATL(this modelToWorld[0,0,0.6]);";
 			};
 			id=920;
 			type="Land_ChairWood_F";
@@ -1133,106 +1113,101 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14283.294,36.540047,18869.064};
-				angles[]={6.2605257,3.9975896,0.014660771};
+				position[]={14283.294,37.135181,18869.064};
+				angles[]={0,3.9975893,6.2826972};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.24943733;
-				init="this setPosATL(this modelToWorld[0,0,0.3]);";
 			};
 			id=921;
 			type="Land_ShelvesMetal_F";
+			atlOffset=4.196167e-005;
 		};
 		class Item51
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14284.38,36.526962,18867.785};
-				angles[]={6.2605257,3.9975896,0.014660771};
+				position[]={14284.38,37.134533,18867.785};
+				angles[]={0,3.9975893,6.2826972};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.24943733;
-				init="this setPosATL(this modelToWorld[0,0,0.3]);";
 			};
 			id=922;
 			type="Land_ShelvesMetal_F";
+			atlOffset=4.196167e-005;
 		};
 		class Item52
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14288.716,37.071087,18871.445};
-				angles[]={6.2791886,0,0.010664274};
+				position[]={14288.715,40.895241,18871.445};
+				angles[]={0,0,6.2826972};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.24943733;
-				init="this setPosATL(this modelToWorld[0,0,4]);";
 			};
 			id=923;
 			type="Land_WoodenTable_large_F";
+			atlOffset=3.33395;
 		};
 		class Item53
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14294.409,36.930546,18856.371};
-				angles[]={6.2618537,2.9454794,0.018667053};
+				position[]={14294.409,40.941471,18856.371};
+				angles[]={0,2.9454875,6.2826972};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.24943733;
-				init="this setPosATL(this modelToWorld[0,0,4.6]);";
 			};
 			id=924;
 			type="Land_ChairPlastic_F";
+			atlOffset=3.3337784;
 		};
 		class Item54
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14390.034,37.992214,18899.734};
-				angles[]={0.034652505,5.5395126,0.0013372133};
+				position[]={14390.034,38.738842,18899.734};
+				angles[]={0,5.5395179,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.24943733;
-				init="this setPosATL(this modelToWorld[0,0,0.1]);";
 			};
 			id=925;
 			type="Land_Rack_F";
-			atlOffset=0.00040435791;
 		};
 		class Item55
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14391.761,37.162445,18900.977};
-				angles[]={0,1.5645685,0.0093286335};
+				position[]={14391.761,37.922348,18900.977};
+				angles[]={0,1.5645654,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.24943733;
-				init="this setPosATL(this modelToWorld[0,0,0.6]);";
 			};
 			id=926;
 			type="Land_ChairWood_F";
@@ -1242,196 +1217,182 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14405.642,37.544735,18921.287};
-				angles[]={0.018663859,5.2205791,0.02399601};
+				position[]={14405.642,41.663239,18921.287};
+				angles[]={0,5.2205768,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.46666664;
-				init="this setPosATL(this modelToWorld[0,0,4]);";
 			};
 			id=927;
 			type="Land_CampingTable_small_F";
+			atlOffset=3.3337898;
 		};
 		class Item57
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14403.542,37.558834,18917.971};
-				angles[]={0.021331646,3.9278142,0.021331646};
+				position[]={14403.541,41.663242,18917.971};
+				angles[]={0,3.9278111,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.46666664;
-				init="this setPosATL(this modelToWorld[0,0,4]);";
 			};
 			id=928;
 			type="Land_CampingTable_F";
+			atlOffset=3.3337936;
 		};
 		class Item58
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14405.01,37.639534,18919.449};
-				angles[]={0.018663859,1.8828728,0.02399601};
+				position[]={14405.01,41.738804,18919.449};
+				angles[]={0,1.8828785,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.24943733;
-				init="this setPosATL(this modelToWorld[0,0,4.6]);";
 			};
 			id=929;
 			type="Land_ChairPlastic_F";
+			atlOffset=3.3337555;
 		};
 		class Item59
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14402.373,37.911652,18908.924};
-				angles[]={0.045302324,0,0.02666023};
+				position[]={14402.228,41.688622,18909.016};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.24943733;
-				init="this setPosATL(this modelToWorld[0,0,4]);";
 			};
 			id=930;
 			type="Land_WoodenTable_large_F";
+			atlOffset=3.3333778;
 		};
 		class Item60
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14387.754,38.094624,18905.684};
-				angles[]={0,0,0.0093286335};
+				position[]={14387.754,38.891827,18905.684};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.24943733;
-				init="this setPosATL(this modelToWorld[0,0,0.1]);";
 			};
 			id=931;
 			type="MapBoard_seismic_F";
-			atlOffset=3.4332275e-005;
 		};
 		class Item61
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14397.565,37.786251,18904.215};
-				angles[]={0,5.0784264,0.041309625};
+				position[]={14397.565,41.663078,18904.215};
+				angles[]={0,5.0784192,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.46666664;
-				init="this setPosATL(this modelToWorld[0,0,4]);";
 			};
 			id=932;
 			type="Land_CampingTable_small_F";
+			atlOffset=3.3336296;
 		};
 		class Item62
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14395.334,37.693993,18903.912};
-				angles[]={0,3.785661,0.041309625};
+				position[]={14395.333,41.663078,18903.912};
+				angles[]={0,3.7856538,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.46666664;
-				init="this setPosATL(this modelToWorld[0,0,4]);";
 			};
 			id=933;
 			type="Land_CampingTable_F";
+			atlOffset=3.3336296;
 		};
 		class Item63
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14397.044,37.840328,18905.893};
-				angles[]={0,1.7407193,0.041309625};
+				position[]={14397.044,41.738613,18905.893};
+				angles[]={0,1.7407216,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.24943733;
-				init="this setPosATL(this modelToWorld[0,0,4.6]);";
 			};
 			id=934;
 			type="Land_ChairPlastic_F";
+			atlOffset=3.3335648;
 		};
 		class Item64
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14391.599,37.623634,18909.57};
-				angles[]={0.018663859,3.9841907,0.010664274};
+				position[]={14391.599,38.424622,18909.57};
+				angles[]={0,3.9841852,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.24943733;
-				init="this setPosATL(this modelToWorld[0,0,0.1]);";
 			};
 			id=935;
 			type="Land_ShelvesWooden_F";
+			atlOffset=0.80110168;
 		};
 		class Item65
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14393.398,37.639374,18911.256};
-				angles[]={0.018663859,3.9681308,0.041309625};
+				position[]={14393.398,38.424221,18911.256};
+				angles[]={0,3.9681282,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.24943733;
-				init="this setPosATL(this modelToWorld[0,0,0.1]);";
 			};
 			id=936;
 			type="Land_ShelvesWooden_khaki_F";
+			atlOffset=0.78541183;
 		};
 		class Item66
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14393.408,37.449429,18907.768};
-				angles[]={0.018663859,0.75924563,0.041309625};
+				position[]={14393.408,38.169376,18907.768};
+				angles[]={0,0.75925308,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.24943733;
-				init="this setPosATL(this modelToWorld[0,0,0.1]);";
 			};
 			id=937;
 			type="Land_Bench_F";
@@ -1441,57 +1402,51 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14409.266,37.315979,18917.168};
-				angles[]={0.018663859,0.80729294,0.017329043};
+				position[]={14409.31,37.87606,18917.211};
+				angles[]={0,0.80728459,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.24943733;
-				init="this setPosATL(this modelToWorld[0,0,0.53]);";
 			};
 			id=938;
 			type="Land_Sleeping_bag_F";
-			atlOffset=4.9591064e-005;
+			atlOffset=0.56015778;
 		};
 		class Item68
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14409.919,37.340946,18916.438};
-				angles[]={0.018663859,0.80729294,0.017329043};
+				position[]={14410.007,37.869671,18916.426};
+				angles[]={0,0.80728459,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.24943733;
-				init="this setPosATL(this modelToWorld[0,0,0.5]);";
 			};
 			id=939;
 			type="Land_Sleeping_bag_blue_F";
-			atlOffset=4.9591064e-005;
+			atlOffset=0.52701187;
 		};
 		class Item69
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14410.65,37.368359,18915.648};
-				angles[]={0.018663859,0.80728531,0.017329043};
+				position[]={14410.65,37.86409,18915.648};
+				angles[]={0,0.80728459,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.24943733;
-				init="this setPosATL(this modelToWorld[0,0,0.5]); {bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 			};
 			id=940;
 			type="Land_Sleeping_bag_brown_F";
-			atlOffset=4.9591064e-005;
+			atlOffset=0.49578094;
 		};
 		class Item70
 		{
@@ -1516,18 +1471,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14404.127,37.368565,18920.211};
-				angles[]={0.018663859,3.8745089,0.02399601};
+				position[]={14404.127,38.169514,18920.211};
+				angles[]={0,3.8745086,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.24943733;
-				init="this setPosATL(this modelToWorld[0,0,0.6]);";
 			};
 			id=942;
 			type="Land_Bench_F";
+			atlOffset=0.80103302;
 		};
 		class Item72
 		{
@@ -3132,24 +3086,47 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14292.239,36.551826,18863.076};
-						angles[]={6.2605233,3.917793,0.018663859};
+						position[]={14292.239,37.128323,18863.076};
+						angles[]={0,3.917793,6.2826972};
 					};
 					side="Independent";
 					flags=6;
 					class Attributes
 					{
 						skill=0.24943733;
-						init="this setPosATL(this modelToWorld[0,0,0.1]); _animate_listen_to_radio_sqf = [this] execVM ""scripts\animate_listen_to_radio.sqf""; {bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
+						init="_animate_listen_to_radio_sqf = [this] execVM ""scripts\animate_listen_to_radio.sqf""; {bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 						presence=0.49870181;
 					};
 					id=998;
 					type="I_soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item1
 				{
 					dataType="Waypoint";
-					position[]={14292.239,37.050388,18863.025};
+					position[]={14292.239,37.626884,18863.025};
 					combatMode="RED";
 					combat="AWARE";
 					class Effects
@@ -3183,24 +3160,47 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14290.919,36.562336,18864.627};
-						angles[]={6.2605233,4.0128264,0.018663859};
+						position[]={14290.919,37.129112,18864.627};
+						angles[]={0,4.012826,6.2826972};
 					};
 					side="Independent";
 					flags=6;
 					class Attributes
 					{
 						skill=0.24943733;
-						init="this setPosATL(this modelToWorld[0,0,0.1]); _animate_listen_to_radio_sqf = [this] execVM ""scripts\animate_listen_to_radio.sqf""; {bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
+						init="_animate_listen_to_radio_sqf = [this] execVM ""scripts\animate_listen_to_radio.sqf""; {bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 						presence=0.49656886;
 					};
 					id=1001;
 					type="I_soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.94999999;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item1
 				{
 					dataType="Waypoint";
-					position[]={14290.919,37.060898,18864.576};
+					position[]={14290.919,37.627674,18864.576};
 					combatMode="RED";
 					combat="AWARE";
 					class Effects
@@ -3234,24 +3234,47 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14282.694,36.494026,18867.537};
-						angles[]={6.2605257,0.93115044,0.014660771};
+						position[]={14282.694,37.134033,18867.537};
+						angles[]={0,0.93115062,6.2826972};
 					};
 					side="Independent";
 					flags=6;
 					class Attributes
 					{
 						skill=0.24943733;
-						init="this setPosATL(this modelToWorld[0,0,0.1]); {bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
+						init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 						presence=0.49870181;
 					};
 					id=1004;
 					type="I_soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item1
 				{
 					dataType="Waypoint";
-					position[]={14282.694,36.992588,18867.486};
+					position[]={14282.694,37.632595,18867.486};
 					combatMode="RED";
 					combat="AWARE";
 					class Effects
@@ -3285,24 +3308,47 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14297.749,36.259499,18850.279};
-						angles[]={6.2525291,2.7149816,6.2738566};
+						position[]={14297.749,37.125031,18850.279};
+						angles[]={0,2.714982,6.2826972};
 					};
 					side="Independent";
 					flags=6;
 					class Attributes
 					{
 						skill=0.24943733;
-						init="this setPosATL(this modelToWorld[0,0,0.1]); {bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
+						init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 						presence=0.49870181;
 					};
 					id=1007;
 					type="I_crew_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item1
 				{
 					dataType="Waypoint";
-					position[]={14297.749,36.75806,18850.229};
+					position[]={14297.749,37.623592,18850.229};
 					combatMode="RED";
 					combat="AWARE";
 					class Effects
@@ -3336,19 +3382,42 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14301.844,36.562256,18859.957};
-						angles[]={6.2578578,4.3848605,0.0053377044};
+						position[]={14301.844,40.456562,18859.957};
+						angles[]={0,4.3848605,6.2826972};
 					};
 					side="Independent";
 					flags=6;
 					class Attributes
 					{
 						skill=0.24943733;
-						init="this setPosATL(this modelToWorld[0,0,4]); this setCombatMode ""RED""; _sit_down_sqf = [this] execVM ""scripts\sit_down.sqf""; {bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
+						init="this setCombatMode ""RED""; _sit_down_sqf = [this] execVM ""scripts\sit_down.sqf""; {bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 						presence=0.49870181;
 					};
 					id=1010;
 					type="I_Soldier_AR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			class Attributes
@@ -3368,19 +3437,42 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14408.659,37.244164,18919.195};
-						angles[]={0.018663859,4.2346401,0.017329043};
+						position[]={14408.66,41.258362,18919.195};
+						angles[]={0,4.2346401,0};
 					};
 					side="Independent";
 					flags=6;
 					class Attributes
 					{
 						skill=0.24943733;
-						init="this setPosATL(this modelToWorld[0,0,4]); this setCombatMode ""RED""; _sit_down_sqf = [this] execVM ""scripts\sit_down.sqf""; {bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
+						init="this setCombatMode ""RED""; _sit_down_sqf = [this] execVM ""scripts\sit_down.sqf""; {bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 						presence=0.50274557;
 					};
 					id=1012;
 					type="I_Soldier_AR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.94999999;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			class Attributes
@@ -3905,24 +3997,47 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14394.71,37.627056,18962.9};
-						angles[]={6.233892,4.8587694,0.051953323};
+						position[]={14394.71,37.837074,18962.9};
+						angles[]={0,4.8587694,6.2826972};
 					};
 					side="Independent";
 					flags=6;
 					class Attributes
 					{
 						skill=0.24943733;
-						init="this setPosATL(this modelToWorld[0,0,0.1]); {bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
+						init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 						presence=0.49870181;
 					};
 					id=1024;
 					type="I_Soldier_A_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item1
 				{
 					dataType="Waypoint";
-					position[]={14394.71,38.125618,18962.85};
+					position[]={14394.71,38.335636,18962.85};
 					combatMode="RED";
 					combat="AWARE";
 					class Effects
@@ -3931,7 +4046,7 @@ class Mission
 					showWP="NEVER";
 					id=1025;
 					type="Move";
-					atlOffset=0.28998184;
+					atlOffset=0.5;
 					class AttachedTo
 					{
 						id=1024;
@@ -3956,24 +4071,47 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14389.443,37.142914,18907.203};
-						angles[]={0,3.2608323,0.0093286335};
+						position[]={14389.443,41.258362,18907.203};
+						angles[]={0,3.2608335,0};
 					};
 					side="Independent";
 					flags=6;
 					class Attributes
 					{
 						skill=0.24943733;
-						init="this setPosATL(this modelToWorld[0,0,4]); {bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
+						init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 						presence=0.49870181;
 					};
 					id=1027;
 					type="I_Soldier_lite_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item1
 				{
 					dataType="Waypoint";
-					position[]={14389.443,37.641476,18907.152};
+					position[]={14389.443,41.756924,18907.152};
 					combatMode="RED";
 					combat="AWARE";
 					class Effects
@@ -4007,24 +4145,47 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14403.875,37.501358,18909.391};
-						angles[]={0.045302324,4.3922257,0.02666023};
+						position[]={14403.9,41.258362,18909.709};
+						angles[]={0,4.3922257,0};
 					};
 					side="Independent";
 					flags=6;
 					class Attributes
 					{
 						skill=0.24943733;
-						init="this setPosATL(this modelToWorld[0,0,4]); {bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
+						init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 						presence=0.49870181;
 					};
 					id=1030;
 					type="I_soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item1
 				{
 					dataType="Waypoint";
-					position[]={14403.875,37.99992,18909.34};
+					position[]={14403.9,41.756924,18909.658};
 					combatMode="RED";
 					combat="AWARE";
 					class Effects
@@ -4033,7 +4194,7 @@ class Mission
 					showWP="NEVER";
 					id=1031;
 					type="Move";
-					atlOffset=0.076972961;
+					atlOffset=0.5;
 					class AttachedTo
 					{
 						id=1030;
@@ -4058,19 +4219,42 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14411.064,37.337219,18916.443};
-						angles[]={0.018663859,4.2346401,0.017329043};
+						position[]={14411.064,37.924385,18916.443};
+						angles[]={0,4.2346401,0};
 					};
 					side="Independent";
 					flags=6;
 					class Attributes
 					{
 						skill=0.24943733;
-						init="this setPosATL(this modelToWorld[0,0,0.1]); this setCombatMode ""RED""; _sit_down_sqf = [this] execVM ""scripts\sit_down.sqf"";";
+						init="this setCombatMode ""RED""; _sit_down_sqf = [this] execVM ""scripts\sit_down.sqf"";";
 						presence=0.49656886;
 					};
 					id=1033;
 					type="I_soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			class Attributes
@@ -4575,24 +4759,47 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14391.045,37.169323,18900.072};
-						angles[]={0.0080009829,6.0420156,0.0013372133};
+						position[]={14391.045,37.924385,18900.072};
+						angles[]={0,6.0420156,0};
 					};
 					side="Independent";
 					flags=6;
 					class Attributes
 					{
 						skill=0.24943733;
-						init="this setPosATL(this modelToWorld[0,0,0.1]); {bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
+						init="{bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
 						presence=0.49870181;
 					};
 					id=1063;
 					type="I_crew_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item1
 				{
 					dataType="Waypoint";
-					position[]={14391.045,37.667885,18900.021};
+					position[]={14391.045,38.422947,18900.021};
 					combatMode="RED";
 					combat="AWARE";
 					class Effects
