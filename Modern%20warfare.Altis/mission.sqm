@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1362;
+		nextID=1366;
 	};
 	class MarkerIDProvider
 	{
@@ -43,13 +43,14 @@ addons[]=
 	"A3_Missions_F_Curator",
 	"A3_Data_F_Curator_Virtual",
 	"A3_Modules_F_Curator_Misc",
-	"A3_Modules_F"
+	"A3_Modules_F",
+	"A3_Air_F_Exp_UAV_03"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=14;
+		items=15;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -145,6 +146,13 @@ class AddonsMetaData
 		{
 			className="A3_Data_F_Curator";
 			name="Arma 3 Zeus Update - Main Configuration";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item14
+		{
+			className="A3_Air_F_Exp";
+			name="Arma 3 Apex - Aircrafts";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
@@ -307,7 +315,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=143;
+		items=145;
 		class Item0
 		{
 			dataType="Marker";
@@ -7065,6 +7073,102 @@ class Mission
 				};
 				nAttributes=6;
 			};
+		};
+		class Item143
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14187.948,19.585136,16274.321};
+						angles[]={0.0013372133,0,6.2818484};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+					};
+					id=1364;
+					type="B_UAV_AI";
+					atlOffset=-5.7220459e-006;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14187.95,21.121529,16274.291};
+						angles[]={0.0013372133,0,6.2818484};
+					};
+					side="West";
+					class Attributes
+					{
+					};
+					id=1365;
+					type="B_UAV_AI";
+					atlOffset=1.5363483;
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=2;
+				};
+				class Links
+				{
+					items=2;
+					class Item0
+					{
+						linkID=0;
+						item0=1364;
+						item1=1363;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item1
+					{
+						linkID=1;
+						item0=1365;
+						item1=1363;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+				};
+			};
+			id=1362;
+			atlOffset=-5.7220459e-006;
+		};
+		class Item144
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14187.95,21.12009,16274.241};
+				angles[]={0.0013372133,0,6.2818484};
+			};
+			side="West";
+			flags=6;
+			class Attributes
+			{
+			};
+			id=1363;
+			type="B_T_UAV_03_F";
+			atlOffset=-5.7220459e-006;
 		};
 	};
 	class Connections
