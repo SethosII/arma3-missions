@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=470;
+		nextID=473;
 	};
 	class MarkerIDProvider
 	{
@@ -49,8 +49,8 @@ addons[]=
 	"A3_Missions_F_Curator",
 	"A3_Data_F_Curator_Virtual",
 	"A3_Modules_F_Intel",
-	"A3_Air_F_EPB_Heli_Light_03",
-	"A3_Modules_F_Sites"
+	"A3_Modules_F_Sites",
+	"A3_Air_F_EPB_Heli_Light_03"
 };
 class AddonsMetaData
 {
@@ -404,7 +404,7 @@ class Mission
 			name="convoy_route_6";
 			type="mil_arrow2";
 			colorName="ColorGUER";
-			angle=53.65564;
+			angle=53.655636;
 			id=271;
 		};
 		class Item7
@@ -464,7 +464,7 @@ class Mission
 			name="convoy_route_12";
 			type="mil_arrow2";
 			colorName="ColorGUER";
-			angle=53.248875;
+			angle=53.248871;
 			id=277;
 		};
 		class Item13
@@ -516,7 +516,7 @@ class Mission
 			text="FIA hideout";
 			type="mil_arrow2";
 			colorName="ColorWEST";
-			angle=227.92787;
+			angle=227.92786;
 			id=282;
 			atlOffset=0.00019454956;
 		};
@@ -542,7 +542,7 @@ class Mission
 			text="AAF checkpoint";
 			type="mil_arrow2";
 			colorName="ColorGUER";
-			angle=223.50822;
+			angle=223.50821;
 			id=284;
 		};
 		class Item20
@@ -3495,14 +3495,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={18205.119,47.486019,15528.902};
-						angles[]={0,3.0457916,6.2658563};
+						angles[]={0,3.0457916,6.2658539};
 					};
 					side="Independent";
 					flags=6;
 					class Attributes
 					{
 					};
-					id=403;
+					id=471;
 					type="I_helipilot_F";
 				};
 				class Item1
@@ -3511,14 +3511,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={18205.119,47.486019,15528.902};
-						angles[]={0,3.0457916,6.2658563};
+						angles[]={0,3.0457916,6.2658539};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 					};
-					id=404;
+					id=472;
 					type="I_helipilot_F";
 				};
 				class Item2
@@ -3608,8 +3608,8 @@ class Mission
 					class Item0
 					{
 						linkID=0;
-						item0=403;
-						item1=402;
+						item0=471;
+						item1=470;
 						class CustomData
 						{
 							role=1;
@@ -3618,8 +3618,8 @@ class Mission
 					class Item1
 					{
 						linkID=1;
-						item0=404;
-						item1=402;
+						item0=472;
+						item1=470;
 						class CustomData
 						{
 							role=2;
@@ -3631,24 +3631,6 @@ class Mission
 			id=401;
 		};
 		class Item94
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={18205.146,49.015427,15528.853};
-				angles[]={0,3.0457916,6.2658563};
-			};
-			side="Independent";
-			flags=6;
-			class Attributes
-			{
-				rank="SERGEANT";
-				init="bis_curator addCuratorEditableObjects [[this], true];";
-			};
-			id=402;
-			type="I_Heli_light_03_F";
-		};
-		class Item95
 		{
 			dataType="Group";
 			side="Independent";
@@ -3697,7 +3679,7 @@ class Mission
 			};
 			id=411;
 		};
-		class Item96
+		class Item95
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3901,7 +3883,7 @@ class Mission
 				nAttributes=10;
 			};
 		};
-		class Item97
+		class Item96
 		{
 			dataType="Group";
 			side="West";
@@ -3932,7 +3914,7 @@ class Mission
 			};
 			id=415;
 		};
-		class Item98
+		class Item97
 		{
 			dataType="Group";
 			side="West";
@@ -3963,7 +3945,7 @@ class Mission
 			};
 			id=417;
 		};
-		class Item99
+		class Item98
 		{
 			dataType="Group";
 			side="West";
@@ -3994,7 +3976,7 @@ class Mission
 			};
 			id=419;
 		};
-		class Item100
+		class Item99
 		{
 			dataType="Group";
 			side="West";
@@ -4043,7 +4025,7 @@ class Mission
 			};
 			id=421;
 		};
-		class Item101
+		class Item100
 		{
 			dataType="Group";
 			side="West";
@@ -4075,7 +4057,7 @@ class Mission
 			};
 			id=424;
 		};
-		class Item102
+		class Item101
 		{
 			dataType="Group";
 			side="West";
@@ -4106,7 +4088,7 @@ class Mission
 			};
 			id=426;
 		};
-		class Item103
+		class Item102
 		{
 			dataType="Group";
 			side="West";
@@ -4137,7 +4119,7 @@ class Mission
 			};
 			id=428;
 		};
-		class Item104
+		class Item103
 		{
 			dataType="Group";
 			side="Independent";
@@ -4186,7 +4168,7 @@ class Mission
 			};
 			id=430;
 		};
-		class Item105
+		class Item104
 		{
 			dataType="Group";
 			side="Independent";
@@ -4235,7 +4217,7 @@ class Mission
 			};
 			id=433;
 		};
-		class Item106
+		class Item105
 		{
 			dataType="Group";
 			side="Independent";
@@ -4284,7 +4266,7 @@ class Mission
 			};
 			id=436;
 		};
-		class Item107
+		class Item106
 		{
 			dataType="Group";
 			side="Independent";
@@ -4333,7 +4315,7 @@ class Mission
 			};
 			id=439;
 		};
-		class Item108
+		class Item107
 		{
 			dataType="Group";
 			side="Independent";
@@ -4382,7 +4364,7 @@ class Mission
 			};
 			id=442;
 		};
-		class Item109
+		class Item108
 		{
 			dataType="Group";
 			side="Independent";
@@ -4431,7 +4413,7 @@ class Mission
 			};
 			id=445;
 		};
-		class Item110
+		class Item109
 		{
 			dataType="Group";
 			side="Independent";
@@ -4460,7 +4442,7 @@ class Mission
 			};
 			id=448;
 		};
-		class Item111
+		class Item110
 		{
 			dataType="Group";
 			side="Independent";
@@ -4489,7 +4471,7 @@ class Mission
 			};
 			id=450;
 		};
-		class Item112
+		class Item111
 		{
 			dataType="Group";
 			side="Independent";
@@ -4518,7 +4500,7 @@ class Mission
 			};
 			id=452;
 		};
-		class Item113
+		class Item112
 		{
 			dataType="Group";
 			side="Independent";
@@ -4549,7 +4531,7 @@ class Mission
 			id=454;
 			atlOffset=2.2888184e-005;
 		};
-		class Item114
+		class Item113
 		{
 			dataType="Group";
 			side="Independent";
@@ -4655,7 +4637,7 @@ class Mission
 			};
 			id=456;
 		};
-		class Item115
+		class Item114
 		{
 			dataType="Group";
 			side="Independent";
@@ -4704,7 +4686,7 @@ class Mission
 			};
 			id=464;
 		};
-		class Item116
+		class Item115
 		{
 			dataType="Group";
 			side="Independent";
@@ -4752,6 +4734,24 @@ class Mission
 			{
 			};
 			id=467;
+		};
+		class Item116
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={18205.146,49.015427,15528.853};
+				angles[]={0,3.0457916,6.2658539};
+			};
+			side="Independent";
+			flags=6;
+			class Attributes
+			{
+				rank="SERGEANT";
+				init="bis_curator addCuratorEditableObjects [[this], true];";
+			};
+			id=470;
+			type="I_Heli_light_03_dynamicLoadout_F";
 		};
 	};
 	class Connections

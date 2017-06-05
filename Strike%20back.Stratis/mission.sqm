@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=165;
+		nextID=168;
 	};
 	class MarkerIDProvider
 	{
@@ -37,12 +37,12 @@ addons[]=
 	"A3_Static_F_Mortar_01",
 	"A3_Modules_F_Intel",
 	"A3_Static_F",
-	"A3_Air_F_Heli_Light_02",
 	"A3_Modules_F_Curator_Curator",
 	"A3_Missions_F_Curator",
 	"A3_Data_F_Curator_Virtual",
 	"A3_Modules_F_Curator_Misc",
-	"A3_Modules_F"
+	"A3_Modules_F",
+	"A3_Air_F_Heli_Light_02"
 };
 class AddonsMetaData
 {
@@ -114,29 +114,29 @@ class AddonsMetaData
 		};
 		class Item9
 		{
-			className="A3_Air_F";
-			name="Arma 3 Alpha - Aircrafts";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item10
-		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item11
+		class Item10
 		{
 			className="A3_Missions_F_Curator";
 			name="Arma 3 Zeus Update - Playable Content";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item12
+		class Item11
 		{
 			className="A3_Data_F_Curator";
 			name="Arma 3 Zeus Update - Main Configuration";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item12
+		{
+			className="A3_Air_F";
+			name="Arma 3 Alpha - Aircrafts";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -353,7 +353,7 @@ class Mission
 			fillName="FDiagonal";
 			a=90;
 			b=150;
-			angle=345.15945;
+			angle=345.15942;
 			id=4;
 		};
 		class Item5
@@ -3566,15 +3566,16 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1848.6545,5.5030756,5565.8877};
-						angles[]={0,4.9930348,0.0024897563};
+						position[]={1848.655,5.5030766,5565.8877};
+						angles[]={0,4.9930377,0.0024958209};
 					};
 					side="East";
 					flags=6;
 					class Attributes
 					{
+						aiRadarUsage=538968096;
 					};
-					id=119;
+					id=166;
 					type="O_helipilot_F";
 				};
 				class Item1
@@ -3582,15 +3583,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1848.6545,5.5030756,5565.8877};
-						angles[]={0,4.9930348,0.0024897563};
+						position[]={1848.655,5.5030766,5565.8877};
+						angles[]={0,4.9930377,0.0024958209};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
 					};
-					id=120;
+					id=167;
 					type="O_helipilot_F";
 				};
 				class Item2
@@ -3731,8 +3732,8 @@ class Mission
 					class Item0
 					{
 						linkID=0;
-						item0=119;
-						item1=118;
+						item0=166;
+						item1=165;
 						class CustomData
 						{
 							role=1;
@@ -3741,8 +3742,8 @@ class Mission
 					class Item1
 					{
 						linkID=1;
-						item0=120;
-						item1=118;
+						item0=167;
+						item1=165;
 						class CustomData
 						{
 							role=2;
@@ -3754,24 +3755,6 @@ class Mission
 			id=117;
 		};
 		class Item61
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={1848.6492,7.6712761,5565.7271};
-				angles[]={0,4.9930348,0.0024897563};
-			};
-			side="East";
-			flags=6;
-			class Attributes
-			{
-				rank="SERGEANT";
-				init="bis_curator addCuratorEditableObjects [[this], true]; {bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
-			};
-			id=118;
-			type="O_Heli_Light_02_F";
-		};
-		class Item62
 		{
 			dataType="Group";
 			side="East";
@@ -3801,7 +3784,7 @@ class Mission
 			};
 			id=131;
 		};
-		class Item63
+		class Item62
 		{
 			dataType="Group";
 			side="East";
@@ -3920,7 +3903,7 @@ class Mission
 			};
 			id=133;
 		};
-		class Item64
+		class Item63
 		{
 			dataType="Group";
 			side="East";
@@ -4084,7 +4067,7 @@ class Mission
 			};
 			id=141;
 		};
-		class Item65
+		class Item64
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4212,7 +4195,7 @@ class Mission
 				nAttributes=6;
 			};
 		};
-		class Item66
+		class Item65
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4416,7 +4399,7 @@ class Mission
 				nAttributes=10;
 			};
 		};
-		class Item67
+		class Item66
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4620,7 +4603,7 @@ class Mission
 				nAttributes=10;
 			};
 		};
-		class Item68
+		class Item67
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4730,7 +4713,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item69
+		class Item68
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4740,7 +4723,7 @@ class Mission
 			id=155;
 			type="ModuleMPTypeGameMaster_F";
 		};
-		class Item70
+		class Item69
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4752,7 +4735,7 @@ class Mission
 			id=156;
 			type="VirtualCurator_F";
 		};
-		class Item71
+		class Item70
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4764,7 +4747,7 @@ class Mission
 			type="ModuleCoverMap_F";
 			atlOffset=131.32521;
 		};
-		class Item72
+		class Item71
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4775,7 +4758,7 @@ class Mission
 			type="LocationArea_F";
 			atlOffset=131.23082;
 		};
-		class Item73
+		class Item72
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4903,7 +4886,7 @@ class Mission
 				nAttributes=6;
 			};
 		};
-		class Item74
+		class Item73
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -5030,6 +5013,24 @@ class Mission
 				};
 				nAttributes=6;
 			};
+		};
+		class Item74
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1848.6497,7.671277,5565.7271};
+				angles[]={0,4.9930377,0.0024958209};
+			};
+			side="East";
+			flags=6;
+			class Attributes
+			{
+				rank="SERGEANT";
+				init="bis_curator addCuratorEditableObjects [[this], true]; {bis_curator addCuratorEditableObjects [[_x], true];} forEach units group this;";
+			};
+			id=165;
+			type="O_Heli_Light_02_dynamicLoadout_F";
 		};
 	};
 	class Connections
